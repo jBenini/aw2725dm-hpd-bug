@@ -1,0 +1,1574 @@
+jul 13 23:24:04 joaoantonio-PC kernel: Linux version 7.1.3-2-cachyos (linux-cachyos@cachyos) (clang version 22.1.6, LLD 22.1.6) #1 SMP PREEMPT_DYNAMIC Wed, 08 Jul 2026 06:14:22 +0000
+jul 13 23:24:04 joaoantonio-PC kernel: Command line: BOOT_IMAGE=/vmlinuz-linux-cachyos root=/dev/mapper/ArchinstallVg-root rw rootflags=subvol=@ quiet splash loglevel=3 rd.udev.log_level=3 pci=noaer nvidia_drm.modeset=1 nvidia_drm.fbdev=1 vt.global_cursor_default=0
+jul 13 23:24:04 joaoantonio-PC kernel: x86/split lock detection: #DB: warning on user-space bus_locks
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-provided physical RAM map:
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000099fefff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x00000000099ff000-0x0000000009ffffff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000000a000000-0x000000000a1fffff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000000a200000-0x000000000a21dfff]  ACPI NVS
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000000a21e000-0x000000000affffff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000000b000000-0x000000000b020fff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000000b021000-0x000000007857efff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000007857f000-0x00000000956fefff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x00000000956ff000-0x00000000976fefff]  ACPI NVS
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x00000000976ff000-0x00000000977fefff]  ACPI data
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x00000000977ff000-0x0000000098096fff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x0000000098097000-0x0000000098097fff]  ACPI NVS
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x0000000098098000-0x0000000099337fff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x0000000099338000-0x0000000099339fff]  ACPI NVS
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000009933a000-0x0000000099ff6fff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x0000000099ff7000-0x0000000099ffbfff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x0000000099ffc000-0x0000000099ffffff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000009a000000-0x000000009bffffff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [gap 0x000000009c000000-0x000000009d7f2fff]
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000009d7f3000-0x000000009fffffff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [gap 0x00000000a0000000-0x00000000dfffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [gap 0x00000000f0000000-0x00000000f6ffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x00000000f7000000-0x00000000ffffffff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x0000000100000000-0x0000000fdde7ffff]  System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [gap 0x0000000fdde80000-0x0000000fdeebffff]
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x0000000fdeec0000-0x00000010801fffff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [gap 0x0000001080200000-0x000000fcffffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: BIOS-e820: [mem 0x000000fd00000000-0x000000ffffffffff]  device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: NX (Execute Disable) protection: active
+jul 13 23:24:04 joaoantonio-PC kernel: APIC: Static calls initialized
+jul 13 23:24:04 joaoantonio-PC kernel: efi: EFI v2.11 by American Megatrends
+jul 13 23:24:04 joaoantonio-PC kernel: efi: ACPI=0x976e5000 ACPI 2.0=0x976e5014 SMBIOS=0x84248000 SMBIOS 3.0=0x84247000 MEMATTR=0x71e6f098 ESRT=0x743fce98 INITRD=0x6d2dce98 RNG=0x97745018 
+jul 13 23:24:04 joaoantonio-PC kernel: random: crng init done
+jul 13 23:24:04 joaoantonio-PC kernel: efi: Remove mem79: MMIO range=[0xe0000000-0xefffffff] (256MB) from e820 map
+jul 13 23:24:04 joaoantonio-PC kernel: e820: remove [mem 0xe0000000-0xefffffff] device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: efi: Remove mem80: MMIO range=[0xf7000000-0xfedfffff] (126MB) from e820 map
+jul 13 23:24:04 joaoantonio-PC kernel: e820: remove [mem 0xf7000000-0xfedfffff] device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: efi: Not removing mem81: MMIO range=[0xfee00000-0xfee00fff] (4KB) from e820 map
+jul 13 23:24:04 joaoantonio-PC kernel: efi: Remove mem82: MMIO range=[0xfee01000-0xffffffff] (17MB) from e820 map
+jul 13 23:24:04 joaoantonio-PC kernel: e820: remove [mem 0xfee01000-0xffffffff] device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: efi: Remove mem84: MMIO range=[0x1060000000-0x10801fffff] (514MB) from e820 map
+jul 13 23:24:04 joaoantonio-PC kernel: e820: remove [mem 0x1060000000-0x10801fffff] device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: DMI: SMBIOS 3.8.0 present.
+jul 13 23:24:04 joaoantonio-PC kernel: DMI: Micro-Star International Co., Ltd. MS-7E51/MAG X870 TOMAHAWK WIFI (MS-7E51), BIOS 1.A82 03/19/2026
+jul 13 23:24:04 joaoantonio-PC kernel: DMI: Memory slots populated: 2/4
+jul 13 23:24:04 joaoantonio-PC kernel: tsc: Fast TSC calibration using PIT
+jul 13 23:24:04 joaoantonio-PC kernel: tsc: Detected 4699.989 MHz processor
+jul 13 23:24:04 joaoantonio-PC kernel: e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: e820: remove [mem 0x000a0000-0x000fffff] System RAM
+jul 13 23:24:04 joaoantonio-PC kernel: last_pfn = 0xfdde80 max_arch_pfn = 0x400000000
+jul 13 23:24:04 joaoantonio-PC kernel: MTRR map: 5 entries (3 fixed + 2 variable; max 20), built from 9 variable MTRRs
+jul 13 23:24:04 joaoantonio-PC kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+jul 13 23:24:04 joaoantonio-PC kernel: e820: update [mem 0xa0000000-0xffffffff] System RAM ==> device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: last_pfn = 0x9a000 max_arch_pfn = 0x400000000
+jul 13 23:24:04 joaoantonio-PC kernel: esrt: Reserving ESRT space from 0x00000000743fce98 to 0x00000000743fced0.
+jul 13 23:24:04 joaoantonio-PC kernel: e820: update [mem 0x743fc000-0x743fcfff] System RAM ==> device reserved
+jul 13 23:24:04 joaoantonio-PC kernel: Using GB pages for direct mapping
+jul 13 23:24:04 joaoantonio-PC kernel: Secure boot disabled
+jul 13 23:24:04 joaoantonio-PC kernel: RAMDISK: [mem 0x58d04000-0x68fc5fff]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Early table checksum verification disabled
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: RSDP 0x00000000976E5014 000024 (v02 ALASKA)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: XSDT 0x00000000976E4728 000104 (v01 ALASKA A M I    01072009 AMI  01000013)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: FACP 0x00000000977F4000 000114 (v06 ALASKA A M I    01072009 AMI  00010013)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: DSDT 0x000000009777D000 06C29E (v02 ALASKA A M I    01072009 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: FACS 0x00000000976E1000 000040
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: _SDM 0x0000000098097000 000055 (v03 ALASKA A M I    01072009 AMI  01000013)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x00000000977F6000 008689 (v02 AMD    Splinter 00000002 MSFT 04000000)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x00000000977F5000 000221 (v02 ALASKA CPUSSDT  01072009 AMI  01072009)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: FIDT 0x00000000977ED000 00009D (v01 ALASKA A M I    01072009 AMI  00010013)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: MCFG 0x00000000977EC000 00003C (v01 ALASKA A M I    01072009 MSFT 00010013)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: HPET 0x00000000977EB000 000038 (v01 ALASKA A M I    01072009 AMI  00000005)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: UEFI 0x0000000096CCF000 000048 (v01 ALASKA A M I    01072009 AMI  01000013)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: FPDT 0x00000000977EA000 000044 (v01 ALASKA A M I    01072009 AMI  01000013)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: VFCT 0x0000000097772000 00AE84 (v01 ALASKA A M I    00000001 AMD  33504F47)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x00000000977EF000 004DEE (v02 AMD    AMD CPU  00000001 AMD  00000001)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x00000000977EE000 000041 (v02 AMD    AppCompD 00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x0000000097764000 00D2AE (v02 AMD    DISCUSB4 00000002 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x0000000097763000 0006D4 (v02 AMD    CPMWLRC  00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x0000000097761000 00169E (v02 AMD    CPMDFIG2 00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x000000009775E000 002AA6 (v02 AMD    CDFAAIG2 00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x000000009775D000 00078F (v02 AMD    CPMDFDG1 00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x0000000097753000 009AF2 (v02 AMD    CPMCMN   00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x0000000097750000 002A9C (v02 AMD    AOD      00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: WSMT 0x000000009774F000 000028 (v01 ALASKA A M I    01072009 AMI  00010013)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: APIC 0x000000009774E000 00015E (v06 ALASKA A M I    01072009 AMI  00010013)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: IVRS 0x000000009774D000 0001FE (v02 AMD    AmdTable 00000001 AMD  00000001)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x000000009774C000 000500 (v02 AMD    MEMTOOL0 00000002 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x000000009774B000 0009D0 (v02 AMD    CPMMSOSC 00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x000000009774A000 00047C (v02 AMD    AMDWOV   00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x0000000097748000 001046 (v02 AMD    CPMACPV4 00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x0000000097747000 00053E (v02 AMD    CPMAPMFD 00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: SSDT 0x0000000097746000 00044E (v02 AMD    AmdTable 00000001 INTL 20230628)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving FACP table memory at [mem 0x977f4000-0x977f4113]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving DSDT table memory at [mem 0x9777d000-0x977e929d]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving FACS table memory at [mem 0x976e1000-0x976e103f]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving _SDM table memory at [mem 0x98097000-0x98097054]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x977f6000-0x977fe688]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x977f5000-0x977f5220]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving FIDT table memory at [mem 0x977ed000-0x977ed09c]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving MCFG table memory at [mem 0x977ec000-0x977ec03b]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving HPET table memory at [mem 0x977eb000-0x977eb037]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving UEFI table memory at [mem 0x96ccf000-0x96ccf047]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving FPDT table memory at [mem 0x977ea000-0x977ea043]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving VFCT table memory at [mem 0x97772000-0x9777ce83]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x977ef000-0x977f3ded]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x977ee000-0x977ee040]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x97764000-0x977712ad]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x97763000-0x977636d3]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x97761000-0x9776269d]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x9775e000-0x97760aa5]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x9775d000-0x9775d78e]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x97753000-0x9775caf1]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x97750000-0x97752a9b]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving WSMT table memory at [mem 0x9774f000-0x9774f027]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving APIC table memory at [mem 0x9774e000-0x9774e15d]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving IVRS table memory at [mem 0x9774d000-0x9774d1fd]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x9774c000-0x9774c4ff]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x9774b000-0x9774b9cf]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x9774a000-0x9774a47b]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x97748000-0x97749045]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x97747000-0x9774753d]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Reserving SSDT table memory at [mem 0x97746000-0x9774644d]
+jul 13 23:24:04 joaoantonio-PC kernel: No NUMA configuration found
+jul 13 23:24:04 joaoantonio-PC kernel: Faking a node at [mem 0x0000000000000000-0x0000000fdde7ffff]
+jul 13 23:24:04 joaoantonio-PC kernel: NODE_DATA(0) allocated [mem 0xfdde54f80-0xfdde7ffff]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PM-Timer IO Port: 0x808
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: LAPIC_NMI (acpi_id[0xff] high edge lint[0x1])
+jul 13 23:24:04 joaoantonio-PC kernel: IOAPIC[0]: apic_id 32, version 33, address 0xfec00000, GSI 0-23
+jul 13 23:24:04 joaoantonio-PC kernel: IOAPIC[1]: apic_id 33, version 33, address 0xfec01000, GSI 24-55
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: HPET id: 0x10228201 base: 0xfed00000
+jul 13 23:24:04 joaoantonio-PC kernel: CPU topo: Max. logical packages:   1
+jul 13 23:24:04 joaoantonio-PC kernel: CPU topo: Max. logical nodes:      1
+jul 13 23:24:04 joaoantonio-PC kernel: CPU topo: Num. nodes per package:  1
+jul 13 23:24:04 joaoantonio-PC kernel: CPU topo: Max. logical dies:       1
+jul 13 23:24:04 joaoantonio-PC kernel: CPU topo: Max. dies per package:   1
+jul 13 23:24:04 joaoantonio-PC kernel: CPU topo: Max. threads per core:   2
+jul 13 23:24:04 joaoantonio-PC kernel: CPU topo: Num. cores per package:     8
+jul 13 23:24:04 joaoantonio-PC kernel: CPU topo: Num. threads per package:  16
+jul 13 23:24:04 joaoantonio-PC kernel: CPU topo: Allowing 16 present CPUs plus 0 hotplug CPUs
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x099ff000-0x09ffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x0a200000-0x0a21dfff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x0b000000-0x0b020fff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x743fc000-0x743fcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x7857f000-0x977fefff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x98097000-0x98097fff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x99338000-0x99339fff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x99ff7000-0x99ffbfff]
+jul 13 23:24:04 joaoantonio-PC kernel: PM: hibernation: Registered nosave memory: [mem 0x9a000000-0xffffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: [gap 0xa0000000-0xfedfffff] available for PCI devices
+jul 13 23:24:04 joaoantonio-PC kernel: Booting paravirtualized kernel on bare hardware
+jul 13 23:24:04 joaoantonio-PC kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+jul 13 23:24:04 joaoantonio-PC kernel: Zone ranges:
+jul 13 23:24:04 joaoantonio-PC kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+jul 13 23:24:04 joaoantonio-PC kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+jul 13 23:24:04 joaoantonio-PC kernel:   Normal   [mem 0x0000000100000000-0x0000000fdde7ffff]
+jul 13 23:24:04 joaoantonio-PC kernel:   Device   empty
+jul 13 23:24:04 joaoantonio-PC kernel: Movable zone start for each node
+jul 13 23:24:04 joaoantonio-PC kernel: Early memory node ranges
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x0000000000100000-0x00000000099fefff]
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x000000000a000000-0x000000000a1fffff]
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x000000000a21e000-0x000000000affffff]
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x000000000b021000-0x000000007857efff]
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x00000000977ff000-0x0000000098096fff]
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x0000000098098000-0x0000000099337fff]
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x000000009933a000-0x0000000099ff6fff]
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x0000000099ffc000-0x0000000099ffffff]
+jul 13 23:24:04 joaoantonio-PC kernel:   node   0: [mem 0x0000000100000000-0x0000000fdde7ffff]
+jul 13 23:24:04 joaoantonio-PC kernel: Initmem setup node 0 [mem 0x0000000000001000-0x0000000fdde7ffff]
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone DMA: 96 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone DMA32: 1537 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone DMA32: 30 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone DMA32: 33 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone DMA32: 62080 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone DMA32: 1 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone DMA32: 2 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone DMA32: 5 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone Normal: 24576 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: On node 0, zone Normal: 8576 pages in unavailable ranges
+jul 13 23:24:04 joaoantonio-PC kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+jul 13 23:24:04 joaoantonio-PC kernel: percpu: Embedded 63 pages/cpu s221184 r8192 d28672 u262144
+jul 13 23:24:04 joaoantonio-PC kernel: pcpu-alloc: s221184 r8192 d28672 u262144 alloc=1*2097152
+jul 13 23:24:04 joaoantonio-PC kernel: pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15 
+jul 13 23:24:04 joaoantonio-PC kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-linux-cachyos root=/dev/mapper/ArchinstallVg-root rw rootflags=subvol=@ quiet splash loglevel=3 rd.udev.log_level=3 pci=noaer nvidia_drm.modeset=1 nvidia_drm.fbdev=1 vt.global_cursor_default=0
+jul 13 23:24:04 joaoantonio-PC kernel: Unknown kernel command line parameters "splash", will be passed to user space.
+jul 13 23:24:04 joaoantonio-PC kernel: printk: log buffer data + meta data: 131072 + 557056 = 688128 bytes
+jul 13 23:24:04 joaoantonio-PC kernel: Dentry cache hash table entries: 8388608 (order: 14, 67108864 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: Inode-cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: software IO TLB: area num 16.
+jul 13 23:24:04 joaoantonio-PC kernel: Fallback order for Node 0: 0 
+jul 13 23:24:04 joaoantonio-PC kernel: Built 1 zonelists, mobility grouping on.  Total pages: 16090455
+jul 13 23:24:04 joaoantonio-PC kernel: Policy zone: Normal
+jul 13 23:24:04 joaoantonio-PC kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+jul 13 23:24:04 joaoantonio-PC kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+jul 13 23:24:04 joaoantonio-PC kernel: ftrace: allocating 57222 entries in 224 pages
+jul 13 23:24:04 joaoantonio-PC kernel: ftrace: allocated 224 pages with 3 groups
+jul 13 23:24:04 joaoantonio-PC kernel: Dynamic Preempt: full
+jul 13 23:24:04 joaoantonio-PC kernel: rcu: Preemptible hierarchical RCU implementation.
+jul 13 23:24:04 joaoantonio-PC kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+jul 13 23:24:04 joaoantonio-PC kernel: rcu:         RCU priority boosting: priority 1 delay 500 ms.
+jul 13 23:24:04 joaoantonio-PC kernel:         Trampoline variant of Tasks RCU enabled.
+jul 13 23:24:04 joaoantonio-PC kernel:         Rude variant of Tasks RCU enabled.
+jul 13 23:24:04 joaoantonio-PC kernel:         Tracing variant of Tasks RCU enabled.
+jul 13 23:24:04 joaoantonio-PC kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+jul 13 23:24:04 joaoantonio-PC kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+jul 13 23:24:04 joaoantonio-PC kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+jul 13 23:24:04 joaoantonio-PC kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+jul 13 23:24:04 joaoantonio-PC kernel: NR_IRQS: 524544, nr_irqs: 1096, preallocated irqs: 16
+jul 13 23:24:04 joaoantonio-PC kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+jul 13 23:24:04 joaoantonio-PC kernel: kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+jul 13 23:24:04 joaoantonio-PC kernel: Console: colour dummy device 80x25
+jul 13 23:24:04 joaoantonio-PC kernel: printk: legacy console [tty0] enabled
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Core revision 20251212
+jul 13 23:24:04 joaoantonio-PC kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484873504 ns
+jul 13 23:24:04 joaoantonio-PC kernel: APIC: Switch to symmetric I/O mode setup
+jul 13 23:24:04 joaoantonio-PC kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:ID00, rdevid:0xa0
+jul 13 23:24:04 joaoantonio-PC kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:ID01, rdevid:0xa0
+jul 13 23:24:04 joaoantonio-PC kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:ID02, rdevid:0xa0
+jul 13 23:24:04 joaoantonio-PC kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:ID03, rdevid:0x98
+jul 13 23:24:04 joaoantonio-PC kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:ID04, rdevid:0x98
+jul 13 23:24:04 joaoantonio-PC kernel: AMD-Vi: Using global IVHD EFR:0x246577efa2254afa, EFR2:0x0
+jul 13 23:24:04 joaoantonio-PC kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+jul 13 23:24:04 joaoantonio-PC kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x43bf61f1c0b, max_idle_ns: 440795249625 ns
+jul 13 23:24:04 joaoantonio-PC kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 9399.97 BogoMIPS (lpj=4699989)
+jul 13 23:24:04 joaoantonio-PC kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+jul 13 23:24:04 joaoantonio-PC kernel: LVT offset 1 assigned for vector 0xf9
+jul 13 23:24:04 joaoantonio-PC kernel: LVT offset 2 assigned for vector 0xf4
+jul 13 23:24:04 joaoantonio-PC kernel: Last level iTLB entries: 4KB 64, 2MB 64, 4MB 32
+jul 13 23:24:04 joaoantonio-PC kernel: Last level dTLB entries: 4KB 128, 2MB 128, 4MB 64, 1GB 0
+jul 13 23:24:04 joaoantonio-PC kernel: process: using mwait in idle threads
+jul 13 23:24:04 joaoantonio-PC kernel: mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+jul 13 23:24:04 joaoantonio-PC kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+jul 13 23:24:04 joaoantonio-PC kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+jul 13 23:24:04 joaoantonio-PC kernel: Spectre V2 : User space: Mitigation: STIBP always-on protection
+jul 13 23:24:04 joaoantonio-PC kernel: Speculative Return Stack Overflow: Mitigation: IBPB on VMEXIT only
+jul 13 23:24:04 joaoantonio-PC kernel: VMSCAPE: Mitigation: IBPB on VMEXIT
+jul 13 23:24:04 joaoantonio-PC kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+jul 13 23:24:04 joaoantonio-PC kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Supporting XSAVE feature 0x1000: 'Control-flow Kernel registers (KVM only)'
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: xstate_offset[9]: 2432, xstate_sizes[9]:    8
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: xstate_offset[11]: 2440, xstate_sizes[11]:   16
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: xstate_offset[12]: 2456, xstate_sizes[12]:   24
+jul 13 23:24:04 joaoantonio-PC kernel: x86/fpu: Enabled xstate features 0x1ae7, context size is 2480 bytes, using 'compacted' format.
+jul 13 23:24:04 joaoantonio-PC kernel: pid_max: default: 32768 minimum: 301
+jul 13 23:24:04 joaoantonio-PC kernel: landlock: Up and running.
+jul 13 23:24:04 joaoantonio-PC kernel: Yama: becoming mindful.
+jul 13 23:24:04 joaoantonio-PC kernel: LSM support for eBPF active
+jul 13 23:24:04 joaoantonio-PC kernel: Mount-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: Mountpoint-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: VFS: Finished mounting rootfs on nullfs
+jul 13 23:24:04 joaoantonio-PC kernel: smpboot: CPU0: AMD Ryzen 7 9800X3D 8-Core Processor (family: 0x1a, model: 0x44, stepping: 0x0)
+jul 13 23:24:04 joaoantonio-PC kernel: Performance Events: Fam17h+ 16-deep LBR, core perfctr, AMD PMU driver.
+jul 13 23:24:04 joaoantonio-PC kernel: ... version:                   2
+jul 13 23:24:04 joaoantonio-PC kernel: ... bit width:                 48
+jul 13 23:24:04 joaoantonio-PC kernel: ... generic counters:          6
+jul 13 23:24:04 joaoantonio-PC kernel: ... generic bitmap:            000000000000003f
+jul 13 23:24:04 joaoantonio-PC kernel: ... fixed-purpose counters:    0
+jul 13 23:24:04 joaoantonio-PC kernel: ... fixed-purpose bitmap:      0000000000000000
+jul 13 23:24:04 joaoantonio-PC kernel: ... value mask:                0000ffffffffffff
+jul 13 23:24:04 joaoantonio-PC kernel: ... max period:                00007fffffffffff
+jul 13 23:24:04 joaoantonio-PC kernel: ... global_ctrl mask:          000000000000003f
+jul 13 23:24:04 joaoantonio-PC kernel: signal: max sigframe size: 3376
+jul 13 23:24:04 joaoantonio-PC kernel: rcu: Hierarchical SRCU implementation.
+jul 13 23:24:04 joaoantonio-PC kernel: rcu:         Max phase no-delay instances is 400.
+jul 13 23:24:04 joaoantonio-PC kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+jul 13 23:24:04 joaoantonio-PC kernel: MCE: In-kernel MCE decoding enabled.
+jul 13 23:24:04 joaoantonio-PC kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+jul 13 23:24:04 joaoantonio-PC kernel: smp: Bringing up secondary CPUs ...
+jul 13 23:24:04 joaoantonio-PC kernel: smpboot: x86: Booting SMP configuration:
+jul 13 23:24:04 joaoantonio-PC kernel: .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8  #9 #10 #11 #12 #13 #14 #15
+jul 13 23:24:04 joaoantonio-PC kernel: Spectre V2 : Update user space SMT mitigation: STIBP always-on
+jul 13 23:24:04 joaoantonio-PC kernel: smp: Brought up 1 node, 16 CPUs
+jul 13 23:24:04 joaoantonio-PC kernel: smpboot: Total of 16 processors activated (150399.64 BogoMIPS)
+jul 13 23:24:04 joaoantonio-PC kernel: Memory: 62731052K/64361820K available (22622K kernel code, 2915K rwdata, 17016K rodata, 4792K init, 4332K bss, 1605456K reserved, 0K cma-reserved)
+jul 13 23:24:04 joaoantonio-PC kernel: devtmpfs: initialized
+jul 13 23:24:04 joaoantonio-PC kernel: x86/mm: Memory block size: 128MB
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PM: Registering ACPI NVS region [mem 0x0a200000-0x0a21dfff] (122880 bytes)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PM: Registering ACPI NVS region [mem 0x956ff000-0x976fefff] (33554432 bytes)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PM: Registering ACPI NVS region [mem 0x98097000-0x98097fff] (4096 bytes)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PM: Registering ACPI NVS region [mem 0x99338000-0x99339fff] (8192 bytes)
+jul 13 23:24:04 joaoantonio-PC kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+jul 13 23:24:04 joaoantonio-PC kernel: posixtimers hash table entries: 8192 (order: 5, 131072 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: futex hash table entries: 4096 (262144 bytes on 1 NUMA nodes, total 256 KiB, linear).
+jul 13 23:24:04 joaoantonio-PC kernel: xor: automatically using best checksumming function   avx       
+jul 13 23:24:04 joaoantonio-PC kernel: PM: RTC time: 02:23:58, date: 2026-07-14
+jul 13 23:24:04 joaoantonio-PC kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+jul 13 23:24:04 joaoantonio-PC kernel: DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+jul 13 23:24:04 joaoantonio-PC kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+jul 13 23:24:04 joaoantonio-PC kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+jul 13 23:24:04 joaoantonio-PC kernel: audit: initializing netlink subsys (disabled)
+jul 13 23:24:04 joaoantonio-PC kernel: audit: type=2000 audit(1783995838.133:1): state=initialized audit_enabled=0 res=1
+jul 13 23:24:04 joaoantonio-PC kernel: thermal_sys: Registered thermal governor 'fair_share'
+jul 13 23:24:04 joaoantonio-PC kernel: thermal_sys: Registered thermal governor 'bang_bang'
+jul 13 23:24:04 joaoantonio-PC kernel: thermal_sys: Registered thermal governor 'step_wise'
+jul 13 23:24:04 joaoantonio-PC kernel: thermal_sys: Registered thermal governor 'user_space'
+jul 13 23:24:04 joaoantonio-PC kernel: thermal_sys: Registered thermal governor 'power_allocator'
+jul 13 23:24:04 joaoantonio-PC kernel: cpuidle: using governor ladder
+jul 13 23:24:04 joaoantonio-PC kernel: cpuidle: using governor menu
+jul 13 23:24:04 joaoantonio-PC kernel: Freeing SMP alternatives memory: 64K
+jul 13 23:24:04 joaoantonio-PC kernel: efi: Freeing EFI boot services memory: 94920K
+jul 13 23:24:04 joaoantonio-PC kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+jul 13 23:24:04 joaoantonio-PC kernel: PCI: ECAM [mem 0xe0000000-0xefffffff] (base 0xe0000000) for domain 0000 [bus 00-ff]
+jul 13 23:24:04 joaoantonio-PC kernel: PCI: Using configuration type 1 for base access
+jul 13 23:24:04 joaoantonio-PC kernel: virt/tdx: TDX not supported by the host platform
+jul 13 23:24:04 joaoantonio-PC kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+jul 13 23:24:04 joaoantonio-PC kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+jul 13 23:24:04 joaoantonio-PC kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+jul 13 23:24:04 joaoantonio-PC kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+jul 13 23:24:04 joaoantonio-PC kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+jul 13 23:24:04 joaoantonio-PC kernel: raid6: skipped pq benchmark and selected avx512x4
+jul 13 23:24:04 joaoantonio-PC kernel: raid6: using avx512x2 recovery algorithm
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Added _OSI(Module Device)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Added _OSI(Processor Device)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Added _OSI(Processor Aggregator Device)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: 18 ACPI AML tables successfully acquired and loaded
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_: platform _OSC: OS support mask [006e7eff]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_: platform _OSC: OS control mask [006e7eff]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: USB4 _OSC: OS supports USB3+ DisplayPort+ PCIe+ XDomain+
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: USB4 _OSC: OS controls USB3+ DisplayPort+ PCIe+ XDomain+
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Interpreter enabled
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PM: (supports S0 S3 S4 S5)
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Using IOAPIC for interrupt routing
+jul 13 23:24:04 joaoantonio-PC kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+jul 13 23:24:04 joaoantonio-PC kernel: PCI: Ignoring E820 reservations for host bridge windows
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Enabled 10 GPEs in block 00 to 1F
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GP17.XHC0.P0U0: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GP17.XHC1.P0U1: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GP19.XHC2.P0U2: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP0.M237: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP1.P0NV: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP08.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP08.EP00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP10.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP10.WN00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP18.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP18.LN00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP20.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP28.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP30.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP30.EP00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP38.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP38.EP00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP40.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP48.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP48.EP00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP50.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP50.EP00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP58.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP58.EP00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP60.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP60.XH00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP68.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP7.UP00.DP68.SA00.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.U4UP.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.U4UP.U4P0.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.U4UP.U4P0.UP0D.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.U4UP.U4P1.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.U4UP.U4P1.UP1D.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.U4UP.U4P2.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.U4UP.U4P2.UXHC.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.U4UP.U4P3.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PCI0.GPP8.U4UP.U4P3.UHI0.PWRS: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PRWL: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: \_SB_.PRWB: New power resource
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME PCIeCapability LTR DPC]
+jul 13 23:24:04 joaoantonio-PC kernel: PCI host bridge to bus 0000:00
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x03af window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [io  0x03e0-0x0cf7 window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [io  0x03b0-0x03df window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000dffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [mem 0xf2000000-0xf6ffffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [mem 0xf0000000-0xf1ffffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [mem 0xa0000000-0xdfffffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [mem 0x1060000000-0xfcffffffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:00.0: [1022:14d8] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:00.2: [1022:14d9] type 00 class 0x080600 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1: PCI bridge to [bus 01]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1:   bridge window [io  0xf000-0xffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1:   bridge window [mem 0xd8000000-0xdc0fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1:   bridge window [mem 0xf800000000-0xfc01ffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.2: [1022:14db] type 01 class 0x060400 PCIe Root Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.2: PCI bridge to [bus 02]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.2:   bridge window [mem 0xdd200000-0xdd2fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.2: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1: PCI bridge to [bus 03-0d]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1:   bridge window [io  0xe000-0xefff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1:   bridge window [mem 0xdc200000-0xdc8fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2: [1022:14db] type 01 class 0x060400 PCIe Root Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2: PCI bridge to [bus 0e-71]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2:   bridge window [io  0x7000-0xcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2:   bridge window [mem 0xa4000000-0xd47fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2:   bridge window [mem 0xb800000000-0xf7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.1: PCI bridge to [bus 72]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.1:   bridge window [mem 0xdd100000-0xdd1fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.1: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:04.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1: [1022:14dd] type 01 class 0x060400 PCIe Root Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1: PCI bridge to [bus 73]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1:   bridge window [io  0xd000-0xdfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1:   bridge window [mem 0xdca00000-0xdcffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1:   bridge window [mem 0xfc10000000-0xfc1fffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.3: [1022:14dd] type 01 class 0x060400 PCIe Root Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.3: PCI bridge to [bus 74]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.3:   bridge window [mem 0xdd000000-0xdd0fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.3: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.3: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:14.0: [1022:790b] type 00 class 0x0c0500 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:14.3: [1022:790e] type 00 class 0x060100 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.0: [1022:14e0] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.1: [1022:14e1] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.2: [1022:14e2] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.3: [1022:14e3] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.4: [1022:14e4] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.5: [1022:14e5] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.6: [1022:14e6] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.7: [1022:14e7] type 00 class 0x060000 conventional PCI endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: [10de:2c05] type 00 class 0x030000 PCIe Legacy Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: BAR 0 [mem 0xd8000000-0xdbffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: BAR 1 [mem 0xf800000000-0xfbffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: BAR 3 [mem 0xfc00000000-0xfc01ffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: BAR 5 [io  0xf000-0xf07f]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: ROM [mem 0xdc000000-0xdc07ffff pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: Enabling HDA controller
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: PME# supported from D0 D3hot
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 0 [mem 0x00000000-0x0003ffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 0 [mem 0x00000000-0x0003ffff 64bit pref]: contains BAR 0 for 1 VFs
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 2 [mem 0x00000000-0x0fffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 2 [mem 0x00000000-0x0fffffff 64bit pref]: contains BAR 2 for 1 VFs
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 4 [mem 0x00000000-0x01ffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 4 [mem 0x00000000-0x01ffffff 64bit pref]: contains BAR 4 for 1 VFs
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.1: [10de:22e9] type 00 class 0x040300 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.1: BAR 0 [mem 0xdc080000-0xdc083fff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1: PCI bridge to [bus 01]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:02:00.0: [144d:a80c] type 00 class 0x010802 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:02:00.0: BAR 0 [mem 0xdd200000-0xdd203fff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.2: PCI bridge to [bus 02]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0: [1022:43f4] type 01 class 0x060400 PCIe Switch Upstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0: PCI bridge to [bus 04-0d]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0:   bridge window [io  0xe000-0xefff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0:   bridge window [mem 0xdc200000-0xdc8fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1: PCI bridge to [bus 03-0d]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:00.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:00.0: PCI bridge to [bus 05]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:00.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:02.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:02.0: PCI bridge to [bus 06]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:02.0:   bridge window [mem 0xdc800000-0xdc8fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:02.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:02.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:04.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:04.0: PCI bridge to [bus 07]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:04.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:04.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:05.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:05.0: PCI bridge to [bus 08]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:05.0:   bridge window [mem 0xdc200000-0xdc3fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:05.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:05.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0: PCI bridge to [bus 09]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0:   bridge window [io  0xe000-0xefff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0:   bridge window [mem 0xdc700000-0xdc7fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:07.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:07.0: PCI bridge to [bus 0a]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:07.0:   bridge window [mem 0xdc600000-0xdc6fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:07.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:07.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:08.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:08.0: PCI bridge to [bus 0b]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:08.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:08.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0c.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0c.0: PCI bridge to [bus 0c]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0c.0:   bridge window [mem 0xdc500000-0xdc5fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0c.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0c.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0d.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0d.0: PCI bridge to [bus 0d]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0d.0:   bridge window [mem 0xdc400000-0xdc4fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0d.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0d.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0: PCI bridge to [bus 04-0d]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:00.0: PCI bridge to [bus 05]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:06:00.0: [2646:5028] type 00 class 0x010802 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:06:00.0: BAR 0 [mem 0xdc800000-0xdc803fff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:06:00.0: 31.506 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x2 link at 0000:04:02.0 (capable of 63.012 Gb/s with 16.0 GT/s PCIe x4 link)
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:02.0: PCI bridge to [bus 06]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:04.0: PCI bridge to [bus 07]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:08:00.0: [17cb:1107] type 00 class 0x028000 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:08:00.0: BAR 0 [mem 0xdc200000-0xdc3fffff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:08:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:08:00.0: 7.876 Gb/s available PCIe bandwidth, limited by 8.0 GT/s PCIe x1 link at 0000:04:05.0 (capable of 15.752 Gb/s with 8.0 GT/s PCIe x2 link)
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:05.0: PCI bridge to [bus 08]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:09:00.0: [10ec:8126] type 00 class 0x020000 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:09:00.0: BAR 0 [io  0xe000-0xe0ff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:09:00.0: BAR 2 [mem 0xdc700000-0xdc70ffff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:09:00.0: BAR 4 [mem 0xdc710000-0xdc713fff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:09:00.0: supports D1 D2
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:09:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0: PCI bridge to [bus 09]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0a:00.0: [1b21:1064] type 00 class 0x010601 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0a:00.0: BAR 0 [mem 0xdc682000-0xdc683fff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0a:00.0: BAR 5 [mem 0xdc680000-0xdc681fff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0a:00.0: ROM [mem 0xdc600000-0xdc67ffff pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0a:00.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0a:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:07.0: PCI bridge to [bus 0a]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:08.0: PCI bridge to [bus 0b]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0c:00.0: [1022:43fc] type 00 class 0x0c0330 PCIe Legacy Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0c:00.0: BAR 0 [mem 0xdc500000-0xdc507fff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0c:00.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0c:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0c.0: PCI bridge to [bus 0c]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0d:00.0: [1022:43f6] type 00 class 0x010601 PCIe Legacy Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0d:00.0: BAR 5 [mem 0xdc480000-0xdc4803ff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0d:00.0: ROM [mem 0xdc400000-0xdc47ffff pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0d:00.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0d:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0d.0: PCI bridge to [bus 0d]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0: [1b21:2421] type 01 class 0x060400 PCIe Switch Upstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0: PCI bridge to [bus 0f-71]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0:   bridge window [io  0x7000-0xcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0:   bridge window [mem 0xa4000000-0xd47fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0:   bridge window [mem 0xb800000000-0xf7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0: 31.506 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x2 link at 0000:00:02.2 (capable of 63.012 Gb/s with 16.0 GT/s PCIe x4 link)
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2: PCI bridge to [bus 0e-71]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0: [1b21:2423] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0: PCI bridge to [bus 10-3f]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0:   bridge window [io  0xa000-0xcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0:   bridge window [mem 0xbc000000-0xd3ffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0:   bridge window [mem 0xd800000000-0xf7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0: [1b21:2423] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0: PCI bridge to [bus 40-6f]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0:   bridge window [io  0x7000-0x9fff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0:   bridge window [mem 0xa4000000-0xbbffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0:   bridge window [mem 0xb800000000-0xd7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:02.0: [1b21:2423] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:02.0: PCI bridge to [bus 70]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:02.0:   bridge window [mem 0xd4400000-0xd47fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:02.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:03.0: [1b21:2423] type 01 class 0x060400 PCIe Switch Downstream Port
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:03.0: PCI bridge to [bus 71]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:03.0:   bridge window [mem 0xd4000000-0xd43fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:03.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0: PCI bridge to [bus 0f-71]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0: PCI bridge to [bus 10-3f]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0: PCI bridge to [bus 40-6f]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:70:00.0: [1b21:2426] type 00 class 0x0c0330 PCIe Legacy Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:70:00.0: BAR 0 [mem 0xd4400000-0xd4407fff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:70:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:02.0: PCI bridge to [bus 70]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:71:00.0: [1b21:2425] type 00 class 0x0c0340 PCIe Legacy Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:71:00.0: BAR 0 [mem 0xd4000000-0xd403ffff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:71:00.0: BAR 2 [mem 0xd4040000-0xd404ffff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:71:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:03.0: PCI bridge to [bus 71]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:72:00.0: [144d:a80c] type 00 class 0x010802 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:72:00.0: BAR 0 [mem 0xdd100000-0xdd103fff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:72:00.0: 31.506 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x2 link at 0000:00:03.1 (capable of 63.012 Gb/s with 16.0 GT/s PCIe x4 link)
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.1: PCI bridge to [bus 72]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: [1002:13c0] type 00 class 0x030000 PCIe Legacy Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: BAR 0 [mem 0xfc10000000-0xfc1fffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: BAR 2 [mem 0xdca00000-0xdcbfffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: BAR 4 [io  0xd000-0xd0ff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: BAR 5 [mem 0xdcf00000-0xdcf7ffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: PME# supported from D1 D2 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.1: [1002:1640] type 00 class 0x040300 PCIe Legacy Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.1: BAR 0 [mem 0xdcf88000-0xdcf8bfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.1: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.1: PME# supported from D1 D2 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.2: [1022:1649] type 00 class 0x108000 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.2: BAR 2 [mem 0xdce00000-0xdcefffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.2: BAR 5 [mem 0xdcf8c000-0xdcf8dfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.2: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.3: [1022:15b6] type 00 class 0x0c0330 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.3: BAR 0 [mem 0xdcd00000-0xdcdfffff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.3: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.3: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.4: [1022:15b7] type 00 class 0x0c0330 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.4: BAR 0 [mem 0xdcc00000-0xdccfffff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.4: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.4: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.6: [1022:15e3] type 00 class 0x040300 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.6: BAR 0 [mem 0xdcf80000-0xdcf87fff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.6: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.6: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1: PCI bridge to [bus 73]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:74:00.0: [1022:15b8] type 00 class 0x0c0330 PCIe Endpoint
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:74:00.0: BAR 0 [mem 0xdd000000-0xdd0fffff 64bit]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:74:00.0: enabling Extended Tags
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:74:00.0: PME# supported from D0 D3hot D3cold
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.3: PCI bridge to [bus 74]
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 0
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+jul 13 23:24:04 joaoantonio-PC kernel: iommu: Default domain type: Translated
+jul 13 23:24:04 joaoantonio-PC kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+jul 13 23:24:04 joaoantonio-PC kernel: SCSI subsystem initialized
+jul 13 23:24:04 joaoantonio-PC kernel: libata version 3.00 loaded.
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: bus type USB registered
+jul 13 23:24:04 joaoantonio-PC kernel: usbcore: registered new interface driver usbfs
+jul 13 23:24:04 joaoantonio-PC kernel: usbcore: registered new interface driver hub
+jul 13 23:24:04 joaoantonio-PC kernel: usbcore: registered new device driver usb
+jul 13 23:24:04 joaoantonio-PC kernel: EDAC MC: Ver: 3.0.0
+jul 13 23:24:04 joaoantonio-PC kernel: efivars: Registered efivars operations
+jul 13 23:24:04 joaoantonio-PC kernel: NetLabel: Initializing
+jul 13 23:24:04 joaoantonio-PC kernel: NetLabel:  domain hash size = 128
+jul 13 23:24:04 joaoantonio-PC kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+jul 13 23:24:04 joaoantonio-PC kernel: NetLabel:  unlabeled traffic allowed by default
+jul 13 23:24:04 joaoantonio-PC kernel: mctp: management component transport protocol core
+jul 13 23:24:04 joaoantonio-PC kernel: NET: Registered PF_MCTP protocol family
+jul 13 23:24:04 joaoantonio-PC kernel: PCI: Using ACPI for IRQ routing
+jul 13 23:24:04 joaoantonio-PC kernel: PCI: pci_cache_line_size set to 64 bytes
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0x099ff000-0x0bffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0x0a200000-0x0bffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0x0b000000-0x0bffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0x743fc000-0x77ffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0x7857f000-0x7bffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0x98097000-0x9bffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0x99338000-0x9bffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0x99ff7000-0x9bffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0x9a000000-0x9bffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: e820: register RAM buffer resource [mem 0xfdde80000-0xfdfffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: vgaarb: setting as boot VGA device
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: vgaarb: bridge control possible
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: vgaarb: setting as boot VGA device (overriding previous)
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: vgaarb: bridge control possible
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+jul 13 23:24:04 joaoantonio-PC kernel: vgaarb: loaded
+jul 13 23:24:04 joaoantonio-PC kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+jul 13 23:24:04 joaoantonio-PC kernel: hpet0: 3 comparators, 32-bit 14.318180 MHz counter
+jul 13 23:24:04 joaoantonio-PC kernel: clocksource: Switched to clocksource tsc-early
+jul 13 23:24:04 joaoantonio-PC kernel: VFS: Disk quotas dquot_6.6.0
+jul 13 23:24:04 joaoantonio-PC kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C01:00: Reserved [mem 0xe0000000-0xefffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:00: Could not reserve [mem 0xf7500000-0xf757ffff]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:01: Reserved [mem 0xfe0000000-0x105fffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:02: Reserved [io  0x0a00-0x0a0f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:02: Reserved [io  0x0a10-0x0a1f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:02: Reserved [io  0x0a20-0x0a2f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0010-0x001f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0022-0x003f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0063]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0065]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0067-0x006f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0072-0x007f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0080]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0084-0x0086]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0088]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x008c-0x008e]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x0090-0x009f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x00a2-0x00bf]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x00b1]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Skipped [io  0x00e0-0x00ef]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x04d0-0x04d1]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x040b]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x04d6]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0c00-0x0c01]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0c14]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0c50-0x0c51]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0c52]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0c6c]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0c6f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0cd8-0x0cdf]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0800-0x089f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0b00-0x0b0f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0b20-0x0b3f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0900-0x090f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [io  0x0910-0x091f]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [mem 0xfedc0000-0xfedc0fff]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [mem 0xfee00000-0xfee00fff]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [mem 0xfec10000-0xfec10fff]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [mem 0xfeb00000-0xfeb00fff]
+jul 13 23:24:04 joaoantonio-PC kernel: acpi PNP0C02:03: Reserved [mem 0xff000000-0xffffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pnp: PnP ACPI init
+jul 13 23:24:04 joaoantonio-PC kernel: pnp: PnP ACPI: found 0 devices
+jul 13 23:24:04 joaoantonio-PC kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+jul 13 23:24:04 joaoantonio-PC kernel: NET: Registered PF_INET protocol family
+jul 13 23:24:04 joaoantonio-PC kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: tcp_listen_portaddr_hash hash table entries: 32768 (order: 7, 524288 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: TCP established hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: TCP: Hash tables configured (established 524288 bind 65536)
+jul 13 23:24:04 joaoantonio-PC kernel: MPTCP token hash table entries: 65536 (order: 9, 1572864 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: UDP hash table entries: 32768 (order: 9, 2097152 bytes, linear)
+jul 13 23:24:04 joaoantonio-PC kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+jul 13 23:24:04 joaoantonio-PC kernel: NET: Registered PF_XDP protocol family
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 2 [mem size 0x10000000 64bit pref]: can't assign; no space
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 2 [mem size 0x10000000 64bit pref]: failed to assign
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 4 [mem size 0x02000000 64bit pref]: can't assign; no space
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 4 [mem size 0x02000000 64bit pref]: failed to assign
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: VF BAR 0 [mem 0xdc0c0000-0xdc0fffff 64bit pref]: assigned
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1: PCI bridge to [bus 01]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1:   bridge window [io  0xf000-0xffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1:   bridge window [mem 0xd8000000-0xdc0fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1:   bridge window [mem 0xf800000000-0xfc01ffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.2: PCI bridge to [bus 02]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.2:   bridge window [mem 0xdd200000-0xdd2fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:00.0: PCI bridge to [bus 05]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:02.0: PCI bridge to [bus 06]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:02.0:   bridge window [mem 0xdc800000-0xdc8fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:04.0: PCI bridge to [bus 07]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:05.0: PCI bridge to [bus 08]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:05.0:   bridge window [mem 0xdc200000-0xdc3fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0: PCI bridge to [bus 09]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0:   bridge window [io  0xe000-0xefff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0:   bridge window [mem 0xdc700000-0xdc7fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:07.0: PCI bridge to [bus 0a]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:07.0:   bridge window [mem 0xdc600000-0xdc6fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:08.0: PCI bridge to [bus 0b]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0c.0: PCI bridge to [bus 0c]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0c.0:   bridge window [mem 0xdc500000-0xdc5fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0d.0: PCI bridge to [bus 0d]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0d.0:   bridge window [mem 0xdc400000-0xdc4fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0: PCI bridge to [bus 04-0d]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0:   bridge window [io  0xe000-0xefff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0:   bridge window [mem 0xdc200000-0xdc8fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1: PCI bridge to [bus 03-0d]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1:   bridge window [io  0xe000-0xefff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1:   bridge window [mem 0xdc200000-0xdc8fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0: PCI bridge to [bus 10-3f]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0:   bridge window [io  0xa000-0xcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0:   bridge window [mem 0xbc000000-0xd3ffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0:   bridge window [mem 0xd800000000-0xf7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0: PCI bridge to [bus 40-6f]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0:   bridge window [io  0x7000-0x9fff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0:   bridge window [mem 0xa4000000-0xbbffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0:   bridge window [mem 0xb800000000-0xd7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:02.0: PCI bridge to [bus 70]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:02.0:   bridge window [mem 0xd4400000-0xd47fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:03.0: PCI bridge to [bus 71]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:03.0:   bridge window [mem 0xd4000000-0xd43fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0: PCI bridge to [bus 0f-71]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0:   bridge window [io  0x7000-0xcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0:   bridge window [mem 0xa4000000-0xd47fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0:   bridge window [mem 0xb800000000-0xf7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2: PCI bridge to [bus 0e-71]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2:   bridge window [io  0x7000-0xcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2:   bridge window [mem 0xa4000000-0xd47fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2:   bridge window [mem 0xb800000000-0xf7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.1: PCI bridge to [bus 72]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.1:   bridge window [mem 0xdd100000-0xdd1fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1: PCI bridge to [bus 73]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1:   bridge window [io  0xd000-0xdfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1:   bridge window [mem 0xdca00000-0xdcffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1:   bridge window [mem 0xfc10000000-0xfc1fffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.3: PCI bridge to [bus 74]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.3:   bridge window [mem 0xdd000000-0xdd0fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: Some PCI device resources are unassigned, try booting with pci=realloc
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x03af window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: resource 5 [io  0x03e0-0x0cf7 window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: resource 6 [io  0x03b0-0x03df window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: resource 7 [io  0x0d00-0xffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: resource 8 [mem 0x000a0000-0x000dffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: resource 9 [mem 0xf2000000-0xf6ffffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: resource 10 [mem 0xf0000000-0xf1ffffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: resource 11 [mem 0xa0000000-0xdfffffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:00: resource 12 [mem 0x1060000000-0xfcffffffff window]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:01: resource 0 [io  0xf000-0xffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:01: resource 1 [mem 0xd8000000-0xdc0fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:01: resource 2 [mem 0xf800000000-0xfc01ffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:02: resource 1 [mem 0xdd200000-0xdd2fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:03: resource 0 [io  0xe000-0xefff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:03: resource 1 [mem 0xdc200000-0xdc8fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:04: resource 0 [io  0xe000-0xefff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:04: resource 1 [mem 0xdc200000-0xdc8fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:06: resource 1 [mem 0xdc800000-0xdc8fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:08: resource 1 [mem 0xdc200000-0xdc3fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:09: resource 0 [io  0xe000-0xefff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:09: resource 1 [mem 0xdc700000-0xdc7fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:0a: resource 1 [mem 0xdc600000-0xdc6fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:0c: resource 1 [mem 0xdc500000-0xdc5fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:0d: resource 1 [mem 0xdc400000-0xdc4fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:0e: resource 0 [io  0x7000-0xcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:0e: resource 1 [mem 0xa4000000-0xd47fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:0e: resource 2 [mem 0xb800000000-0xf7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:0f: resource 0 [io  0x7000-0xcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:0f: resource 1 [mem 0xa4000000-0xd47fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:0f: resource 2 [mem 0xb800000000-0xf7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:10: resource 0 [io  0xa000-0xcfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:10: resource 1 [mem 0xbc000000-0xd3ffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:10: resource 2 [mem 0xd800000000-0xf7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:40: resource 0 [io  0x7000-0x9fff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:40: resource 1 [mem 0xa4000000-0xbbffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:40: resource 2 [mem 0xb800000000-0xd7ffffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:70: resource 1 [mem 0xd4400000-0xd47fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:71: resource 1 [mem 0xd4000000-0xd43fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:72: resource 1 [mem 0xdd100000-0xdd1fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:73: resource 0 [io  0xd000-0xdfff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:73: resource 1 [mem 0xdca00000-0xdcffffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:73: resource 2 [mem 0xfc10000000-0xfc1fffffff 64bit pref]
+jul 13 23:24:04 joaoantonio-PC kernel: pci_bus 0000:74: resource 1 [mem 0xdd000000-0xdd0fffff]
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.1: extending delay after power-on from D3hot to 20 msec
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.1: D0 power state depends on 0000:01:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.1: D0 power state depends on 0000:73:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: PCI: CLS 64 bytes, default 64
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
+jul 13 23:24:04 joaoantonio-PC kernel: Trying to unpack rootfs image as initramfs...
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.0: Adding to iommu group 0
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.1: Adding to iommu group 1
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:01.2: Adding to iommu group 2
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.0: Adding to iommu group 3
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.1: Adding to iommu group 4
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:02.2: Adding to iommu group 5
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.0: Adding to iommu group 6
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:03.1: Adding to iommu group 7
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:04.0: Adding to iommu group 8
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.0: Adding to iommu group 9
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.1: Adding to iommu group 10
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:08.3: Adding to iommu group 11
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:14.0: Adding to iommu group 12
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:14.3: Adding to iommu group 12
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.0: Adding to iommu group 13
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.1: Adding to iommu group 13
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.2: Adding to iommu group 13
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.3: Adding to iommu group 13
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.4: Adding to iommu group 13
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.5: Adding to iommu group 13
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.6: Adding to iommu group 13
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:00:18.7: Adding to iommu group 13
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.0: Adding to iommu group 14
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:01:00.1: Adding to iommu group 14
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:02:00.0: Adding to iommu group 15
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:03:00.0: Adding to iommu group 16
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:00.0: Adding to iommu group 17
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:02.0: Adding to iommu group 18
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:04.0: Adding to iommu group 19
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:05.0: Adding to iommu group 20
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:06.0: Adding to iommu group 21
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:07.0: Adding to iommu group 22
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:08.0: Adding to iommu group 23
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0c.0: Adding to iommu group 24
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:04:0d.0: Adding to iommu group 25
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:06:00.0: Adding to iommu group 18
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:08:00.0: Adding to iommu group 20
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:09:00.0: Adding to iommu group 21
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0a:00.0: Adding to iommu group 22
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0c:00.0: Adding to iommu group 24
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0d:00.0: Adding to iommu group 25
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0e:00.0: Adding to iommu group 26
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:00.0: Adding to iommu group 27
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:01.0: Adding to iommu group 28
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:02.0: Adding to iommu group 29
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:0f:03.0: Adding to iommu group 30
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:70:00.0: Adding to iommu group 29
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:71:00.0: Adding to iommu group 30
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:72:00.0: Adding to iommu group 31
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.0: Adding to iommu group 32
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.1: Adding to iommu group 33
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.2: Adding to iommu group 34
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.3: Adding to iommu group 35
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.4: Adding to iommu group 36
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:73:00.6: Adding to iommu group 37
+jul 13 23:24:04 joaoantonio-PC kernel: pci 0000:74:00.0: Adding to iommu group 38
+jul 13 23:24:04 joaoantonio-PC kernel: AMD-Vi: Extended features (0x246577efa2254afa, 0x0): PPR NX GT [5] IA GA PC GA_vAPIC
+jul 13 23:24:04 joaoantonio-PC kernel: AMD-Vi: Interrupt remapping enabled
+jul 13 23:24:04 joaoantonio-PC kernel: AMD-Vi: Virtual APIC enabled
+jul 13 23:24:04 joaoantonio-PC kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+jul 13 23:24:04 joaoantonio-PC kernel: software IO TLB: mapped [mem 0x000000006de6f000-0x0000000071e6f000] (64MB)
+jul 13 23:24:04 joaoantonio-PC kernel: LVT offset 0 assigned for vector 0x400
+jul 13 23:24:04 joaoantonio-PC kernel: perf: AMD IBS detected (0x00081bff)
+jul 13 23:24:04 joaoantonio-PC kernel: perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
+jul 13 23:24:04 joaoantonio-PC kernel: Initialise system trusted keyrings
+jul 13 23:24:04 joaoantonio-PC kernel: Key type blacklist registered
+jul 13 23:24:04 joaoantonio-PC kernel: workingset: timestamp_bits=36 (anon: 32) max_order=24 bucket_order=0 (anon: 0)
+jul 13 23:24:04 joaoantonio-PC kernel: fuse: init (API version 7.45)
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Platform Keyring initialized
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Machine keyring initialized
+jul 13 23:24:04 joaoantonio-PC kernel: Key type asymmetric registered
+jul 13 23:24:04 joaoantonio-PC kernel: Asymmetric key parser 'x509' registered
+jul 13 23:24:04 joaoantonio-PC kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+jul 13 23:24:04 joaoantonio-PC kernel: io scheduler mq-deadline registered
+jul 13 23:24:04 joaoantonio-PC kernel: io scheduler kyber registered
+jul 13 23:24:04 joaoantonio-PC kernel: Adaptive Deadline I/O Scheduler 3.2.0 by Masahito Suzuki
+jul 13 23:24:04 joaoantonio-PC kernel: io scheduler adios registered
+jul 13 23:24:04 joaoantonio-PC kernel: io scheduler bfq registered
+jul 13 23:24:04 joaoantonio-PC kernel: ledtrig-cpu: registered to indicate activity on CPUs
+jul 13 23:24:04 joaoantonio-PC kernel: pcieport 0000:00:01.1: PME: Signaling with IRQ 31
+jul 13 23:24:04 joaoantonio-PC kernel: pcieport 0000:00:01.2: PME: Signaling with IRQ 32
+jul 13 23:24:04 joaoantonio-PC kernel: pcieport 0000:00:02.1: PME: Signaling with IRQ 33
+jul 13 23:24:04 joaoantonio-PC kernel: pcieport 0000:00:02.2: PME: Signaling with IRQ 34
+jul 13 23:24:04 joaoantonio-PC kernel: pcieport 0000:00:03.1: PME: Signaling with IRQ 35
+jul 13 23:24:04 joaoantonio-PC kernel: pcieport 0000:00:08.1: PME: Signaling with IRQ 36
+jul 13 23:24:04 joaoantonio-PC kernel: pcieport 0000:00:08.3: PME: Signaling with IRQ 37
+jul 13 23:24:04 joaoantonio-PC kernel: pcieport 0000:0f:00.0: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+jul 13 23:24:04 joaoantonio-PC kernel: pcieport 0000:0f:01.0: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+jul 13 23:24:04 joaoantonio-PC kernel: input: Power Button as /devices/platform/PNP0C0C:00/input/input0
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: button: Power Button [PWRB]
+jul 13 23:24:04 joaoantonio-PC kernel: input: Power Button as /devices/platform/LNXPWRBN:00/input/input1
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: button: Power Button [PWRF]
+jul 13 23:24:04 joaoantonio-PC kernel: Monitor-Mwait will be used to enter C-1 state
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: Enabled processor.bm_check_disable for AMD cpuidle
+jul 13 23:24:04 joaoantonio-PC kernel: Estimated ratio of average max frequency by base frequency (times 1024): 1086
+jul 13 23:24:04 joaoantonio-PC kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+jul 13 23:24:04 joaoantonio-PC kernel: serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+jul 13 23:24:04 joaoantonio-PC kernel: Non-volatile memory driver v1.3
+jul 13 23:24:04 joaoantonio-PC kernel: ahci 0000:0a:00.0: SSS flag set, parallel bus scan disabled
+jul 13 23:24:04 joaoantonio-PC kernel: Freeing initrd memory: 264968K
+jul 13 23:24:04 joaoantonio-PC kernel: ahci 0000:0a:00.0: AHCI vers 0001.0301, 32 command slots, 6 Gbps, SATA mode
+jul 13 23:24:04 joaoantonio-PC kernel: ahci 0000:0a:00.0: 4/4 ports implemented (port mask 0xf)
+jul 13 23:24:04 joaoantonio-PC kernel: ahci 0000:0a:00.0: flags: 64bit ncq sntf stag pm led only pio deso sadm sds apst 
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host0: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host1: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host2: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host3: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: ata1: SATA max UDMA/133 abar m8192@0xdc680000 port 0xdc680100 irq 49 lpm-pol 3
+jul 13 23:24:04 joaoantonio-PC kernel: ata2: SATA max UDMA/133 abar m8192@0xdc680000 port 0xdc680180 irq 49 lpm-pol 3
+jul 13 23:24:04 joaoantonio-PC kernel: ata3: SATA max UDMA/133 abar m8192@0xdc680000 port 0xdc680200 irq 49 lpm-pol 3
+jul 13 23:24:04 joaoantonio-PC kernel: ata4: SATA max UDMA/133 abar m8192@0xdc680000 port 0xdc680280 irq 49 lpm-pol 3
+jul 13 23:24:04 joaoantonio-PC kernel: ahci 0000:0d:00.0: SSS flag set, parallel bus scan disabled
+jul 13 23:24:04 joaoantonio-PC kernel: ahci 0000:0d:00.0: AHCI vers 0001.0301, 32 command slots, 6 Gbps, SATA mode
+jul 13 23:24:04 joaoantonio-PC kernel: ahci 0000:0d:00.0: 4/6 ports implemented (port mask 0xf)
+jul 13 23:24:04 joaoantonio-PC kernel: ahci 0000:0d:00.0: flags: 64bit ncq sntf stag pm led clo only pmp pio slum part sxs deso sadm sds apst 
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host4: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host5: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host6: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host7: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host8: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: scsi host9: ahci
+jul 13 23:24:04 joaoantonio-PC kernel: ata5: SATA max UDMA/133 abar m1024@0xdc480000 port 0xdc480100 irq 50 lpm-pol 3
+jul 13 23:24:04 joaoantonio-PC kernel: ata6: SATA max UDMA/133 abar m1024@0xdc480000 port 0xdc480180 irq 50 lpm-pol 3
+jul 13 23:24:04 joaoantonio-PC kernel: ata7: SATA max UDMA/133 abar m1024@0xdc480000 port 0xdc480200 irq 50 lpm-pol 3
+jul 13 23:24:04 joaoantonio-PC kernel: ata8: SATA max UDMA/133 abar m1024@0xdc480000 port 0xdc480280 irq 50 lpm-pol 3
+jul 13 23:24:04 joaoantonio-PC kernel: ata9: DUMMY
+jul 13 23:24:04 joaoantonio-PC kernel: ata10: DUMMY
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: bus type drm_connector registered
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:0c:00.0: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:0c:00.0: new USB bus registered, assigned bus number 1
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:0c:00.0: hcc params 0x0200ef81 hci version 0x110 quirks 0x0000000000000010
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:0c:00.0: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:0c:00.0: new USB bus registered, assigned bus number 2
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:0c:00.0: Host supports USB 3.2 Enhanced SuperSpeed
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb1: Product: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb1: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb1: SerialNumber: 0000:0c:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: hub 1-0:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 1-0:1.0: 12 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb2: Product: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb2: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb2: SerialNumber: 0000:0c:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: hub 2-0:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 2-0:1.0: 5 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:70:00.0: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:70:00.0: new USB bus registered, assigned bus number 3
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:70:00.0: hcc params 0x0200ef81 hci version 0x120 quirks 0x0000000200000010
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:70:00.0: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:70:00.0: new USB bus registered, assigned bus number 4
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:70:00.0: Host supports USB 3.2 Enhanced SuperSpeed
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb3: Product: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb3: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb3: SerialNumber: 0000:70:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: hub 3-0:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 3-0:1.0: 2 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb4: Product: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb4: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb4: SerialNumber: 0000:70:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: hub 4-0:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 4-0:1.0: 2 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.3: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.3: new USB bus registered, assigned bus number 5
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.3: hcc params 0x0120ffc5 hci version 0x120 quirks 0x0000000200000010
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.3: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.3: new USB bus registered, assigned bus number 6
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.3: Host supports USB 3.1 Enhanced SuperSpeed
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb5: Product: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb5: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb5: SerialNumber: 0000:73:00.3
+jul 13 23:24:04 joaoantonio-PC kernel: hub 5-0:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 5-0:1.0: 2 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb6: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb6: Product: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb6: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb6: SerialNumber: 0000:73:00.3
+jul 13 23:24:04 joaoantonio-PC kernel: hub 6-0:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 6-0:1.0: 2 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.4: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.4: new USB bus registered, assigned bus number 7
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.4: hcc params 0x0120ffc5 hci version 0x120 quirks 0x0000000200000010
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.4: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.4: new USB bus registered, assigned bus number 8
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:73:00.4: Host supports USB 3.1 Enhanced SuperSpeed
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb7: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb7: Product: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb7: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb7: SerialNumber: 0000:73:00.4
+jul 13 23:24:04 joaoantonio-PC kernel: hub 7-0:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 7-0:1.0: 2 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb8: We don't know the algorithms for LPM for this host, disabling LPM.
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb8: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb8: Product: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb8: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb8: SerialNumber: 0000:73:00.4
+jul 13 23:24:04 joaoantonio-PC kernel: hub 8-0:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 8-0:1.0: 2 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:74:00.0: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:74:00.0: new USB bus registered, assigned bus number 9
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:74:00.0: USB0 root hub has no ports
+jul 13 23:24:04 joaoantonio-PC kernel: xhci_hcd 0000:74:00.0: hcc params 0x0110ffc5 hci version 0x120 quirks 0x0000000200000010
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb9: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb9: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb9: Product: xHCI Host Controller
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb9: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb usb9: SerialNumber: 0000:74:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: hub 9-0:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 9-0:1.0: 1 port detected
+jul 13 23:24:04 joaoantonio-PC kernel: usbcore: registered new interface driver usbserial_generic
+jul 13 23:24:04 joaoantonio-PC kernel: usbserial: USB Serial support registered for generic
+jul 13 23:24:04 joaoantonio-PC kernel: i8042: PNP: No PS/2 controller found.
+jul 13 23:24:04 joaoantonio-PC kernel: rtc_cmos PNP0B00:00: RTC can wake from S4
+jul 13 23:24:04 joaoantonio-PC kernel: rtc_cmos PNP0B00:00: registered as rtc0
+jul 13 23:24:04 joaoantonio-PC kernel: rtc_cmos PNP0B00:00: setting system clock to 2026-07-14T02:23:58 UTC (1783995838)
+jul 13 23:24:04 joaoantonio-PC kernel: rtc_cmos PNP0B00:00: alarms up to one month, y3k, 114 bytes nvram
+jul 13 23:24:04 joaoantonio-PC kernel: hid: raw HID events driver (C) Jiri Kosina
+jul 13 23:24:04 joaoantonio-PC kernel: usbcore: registered new interface driver usbhid
+jul 13 23:24:04 joaoantonio-PC kernel: usbhid: USB HID core driver
+jul 13 23:24:04 joaoantonio-PC kernel: drop_monitor: Initializing network drop monitor service
+jul 13 23:24:04 joaoantonio-PC kernel: NET: Registered PF_INET6 protocol family
+jul 13 23:24:04 joaoantonio-PC kernel: Segment Routing with IPv6
+jul 13 23:24:04 joaoantonio-PC kernel: RPL Segment Routing with IPv6
+jul 13 23:24:04 joaoantonio-PC kernel: In-situ OAM (IOAM) with IPv6
+jul 13 23:24:04 joaoantonio-PC kernel: NET: Registered PF_PACKET protocol family
+jul 13 23:24:04 joaoantonio-PC kernel: x86/amd: Previous system reset reason [0x00200800]: ACPI power state transition occurred
+jul 13 23:24:04 joaoantonio-PC kernel: AGESA: AGESA!V9 ComboAm5PI 1.3.0.0
+jul 13 23:24:04 joaoantonio-PC kernel: microcode: Current revision: 0x0b404035
+jul 13 23:24:04 joaoantonio-PC kernel: microcode: Updated early from: 0x0b404035
+jul 13 23:24:04 joaoantonio-PC kernel: resctrl: L3 allocation detected
+jul 13 23:24:04 joaoantonio-PC kernel: resctrl: MB allocation detected
+jul 13 23:24:04 joaoantonio-PC kernel: resctrl: SMBA allocation detected
+jul 13 23:24:04 joaoantonio-PC kernel: resctrl: L3 monitoring detected
+jul 13 23:24:04 joaoantonio-PC kernel: IPI shorthand broadcast: enabled
+jul 13 23:24:04 joaoantonio-PC kernel: Piece-Of-Cake (POC) CPU Selector 2.6.2 by Masahito Suzuki [CTZ: HW (TZCNT), PTSelect: HW (PDEP)]
+jul 13 23:24:04 joaoantonio-PC kernel: sched_clock: Marking stable (595010135, 397133)->(609894368, -14487100)
+jul 13 23:24:04 joaoantonio-PC kernel: registered taskstats version 1
+jul 13 23:24:04 joaoantonio-PC kernel: Loading compiled-in X.509 certificates
+jul 13 23:24:04 joaoantonio-PC kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 52d55d9e3cb97d23620902761b88a3c7b177e29a'
+jul 13 23:24:04 joaoantonio-PC kernel: zswap: loaded using pool zstd
+jul 13 23:24:04 joaoantonio-PC kernel: Demotion targets for Node 0: null
+jul 13 23:24:04 joaoantonio-PC kernel: Key type .fscrypt registered
+jul 13 23:24:04 joaoantonio-PC kernel: Key type fscrypt-provisioning registered
+jul 13 23:24:04 joaoantonio-PC kernel: Btrfs loaded, zoned=yes, fsverity=yes
+jul 13 23:24:04 joaoantonio-PC kernel: Key type big_key registered
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loading X.509 certificate: UEFI:db
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loading X.509 certificate: UEFI:db
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loaded X.509 cert 'Microsoft UEFI CA 2023: 81aa6b3244c935bce0d6628af39827421e32497d'
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loading X.509 certificate: UEFI:db
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loading X.509 certificate: UEFI:db
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loaded X.509 cert 'Microsoft Option ROM UEFI CA 2023: 514fbf937fa46fb57bf07af8bed84b3b864b1711'
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loading X.509 certificate: UEFI:db
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loading X.509 certificate: UEFI:db
+jul 13 23:24:04 joaoantonio-PC kernel: integrity: Loaded X.509 cert 'MSI SHIP DB: ebc30d5be5f35f8041c1c2d9e613eee2'
+jul 13 23:24:04 joaoantonio-PC kernel: PM:   Magic number: 2:91:359
+jul 13 23:24:04 joaoantonio-PC kernel: machinecheck machinecheck15: hash matches
+jul 13 23:24:04 joaoantonio-PC kernel: acpi AMDI0063:00: hash matches
+jul 13 23:24:04 joaoantonio-PC kernel: RAS: Correctable Errors collector initialized.
+jul 13 23:24:04 joaoantonio-PC kernel: clk: Disabling unused clocks
+jul 13 23:24:04 joaoantonio-PC kernel: PM: genpd: Disabling unused power domains
+jul 13 23:24:04 joaoantonio-PC kernel: usb 5-2: new high-speed USB device number 2 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: ata5: SATA link down (SStatus 0 SControl 330)
+jul 13 23:24:04 joaoantonio-PC kernel: ata1: SATA link down (SStatus 0 SControl 300)
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-2: new high-speed USB device number 2 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb 5-2: New USB device found, idVendor=05e3, idProduct=0608, bcdDevice=60.70
+jul 13 23:24:04 joaoantonio-PC kernel: usb 5-2: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+jul 13 23:24:04 joaoantonio-PC kernel: usb 5-2: Product: USB2.0 Hub
+jul 13 23:24:04 joaoantonio-PC kernel: hub 5-2:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 5-2:1.0: 4 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-2: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice=93.91
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-2: Product: USB2.1 Hub
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-2: Manufacturer: GenesysLogic
+jul 13 23:24:04 joaoantonio-PC kernel: hub 1-2:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 1-2:1.0: 4 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: ata2: SATA link down (SStatus 0 SControl 300)
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-2: new SuperSpeed USB device number 2 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-2: New USB device found, idVendor=05e3, idProduct=0620, bcdDevice=93.91
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-2: Product: USB3.2 Hub
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-2: Manufacturer: GenesysLogic
+jul 13 23:24:04 joaoantonio-PC kernel: hub 2-2:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 2-2:1.0: 4 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: usb 5-2.2: new full-speed USB device number 3 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb 5-2.2: New USB device found, idVendor=5943, idProduct=3130, bcdDevice= 1.00
+jul 13 23:24:04 joaoantonio-PC kernel: usb 5-2.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+jul 13 23:24:04 joaoantonio-PC kernel: usb 5-2.2: Product: SG-286
+jul 13 23:24:04 joaoantonio-PC kernel: usb 5-2.2: Manufacturer: Jieli Technology
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3: new high-speed USB device number 3 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: input: Jieli Technology SG-286 as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.2/5-2.2:1.3/0003:5943:3130.0001/input/input2
+jul 13 23:24:04 joaoantonio-PC kernel: ata3: SATA link down (SStatus 0 SControl 300)
+jul 13 23:24:04 joaoantonio-PC kernel: hid-generic 0003:5943:3130.0001: input,hidraw0: USB HID v1.00 Device [Jieli Technology SG-286] on usb-0000:73:00.3-2.2/input3
+jul 13 23:24:04 joaoantonio-PC kernel: tsc: Refined TSC clocksource calibration: 4699.975 MHz
+jul 13 23:24:04 joaoantonio-PC kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x43bf559e518, max_idle_ns: 440795274624 ns
+jul 13 23:24:04 joaoantonio-PC kernel: clocksource: Switched to clocksource tsc
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice=93.91
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3: Product: USB2.1 Hub
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3: Manufacturer: GenesysLogic
+jul 13 23:24:04 joaoantonio-PC kernel: hub 1-3:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 1-3:1.0: 4 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-3: new SuperSpeed USB device number 3 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-3: New USB device found, idVendor=05e3, idProduct=0620, bcdDevice=93.91
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-3: Product: USB3.2 Hub
+jul 13 23:24:04 joaoantonio-PC kernel: usb 2-3: Manufacturer: GenesysLogic
+jul 13 23:24:04 joaoantonio-PC kernel: hub 2-3:1.0: USB hub found
+jul 13 23:24:04 joaoantonio-PC kernel: hub 2-3:1.0: 4 ports detected
+jul 13 23:24:04 joaoantonio-PC kernel: ata4: SATA link down (SStatus 0 SControl 300)
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-5: new high-speed USB device number 4 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: ata6: SATA link down (SStatus 0 SControl 330)
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.1: new full-speed USB device number 5 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: ata7: SATA link down (SStatus 0 SControl 330)
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.1: New USB device found, idVendor=04b4, idProduct=2412, bcdDevice= 1.00
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.1: Product: Flydigi VADER3
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.1: Manufacturer: Flydigi
+jul 13 23:24:04 joaoantonio-PC kernel: input: Flydigi Flydigi VADER3 as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.1/1-3.1:1.0/0003:04B4:2412.0002/input/input3
+jul 13 23:24:04 joaoantonio-PC kernel: hid-generic 0003:04B4:2412.0002: input,hidraw1: USB HID v1.11 Gamepad [Flydigi Flydigi VADER3] on usb-0000:0c:00.0-3.1/input0
+jul 13 23:24:04 joaoantonio-PC kernel: input: Flydigi Flydigi VADER3 as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.1/1-3.1:1.1/0003:04B4:2412.0003/input/input4
+jul 13 23:24:04 joaoantonio-PC kernel: hid-generic 0003:04B4:2412.0003: input,hidraw2: USB HID v1.11 Mouse [Flydigi Flydigi VADER3] on usb-0000:0c:00.0-3.1/input1
+jul 13 23:24:04 joaoantonio-PC kernel: hid-generic 0003:04B4:2412.0004: hiddev96,hidraw3: USB HID v1.11 Device [Flydigi Flydigi VADER3] on usb-0000:0c:00.0-3.1/input2
+jul 13 23:24:04 joaoantonio-PC kernel: ata8: SATA link down (SStatus 0 SControl 330)
+jul 13 23:24:04 joaoantonio-PC kernel: Freeing unused decrypted memory: 2028K
+jul 13 23:24:04 joaoantonio-PC kernel: Freeing unused kernel image (initmem) memory: 4792K
+jul 13 23:24:04 joaoantonio-PC kernel: Write protecting the kernel read-only data: 43008k
+jul 13 23:24:04 joaoantonio-PC kernel: Freeing unused kernel image (text/rodata gap) memory: 1952K
+jul 13 23:24:04 joaoantonio-PC kernel: Freeing unused kernel image (rodata/data gap) memory: 1416K
+jul 13 23:24:04 joaoantonio-PC kernel: hid-generic 0003:04B4:2412.0005: hiddev97,hidraw4: USB HID v1.11 Device [Flydigi Flydigi VADER3] on usb-0000:0c:00.0-3.1/input3
+jul 13 23:24:04 joaoantonio-PC kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+jul 13 23:24:04 joaoantonio-PC kernel: rodata_test: all tests were successful
+jul 13 23:24:04 joaoantonio-PC kernel: Run /init as init process
+jul 13 23:24:04 joaoantonio-PC kernel:   with arguments:
+jul 13 23:24:04 joaoantonio-PC kernel:     /init
+jul 13 23:24:04 joaoantonio-PC kernel:     splash
+jul 13 23:24:04 joaoantonio-PC kernel:   with environment:
+jul 13 23:24:04 joaoantonio-PC kernel:     HOME=/
+jul 13 23:24:04 joaoantonio-PC kernel:     TERM=linux
+jul 13 23:24:04 joaoantonio-PC kernel: nvidia: loading out-of-tree module taints kernel.
+jul 13 23:24:04 joaoantonio-PC kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.2: new full-speed USB device number 6 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 239
+jul 13 23:24:04 joaoantonio-PC kernel: 
+jul 13 23:24:04 joaoantonio-PC kernel: nvidia 0000:01:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+jul 13 23:24:04 joaoantonio-PC kernel: NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  610.43.03  Release Build  (root@joaoantonio-PC)  
+jul 13 23:24:04 joaoantonio-PC kernel: ACPI: video: Video Device [VGA] (multi-head: yes  rom: no  post: no)
+jul 13 23:24:04 joaoantonio-PC kernel: input: Video Bus as /devices/pci0000:00/0000:00:08.1/acpi.video_bus.0/input/input5
+jul 13 23:24:04 joaoantonio-PC kernel: nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for x86_64  610.43.03  Release Build  (root@joaoantonio-PC)  
+jul 13 23:24:04 joaoantonio-PC kernel: [drm] [nvidia-drm] [GPU ID 0x00000100] Loading driver
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.2: New USB device found, idVendor=1b1c, idProduct=0a6b, bcdDevice= 0.00
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.2: Product: CORSAIR HS80 RGB Wireless Gaming Receiver
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.2: Manufacturer: Corsair
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-3.2: SerialNumber: 1c62f27300000217
+jul 13 23:24:04 joaoantonio-PC kernel: input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver Keyboard as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.3/0003:1B1C:0A6B.0006/input/input6
+jul 13 23:24:04 joaoantonio-PC kernel: input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.3/0003:1B1C:0A6B.0006/input/input7
+jul 13 23:24:04 joaoantonio-PC kernel: input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.3/0003:1B1C:0A6B.0006/input/input8
+jul 13 23:24:04 joaoantonio-PC kernel: input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.3/0003:1B1C:0A6B.0006/input/input9
+jul 13 23:24:04 joaoantonio-PC kernel: hid-generic 0003:1B1C:0A6B.0006: input,hiddev98,hidraw5: USB HID v1.11 Keyboard [Corsair CORSAIR HS80 RGB Wireless Gaming Receiver] on usb-0000:0c:00.0-3.2/input3
+jul 13 23:24:04 joaoantonio-PC kernel: input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.4/0003:1B1C:0A6B.0007/input/input10
+jul 13 23:24:04 joaoantonio-PC kernel: hid-generic 0003:1B1C:0A6B.0007: input,hidraw6: USB HID v1.11 Mouse [Corsair CORSAIR HS80 RGB Wireless Gaming Receiver] on usb-0000:0c:00.0-3.2/input4
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-5: New USB device found, idVendor=0db0, idProduct=cd0e, bcdDevice= 0.05
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-5: New USB device strings: Mfr=3, Product=1, SerialNumber=0
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-5: Product: USB Audio
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-5: Manufacturer: Generic
+jul 13 23:24:04 joaoantonio-PC kernel: hid-generic 0003:0DB0:CD0E.0008: hiddev99,hidraw7: USB HID v1.11 Device [Generic USB Audio] on usb-0000:0c:00.0-5/input7
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-10: new full-speed USB device number 7 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: [drm] Initialized nvidia-drm 0.0.0 for 0000:01:00.0 on minor 0
+jul 13 23:24:04 joaoantonio-PC kernel: nvidia 0000:01:00.0: [drm] Cannot find any crtc or sizes
+jul 13 23:24:04 joaoantonio-PC kernel: Key type psk registered
+jul 13 23:24:04 joaoantonio-PC kernel: nvme 0000:02:00.0: platform quirk: setting simple suspend
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme0: pci function 0000:06:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme1: pci function 0000:02:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme2: pci function 0000:72:00.0
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme1: D3 entry latency set to 10 seconds
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme1: passthrough uses implicit buffer lengths
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme2: D3 entry latency set to 10 seconds
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme2: passthrough uses implicit buffer lengths
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme1: 16/0/0 default/read/poll queues
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme2: 16/0/0 default/read/poll queues
+jul 13 23:24:04 joaoantonio-PC kernel:  nvme1n1: p1 p2
+jul 13 23:24:04 joaoantonio-PC kernel:  nvme2n1: p1 p2
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme0: passthrough uses implicit buffer lengths
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme0: allocated 64 MiB host memory buffer (1 segment).
+jul 13 23:24:04 joaoantonio-PC kernel: nvme nvme0: 16/0/0 default/read/poll queues
+jul 13 23:24:04 joaoantonio-PC kernel:  nvme0n1: p1 p2
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-10: New USB device found, idVendor=0db0, idProduct=0076, bcdDevice= 0.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-10: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-10: Product: MYSTIC LIGHT
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-10: Manufacturer: MSI
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-10: SerialNumber: 7E5124092002
+jul 13 23:24:04 joaoantonio-PC kernel: device-mapper: uevent: version 1.0.3
+jul 13 23:24:04 joaoantonio-PC kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+jul 13 23:24:04 joaoantonio-PC kernel: hid-generic 0003:0DB0:0076.0009: hiddev100,hidraw8: USB HID v1.10 Device [MSI MYSTIC LIGHT] on usb-0000:0c:00.0-10/input0
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-12: new full-speed USB device number 8 using xhci_hcd
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-12: New USB device found, idVendor=0489, idProduct=e10a, bcdDevice= 0.01
+jul 13 23:24:04 joaoantonio-PC kernel: usb 1-12: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu: vga_switcheroo: detected switching method \_SB_.PCI0.GP17.VGA_.ATPX handle
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu: ATPX version 1, functions 0x00000000
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu: Virtual CRAT table created for CPU
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu: Topology: Add CPU node
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: enabling device (0006 -> 0007)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: initializing kernel modesetting (IP DISCOVERY 0x1002:0x13C0 0x1462:0x7E51 0xCB).
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: register mmio base: 0xDCF00000
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: register mmio size: 524288
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 0 <common_v1_0_0> (nv_common)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 1 <gmc_v10_0_0> (gmc_v10_0)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 2 <ih_v5_0_0> (navi10_ih)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 3 <psp_v13_0_0> (psp)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 4 <smu_v13_0_0> (smu)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 5 <dce_v1_0_0> (dm)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 6 <gfx_v10_0_0> (gfx_v10_0)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 7 <sdma_v5_2_0> (sdma_v5_2)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 8 <vcn_v3_0_0> (vcn_v3_0)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: detected ip block number 9 <jpeg_v3_0_0> (jpeg_v3_0)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: Fetched VBIOS from VFCT
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] ATOM BIOS: 102-RAPHAEL-008, build: 612127  , ver: 032.019.000.008.000000, 2022/09/26
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: vgaarb: deactivate vga console
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: Trusted Memory Zone (TMZ) feature disabled as experimental (default)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: vm size is 262144 GB, 4 levels, block size is 9-bit, fragment size is 9-bit
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: VRAM: 2048M 0x000000F400000000 - 0x000000F47FFFFFFF (2048M used)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: GART: 1024M 0x0000000000000000 - 0x000000003FFFFFFF
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] Detected VRAM RAM=2048M, BAR=2048M
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] RAM width 128bits DDR5
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0:  2048M of VRAM memory ready
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0:  30823M of GTT memory ready.
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] GART: num cpu pages 262144, num gpu pages 262144
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] PCIE GART of 1024M enabled (table at 0x000000F47FC00000).
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] Loading DMUB firmware via PSP: version=0x05003000
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] use_doorbell being set to: [true]
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [VCN instance 0] Found VCN firmware Version ENC: 1.33 DEC: 4 VEP: 0 Revision: 15
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: reserve 0xa00000 from 0xf47e000000 for PSP TMR
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: RAS: optional ras ta ucode is not available
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: RAP: optional rap ta ucode is not available
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: SECUREDISPLAY: optional securedisplay ta ucode is not available
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: smu driver if version = 0x00000005, smu fw if version = 0x00000005, smu fw program = 0, smu fw version = 0x00625300 (98.83.0)
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: SMU is initialized successfully!
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] Display Core v3.2.378 initialized on DCN 3.1.5
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] DP-HDMI FRL PCON supported
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] DMUB hardware initialized: version=0x05003000
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] HDMI-A-3: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] DP-4: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] DP-5: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] DP-6: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: kiq ring mec 2 pipe 1 q 0
+jul 13 23:24:04 joaoantonio-PC kernel: kfd kfd: Allocated 3969056 bytes on gart
+jul 13 23:24:04 joaoantonio-PC kernel: kfd kfd: Total number of KFD nodes to be created: 1
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu: Virtual CRAT table created for GPU
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu: Topology: Add GPU node [0x1002:0x13c0]
+jul 13 23:24:04 joaoantonio-PC kernel: kfd kfd: added device 1002:13c0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: SE 1, SH per SE 1, CU per SH 2, active_cu_number 2
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring gfx_0.1.0 uses VM inv eng 1 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring comp_1.0.0 uses VM inv eng 4 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring comp_1.1.0 uses VM inv eng 5 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring comp_1.2.0 uses VM inv eng 6 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring comp_1.3.0 uses VM inv eng 7 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring comp_1.0.1 uses VM inv eng 8 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring comp_1.1.1 uses VM inv eng 9 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring comp_1.2.1 uses VM inv eng 10 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring comp_1.3.1 uses VM inv eng 11 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring kiq_0.2.1.0 uses VM inv eng 12 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring sdma0 uses VM inv eng 13 on hub 0
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring vcn_dec_0 uses VM inv eng 0 on hub 8
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring vcn_enc_0.0 uses VM inv eng 1 on hub 8
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring vcn_enc_0.1 uses VM inv eng 4 on hub 8
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: ring jpeg_dec uses VM inv eng 5 on hub 8
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: Runtime PM not available
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] Registered 4 planes with drm panic
+jul 13 23:24:04 joaoantonio-PC kernel: [drm] Initialized amdgpu 3.64.0 for 0000:73:00.0 on minor 1
+jul 13 23:24:04 joaoantonio-PC kernel: amdgpu 0000:73:00.0: [drm] Cannot find any crtc or sizes
+jul 13 23:24:04 joaoantonio-PC kernel: [drm] pre_validate_dsc:1667 MST_DSC dsc precompute is not needed
+jul 13 23:24:04 joaoantonio-PC kernel: BTRFS: device fsid 87f5a9f3-3f4f-4df3-91d4-f4af3ebe6108 devid 1 transid 85080 /dev/mapper/ArchinstallVg-root (253:0) scanned by mount (435)
+jul 13 23:24:04 joaoantonio-PC kernel: BTRFS info (device dm-0): first mount of filesystem 87f5a9f3-3f4f-4df3-91d4-f4af3ebe6108
+jul 13 23:24:04 joaoantonio-PC kernel: BTRFS info (device dm-0): using crc32c checksum algorithm
+jul 13 23:24:04 joaoantonio-PC kernel: BTRFS info (device dm-0): enabling ssd optimizations
+jul 13 23:24:04 joaoantonio-PC kernel: BTRFS info (device dm-0): turning on async discard
+jul 13 23:24:04 joaoantonio-PC kernel: BTRFS info (device dm-0): enabling free space tree
+jul 13 23:24:04 joaoantonio-PC systemd[1]: systemd 261.1-1-arch running in system mode (+PAM +AUDIT -SELINUX +APPARMOR -IMA +IPE +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +LIBARCHIVE)
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Detected architecture x86-64.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Hostname set to <joaoantonio-PC>.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: bpf-restrict-fs: LSM BPF program attached
+jul 13 23:24:04 joaoantonio-PC kernel: zram: Added device: zram0
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Queued start job for default target Graphical Interface.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice Slice /system/dirmngr.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice Slice /system/getty.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice Slice /system/gpg-agent.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice Slice /system/gpg-agent-browser.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice Slice /system/gpg-agent-extra.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice Slice /system/gpg-agent-ssh.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice Slice /system/keyboxd.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice Slice /system/modprobe.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice Slice /system/systemd-zram-setup.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Created slice User and Session Slice.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Expecting device /dev/disk/by-uuid/4533-4062...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Expecting device /dev/disk/by-uuid/6CFED9C5FED987AA...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Expecting device /dev/disk/by-uuid/87f5a9f3-3f4f-4df3-91d4-f4af3ebe6108...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Expecting device /dev/disk/by-uuid/8EAEE46AAEE44BF1...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Expecting device /dev/zram0...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Reached target Login Prompts.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Reached target Image Downloads.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Reached target Local Integrity Protected Volumes.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Reached target Remote File Systems.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Reached target Slice Units.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Reached target Local Verity Protected Volumes.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Device-mapper event daemon FIFOs.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on LVM2 poll daemon socket.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Query the User Interactively for a Password.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Process Core Dump Socket.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Credential Encryption/Decryption.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Factory Reset Management.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Hostname Service Socket.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Journal Socket (/dev/log).
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Journal Sockets.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Console Output Muting Service Socket.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-os
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Disk Repartitioning Service Socket.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Simple Block Device Backed Storage Provider.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on Simple File System Backed Storage Provider.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on udev Control Socket.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on udev Kernel Socket.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on udev Varlink Socket.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Listening on User Database Manager Socket.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounting Huge Pages File System...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounting POSIX Message Queue File System...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounting Kernel Debug File System...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounting Kernel Trace File System...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Create List of Static Device Nodes...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounting Kernel Configuration File System...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounting FUSE Control File System...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Journal Service...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Load Kernel Modules...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+jul 13 23:24:04 joaoantonio-PC systemd[1]: TPM PCR OS Separator skipped, unmet condition check ConditionSecurity=measured-os
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Remount Root and Kernel File Systems...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-os
+jul 13 23:24:04 joaoantonio-PC systemd[1]: TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionPathExists=/etc/initrd-release
+jul 13 23:24:04 joaoantonio-PC systemd[1]: TPM NvPCR Product ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Load udev Rules from Credentials...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Coldplug All udev Devices...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Virtual Console Setup...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Finished Create List of Static Device Nodes.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounted Huge Pages File System.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounted POSIX Message Queue File System.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounted Kernel Debug File System.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounted Kernel Trace File System.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounted Kernel Configuration File System.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Mounted FUSE Control File System.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Finished Load udev Rules from Credentials.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Finished Virtual Console Setup.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+jul 13 23:24:04 joaoantonio-PC systemd-journald[521]: Collecting audit messages is disabled.
+jul 13 23:24:04 joaoantonio-PC kernel: i2c_dev: i2c /dev entries driver
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Finished Load Kernel Modules.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting Apply Kernel Variables...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Starting User Database Manager...
+jul 13 23:24:04 joaoantonio-PC systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 536 ((systemd-userd))
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+jul 13 23:24:04 joaoantonio-PC systemd[1]: Started Journal Service.
+jul 13 23:24:04 joaoantonio-PC kernel: BTRFS info (device dm-0 state M): use zstd compression, level 3
+jul 13 23:24:05 joaoantonio-PC kernel: zram0: detected capacity change from 0 to 8388608
+jul 13 23:24:05 joaoantonio-PC kernel: mousedev: PS/2 mouse device common for all mice
+jul 13 23:24:05 joaoantonio-PC kernel: Adding 4194300k swap on /dev/zram0.  Priority:100 extents:1 across:4194300k SSDsc
+jul 13 23:24:05 joaoantonio-PC kernel: mc: Linux media interface: v0.10
+jul 13 23:24:05 joaoantonio-PC kernel: Bluetooth: Core ver 2.22
+jul 13 23:24:05 joaoantonio-PC kernel: NET: Registered PF_BLUETOOTH protocol family
+jul 13 23:24:05 joaoantonio-PC kernel: Bluetooth: HCI device and connection manager initialized
+jul 13 23:24:05 joaoantonio-PC kernel: Bluetooth: HCI socket layer initialized
+jul 13 23:24:05 joaoantonio-PC kernel: Bluetooth: L2CAP socket layer initialized
+jul 13 23:24:05 joaoantonio-PC kernel: Bluetooth: SCO socket layer initialized
+jul 13 23:24:05 joaoantonio-PC kernel: ACPI: bus type thunderbolt registered
+jul 13 23:24:05 joaoantonio-PC kernel: thunderbolt 0000:71:00.0: enabling device (0000 -> 0002)
+jul 13 23:24:05 joaoantonio-PC kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+jul 13 23:24:05 joaoantonio-PC kernel: RAPL PMU: API unit is 2^-32 Joules, 2 fixed counters, 163840 ms ovfl timer
+jul 13 23:24:05 joaoantonio-PC kernel: RAPL PMU: hw unit of domain package 2^-16 Joules
+jul 13 23:24:05 joaoantonio-PC kernel: RAPL PMU: hw unit of domain core 2^-16 Joules
+jul 13 23:24:05 joaoantonio-PC kernel: input: PC Speaker as /devices/platform/pcspkr/input/input11
+jul 13 23:24:05 joaoantonio-PC kernel: ccp 0000:73:00.2: enabling device (0000 -> 0002)
+jul 13 23:24:05 joaoantonio-PC kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+jul 13 23:24:05 joaoantonio-PC kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+jul 13 23:24:05 joaoantonio-PC kernel: piix4_smbus 0000:00:14.0: SMBus Host Controller at 0xb00, revision 0
+jul 13 23:24:05 joaoantonio-PC kernel: piix4_smbus 0000:00:14.0: Using register 0x02 for SMBus port selection
+jul 13 23:24:05 joaoantonio-PC kernel: snd_hda_intel 0000:01:00.1: enabling device (0000 -> 0002)
+jul 13 23:24:05 joaoantonio-PC kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+jul 13 23:24:05 joaoantonio-PC kernel: cfg80211: failed to load regulatory.db
+jul 13 23:24:05 joaoantonio-PC kernel: snd_hda_intel 0000:01:00.1: Disabling MSI
+jul 13 23:24:05 joaoantonio-PC kernel: snd_hda_intel 0000:01:00.1: Handle vga_switcheroo audio client
+jul 13 23:24:05 joaoantonio-PC kernel: r8169 0000:09:00.0: enabling device (0000 -> 0003)
+jul 13 23:24:05 joaoantonio-PC kernel: snd_hda_intel 0000:73:00.1: enabling device (0000 -> 0002)
+jul 13 23:24:05 joaoantonio-PC kernel: snd_hda_intel 0000:73:00.1: Handle vga_switcheroo audio client
+jul 13 23:24:05 joaoantonio-PC kernel: snd_hda_intel 0000:73:00.6: enabling device (0000 -> 0002)
+jul 13 23:24:05 joaoantonio-PC kernel: ccp 0000:73:00.2: tee enabled
+jul 13 23:24:05 joaoantonio-PC kernel: ccp 0000:73:00.2: psp enabled
+jul 13 23:24:05 joaoantonio-PC kernel: i2c i2c-15: Successfully instantiated SPD at 0x51
+jul 13 23:24:05 joaoantonio-PC kernel: i2c i2c-15: Successfully instantiated SPD at 0x53
+jul 13 23:24:05 joaoantonio-PC kernel: piix4_smbus 0000:00:14.0: Auxiliary SMBus Host Controller at 0xb20
+jul 13 23:24:05 joaoantonio-PC kernel: snd_hda_intel 0000:73:00.6: no codecs found!
+jul 13 23:24:05 joaoantonio-PC kernel: usbcore: registered new interface driver btusb
+jul 13 23:24:05 joaoantonio-PC kernel: Bluetooth: hci0: HCI Enhanced Setup Synchronous Connection command is advertised, but not supported.
+jul 13 23:24:05 joaoantonio-PC kernel: r8169 0000:09:00.0 eth0: RTL8126A, 34:5a:60:01:b3:86, XID 64a, IRQ 178
+jul 13 23:24:05 joaoantonio-PC kernel: r8169 0000:09:00.0 eth0: jumbo features [frames: 16362 bytes, tx checksumming: ko]
+jul 13 23:24:05 joaoantonio-PC kernel: sp5100_tco: SP5100/SB800 TCO WatchDog Timer Driver
+jul 13 23:24:05 joaoantonio-PC kernel: sp5100-tco sp5100-tco: Using 0xfeb00000 for watchdog MMIO address
+jul 13 23:24:05 joaoantonio-PC kernel: sp5100-tco sp5100-tco: initialized. heartbeat=60 sec (nowayout=0)
+jul 13 23:24:05 joaoantonio-PC kernel: r8169 0000:09:00.0 enp9s0: renamed from eth0
+jul 13 23:24:05 joaoantonio-PC kernel: snd_hda_intel 0000:73:00.1: bound 0000:73:00.0 (ops amdgpu_dm_audio_component_bind_ops [amdgpu])
+jul 13 23:24:06 joaoantonio-PC kernel: input: HD-Audio Generic HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:08.1/0000:73:00.1/sound/card1/input12
+jul 13 23:24:06 joaoantonio-PC kernel: input: HD-Audio Generic HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:08.1/0000:73:00.1/sound/card1/input13
+jul 13 23:24:06 joaoantonio-PC kernel: input: HD-Audio Generic HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:08.1/0000:73:00.1/sound/card1/input14
+jul 13 23:24:06 joaoantonio-PC kernel: input: HD-Audio Generic HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:08.1/0000:73:00.1/sound/card1/input15
+jul 13 23:24:06 joaoantonio-PC kernel: input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input16
+jul 13 23:24:06 joaoantonio-PC kernel: input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input17
+jul 13 23:24:06 joaoantonio-PC kernel: input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input18
+jul 13 23:24:06 joaoantonio-PC kernel: input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input19
+jul 13 23:24:06 joaoantonio-PC kernel: kvm_amd: TSC scaling supported
+jul 13 23:24:06 joaoantonio-PC kernel: kvm_amd: Nested Virtualization enabled
+jul 13 23:24:06 joaoantonio-PC kernel: kvm_amd: Nested Paging enabled
+jul 13 23:24:06 joaoantonio-PC kernel: kvm_amd: LBR virtualization supported
+jul 13 23:24:06 joaoantonio-PC kernel: kvm_amd: AVIC enabled
+jul 13 23:24:06 joaoantonio-PC kernel: kvm_amd: x2AVIC enabled (max 512 vCPUs)
+jul 13 23:24:06 joaoantonio-PC kernel: kvm_amd: Virtual VMLOAD VMSAVE supported
+jul 13 23:24:06 joaoantonio-PC kernel: kvm_amd: Virtual GIF supported
+jul 13 23:24:06 joaoantonio-PC kernel: kvm_amd: Virtual NMI enabled
+jul 13 23:24:06 joaoantonio-PC kernel: spd5118 15-0051: DDR5 temperature sensor: vendor 0x06:0x32 revision 1.6
+jul 13 23:24:06 joaoantonio-PC kernel: spd5118 15-0053: DDR5 temperature sensor: vendor 0x06:0x32 revision 1.6
+jul 13 23:24:06 joaoantonio-PC kernel: ath12k_wifi7_pci 0000:08:00.0: BAR 0 [mem 0xdc200000-0xdc3fffff 64bit]: assigned
+jul 13 23:24:06 joaoantonio-PC kernel: ath12k_wifi7_pci 0000:08:00.0: enabling device (0000 -> 0002)
+jul 13 23:24:06 joaoantonio-PC kernel: ath12k_wifi7_pci 0000:08:00.0: Wi-Fi 7 Hardware name: wcn7850 hw2.0
+jul 13 23:24:06 joaoantonio-PC kernel: ath12k_wifi7_pci 0000:08:00.0: MSI vectors: 16
+jul 13 23:24:06 joaoantonio-PC kernel: NET: Registered PF_QIPCRTR protocol family
+jul 13 23:24:06 joaoantonio-PC kernel: intel_rapl_common: Found RAPL domain package
+jul 13 23:24:06 joaoantonio-PC kernel: intel_rapl_common: Found RAPL domain core
+jul 13 23:24:06 joaoantonio-PC kernel: amd_atl: AMD Address Translation Library initialized
+jul 13 23:24:06 joaoantonio-PC kernel: mhi mhi0: Requested to power ON
+jul 13 23:24:06 joaoantonio-PC kernel: mhi mhi0: Power on setup success
+jul 13 23:24:06 joaoantonio-PC kernel: mhi mhi0: Wait for device to enter SBL or Mission mode
+jul 13 23:24:06 joaoantonio-PC kernel: ath12k_wifi7_pci 0000:08:00.0: chip_id 0x2 chip_family 0x4 board_id 0xff soc_id 0x40170200
+jul 13 23:24:06 joaoantonio-PC kernel: ath12k_wifi7_pci 0000:08:00.0: fw_version 0x1103006c fw_build_timestamp 2026-03-06 09:10 fw_build_id QC_IMAGE_VERSION_STRING=WLAN.HMT.1.1.c7-00108-QCAHMTSWPL_V1.0_V2.0_SILICONZ_UPSTREAM-3
+jul 13 23:24:06 joaoantonio-PC systemd-journald[521]: Received client request to flush runtime journal.
+jul 13 23:24:06 joaoantonio-PC kernel: ieee80211 phy0: copying sband (band 1) due to VHT EXT NSS BW flag
+jul 13 23:24:06 joaoantonio-PC kernel: ath12k_wifi7_pci 0000:08:00.0 wlp8s0: renamed from wlan0
+jul 13 23:24:07 joaoantonio-PC kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+jul 13 23:24:07 joaoantonio-PC kernel: Bluetooth: BNEP filters: protocol multicast
+jul 13 23:24:07 joaoantonio-PC kernel: Bluetooth: BNEP socket layer initialized
+jul 13 23:24:07 joaoantonio-PC kernel: Bluetooth: MGMT ver 1.23
+jul 13 23:24:07 joaoantonio-PC kernel: NET: Registered PF_ALG protocol family
+jul 13 23:24:07 joaoantonio-PC kernel: Realtek Internal NBASE-T PHY r8169-0-900:00: attached PHY driver (mii_bus:phy_addr=r8169-0-900:00, irq=MAC)
+jul 13 23:24:07 joaoantonio-PC kernel: r8169 0000:09:00.0 enp9s0: Link is Down
+jul 13 23:24:09 joaoantonio-PC kernel: Bluetooth: RFCOMM TTY layer initialized
+jul 13 23:24:09 joaoantonio-PC kernel: Bluetooth: RFCOMM socket layer initialized
+jul 13 23:24:09 joaoantonio-PC kernel: Bluetooth: RFCOMM ver 1.11
+jul 13 23:24:10 joaoantonio-PC kernel: r8169 0000:09:00.0 enp9s0: Link is Up - 1Gbps/Full - flow control rx/tx
+jul 13 23:24:12 joaoantonio-PC kernel: usbcore: registered new interface driver snd-usb-audio
+jul 13 23:24:18 joaoantonio-PC kernel: usb 5-2.1: new high-speed USB device number 4 using xhci_hcd
+jul 13 23:24:18 joaoantonio-PC kernel: usb 5-2.1: New USB device found, idVendor=0bda, idProduct=5409, bcdDevice= 1.30
+jul 13 23:24:18 joaoantonio-PC kernel: usb 5-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+jul 13 23:24:18 joaoantonio-PC kernel: usb 5-2.1: Product: USB2.1 Hub
+jul 13 23:24:18 joaoantonio-PC kernel: usb 5-2.1: Manufacturer: Generic
+jul 13 23:24:19 joaoantonio-PC kernel: hub 5-2.1:1.0: USB hub found
+jul 13 23:24:19 joaoantonio-PC kernel: hub 5-2.1:1.0: 3 ports detected
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.1: new full-speed USB device number 5 using xhci_hcd
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.1: New USB device found, idVendor=1b1c, idProduct=1b75, bcdDevice= 3.14
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.1: Product: CORSAIR HARPOON RGB PRO Gaming Mouse
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.1: Manufacturer: Corsair
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.1: SerialNumber: 1002701DAFBC8806633FB238F5001C04
+jul 13 23:24:19 joaoantonio-PC kernel: input: Corsair CORSAIR HARPOON RGB PRO Gaming Mouse as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.1/5-2.1.1:1.0/0003:1B1C:1B75.000A/input/input20
+jul 13 23:24:19 joaoantonio-PC kernel: input: Corsair CORSAIR HARPOON RGB PRO Gaming Mouse as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.1/5-2.1.1:1.0/0003:1B1C:1B75.000A/input/input21
+jul 13 23:24:19 joaoantonio-PC kernel: input: Corsair CORSAIR HARPOON RGB PRO Gaming Mouse as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.1/5-2.1.1:1.0/0003:1B1C:1B75.000A/input/input22
+jul 13 23:24:19 joaoantonio-PC kernel: hid-generic 0003:1B1C:1B75.000A: input,hiddev101,hidraw9: USB HID v1.11 Mouse [Corsair CORSAIR HARPOON RGB PRO Gaming Mouse] on usb-0000:73:00.3-2.1.1/input0
+jul 13 23:24:19 joaoantonio-PC kernel: hid-generic 0003:1B1C:1B75.000B: hiddev102,hidraw10: USB HID v1.11 Device [Corsair CORSAIR HARPOON RGB PRO Gaming Mouse] on usb-0000:73:00.3-2.1.1/input1
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.3: new high-speed USB device number 6 using xhci_hcd
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.3: New USB device found, idVendor=0bda, idProduct=1101, bcdDevice= 1.01
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.3: Product: HID Device
+jul 13 23:24:19 joaoantonio-PC kernel: usb 5-2.1.3: Manufacturer: Realtek
+jul 13 23:24:19 joaoantonio-PC kernel: hid-generic 0003:0BDA:1101.000C: hiddev103,hidraw11: USB HID v1.11 Device [Realtek HID Device] on usb-0000:73:00.3-2.1.3/input0
+jul 13 23:24:20 joaoantonio-PC kernel: usb 5-2.1.2: new full-speed USB device number 7 using xhci_hcd
+jul 13 23:24:20 joaoantonio-PC kernel: usb 5-2.1.2: New USB device found, idVendor=1b1c, idProduct=1bad, bcdDevice= 4.15
+jul 13 23:24:20 joaoantonio-PC kernel: usb 5-2.1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+jul 13 23:24:20 joaoantonio-PC kernel: usb 5-2.1.2: Product: CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard
+jul 13 23:24:20 joaoantonio-PC kernel: usb 5-2.1.2: Manufacturer: Corsair
+jul 13 23:24:20 joaoantonio-PC kernel: usb 5-2.1.2: SerialNumber: 14021013AF7BA4C85F7F0F3EF5001BC6
+jul 13 23:24:20 joaoantonio-PC kernel: input: Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.2/5-2.1.2:1.0/0003:1B1C:1BAD.000D/input/input23
+jul 13 23:24:20 joaoantonio-PC kernel: hid-generic 0003:1B1C:1BAD.000D: input,hidraw12: USB HID v1.11 Keyboard [Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard] on usb-0000:73:00.3-2.1.2/input0
+jul 13 23:24:20 joaoantonio-PC kernel: hid-generic 0003:1B1C:1BAD.000E: hiddev104,hidraw13: USB HID v1.11 Device [Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard] on usb-0000:73:00.3-2.1.2/input1
+jul 13 23:24:20 joaoantonio-PC kernel: hid-generic 0003:1B1C:1BAD.000F: hiddev105,hidraw14: USB HID v1.11 Device [Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard] on usb-0000:73:00.3-2.1.2/input2
+jul 13 23:24:20 joaoantonio-PC kernel: input: Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.2/5-2.1.2:1.3/0003:1B1C:1BAD.0010/input/input24
+jul 13 23:24:20 joaoantonio-PC kernel: hid-generic 0003:1B1C:1BAD.0010: input,hidraw15: USB HID v1.11 Mouse [Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard] on usb-0000:73:00.3-2.1.2/input3
+jul 13 23:24:32 joaoantonio-PC kernel: usb 1-3.1: USB disconnect, device number 5
