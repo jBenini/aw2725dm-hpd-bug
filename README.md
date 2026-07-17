@@ -3,7 +3,15 @@ Last update: July 14, 2026.
 
 # Disclaimer -> Why this configuration necessary? Where should be applied?
 
-**TLDR:** It's a Dell fault for not following DisplayPort's standards.
+## **TLDR:** 
+After long log collecting and tests I discovered that the fault is divided by:
+- 70% for Dell, for not following DisplayPort's standards entirely,
+- 20% for DisplayPort protocol, due fragile structure.
+- 10% for NVIDIA, due Linux driver issues.
+
+I couldn't find a solution, so I had to get a mechanism for the Kernel send a signal via GPU port to warn the Monitor to display the signal, in case if there is a blank screen and a message "*No signal on DisplayPort*".
+
+## Hardware overview
 
 I have an Alienware monitor model AW2725DM, it can show images in 2K (1440p) with 180Hz frequency, DisplayPort 1.4 interface, a 1440p high-end monitor for 2026.
 Also in my computer runs Arch Linux, with CachyOS Kernel:
@@ -256,17 +264,19 @@ When the Linux system is up and ready to be used, it load the NVIDIA module, pro
 
 Windows' WDDM (Windows Display Driver Model) has, by its own design, periodic polling of display outputs as a fallback beyond hotplug interrupts — a general defensive behavior that happens to mask this class of hardware/firmware bugs, not a fix built specifically for this matter. This is likely why end users rarely notice HPD reliability issues like this one on Windows.
 
-## So, who can I blame from this problem:
+## So, at this moment, what I can figure?
 
-For my point-of-view and all the troubleshoot attempts, with data collecting from the logs, I can say that the **Dell Technologies** is the responsible, since the monitor **NEVER** send a signal from the DisplayPort to the other-end and establish a 'handshake' between the devices and display the image to the user. They are well comfortable that Microsoft already created a solution from their side called WDDM, ignoring the fact that the monitor is simply sluggish.
+For my point-of-view and all the troubleshoot attempts, with data collecting from the logs, I can say that the **Dell Technologies** have the big slice of this responsability, since the monitor **NEVER** send a signal from the DisplayPort to the other-end and establish a 'handshake' between the devices and display the image to the user. They are well comfortable that Microsoft already created a solution from their side called WDDM, ignoring the fact that the monitor is simply sluggish.
 According to the DisplayPort Standards, the PIN number 18, also called Hot Plug Detect(HPD), it's used to send signal to the other side to confirm that the monitor is powered and ready to display any image. 
 Source: [DisplayPort on Wikipedia](https://en.wikipedia.org/wiki/DisplayPort)
 
 Also on [DisplayPort search results for Alienware monitors](https://www.displayport.org/product-category/monitors-tvs/?ps=alienware), from today, July 14, 2026, there is no **AW2725DM** on the results, suggesting that this monitor (though not conclusively proving) may not be listed on VESA's certified products database since I wrote this README.
 
+Another slice goes to NVIDIA, for the Linux Driver still have issues, as I've discovered and registered in this document. Thanks to understand the issue of the Driver I can figure how to find another palliative solution, since EDID didn't worked. 
+
 ## And now, how to deal with this problem?
 
-I'm not very confident that Dell will take any action for my cause, since Linux's marketshare is really tiny and it won't cause any problem on the profits of this manufacturer, so, it was left for me to accept that it's a problem without solution until now.
+I'm not very confident that Dell will take any action for my cause, since Linux's marketshare is really tiny and it won't cause any problem on the profits of this manufacturer, so, it was left for me to accept that it's a problem without solution until now. NVIDIA already opened the code of the GPU drivers, so I had to find on the Linux community how to solve in GPU side.
 
 # UPDATES - July 16, 2026
 
@@ -317,3 +327,59 @@ Then I've made an fourth attempt: rebooted the PC, powered off the monitor, powe
 
 This obstacle looks like NVIDIA driver + VT Switching have problem to return the "DRM Master" from different TTYs, which escalates this problem in new ways. But it don't minimize the Dell's product failure to send a signal via PIN_18 on displayport to the GPU (HPD faulty).
 
+### What these behaviours and tests mentioned before revealed?
+
+Restarting SDDM Daemon plus returning to TTY1 logging in blindly gave me some a good trail, also the ```login-trigger-test``` logfiles gave me something important than the previous ```dmesg``` and ```journalctl```, in which there was silence: These workaround between TTYs and attempt to login without screen makes the GPU tries to display video for real.
+
+According to ```login-trigger-test``` logfiles, the NVIDIA driver enters in a loop of recurrent faulty for each 17 ~ 30 seconds, it tries to show image, without success:
+
+```shell
+Failed to query display engine channel state # GPU recgonize the monitor, even cannot complete the link via Displayport.
+Lost display notification
+Failed to query default adaptivesync listing for Dell AW2725DM (DP-2) # NOW IT DETECTS THE MONITOR MODEL!!! AN IMPORTANT PROGRESS!!!
+Flip event timeout on head 0
+nvidia-modeset: WARNING: GPU:0: Failure processing EDID for display device Dell AW2725DM (DP-2). # Now it shows what happened during EDID.
+nvidia-modeset: WARNING: GPU:0: Unable to read EDID for display device Dell AW2725DM (DP-2)
+nvidia-modeset: ERROR: GPU:0: Failure reading maximum pixel clock value for display device DP-2.
+[drm:nv_drm_atomic_commit [nvidia_drm]] *ERROR* [nvidia-drm] [GPU ID 0x00000100] Flip event timeout on head 0 # Video commit timeout happening
+Failed detecting connected display devices
+
+```
+
+This issue occurs repeatedly until I run `sudo systemctl restart sddm´.
+
+Now I got an evidence that the Kernel tried a lot of times to display the signal, but since with EDID didn't show up the display, and complete the video flip/commit, there is an unstable eletric link via DisplayPort. Proving that it's not a bug, but a deterministic error (constant and predictable).
+
+## New attempt for a palliative solution: triggerhappy (thd)
+
+I'll download the package for triggerhappy via ```pacman```, create it's daemon and create a shortcut to send a signal to the video, in case there is no display.
+
+```yay -S triggerhappy```
+
+```sudo nvim /etc/triggerhappy/triggers.d/wake-monitor.conf ```
+
+```wake-monitor.conf content
+KEY_F9 1 /usr/local/bin/wake-monitor.sh
+```
+
+```sudo nvim /usr/local/bin/wake-monitor.sh```
+
+
+```wake-monitor.sh content
+#!/bin/bash
+if ! loginctl list-sessions --no-legend | grep -q "seat0.*active"; then
+    systemctl restart sddm
+fi
+```
+
+```chmod +x /usr/local/bin/wake-monitor.sh```
+
+``sudo systemctl enable --now triggerhappy.service```
+
+### Testing triggerhappy
+
+Now I had to reboot, power off the monitor and power on only the SDDM is up, then I press F9 and see if the screen appears on the monitor. I tested, no success.
+
+## So, what is left after all this work.
+
+Since I couldn't find any solution, definitive or palliative, for me I must log in blindly on SDDM when I forget to power on the monitor before SDDM appears.
