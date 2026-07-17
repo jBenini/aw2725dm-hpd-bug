@@ -267,3 +267,53 @@ Also on [DisplayPort search results for Alienware monitors](https://www.displayp
 ## And now, how to deal with this problem?
 
 I'm not very confident that Dell will take any action for my cause, since Linux's marketshare is really tiny and it won't cause any problem on the profits of this manufacturer, so, it was left for me to accept that it's a problem without solution until now.
+
+# UPDATES - July 16, 2026
+
+## Attempt to contact Dell and new discovers.
+
+As I've suspected, Dell official technical support do a little care about this matter, but at Dell Community the Dell support team tries his best.
+At this moment they requested for me to look at monitor's OSD menu something similar for "Deep Sleep", "Auto Source Input" or "Power Saving", but I found only on OSD the path "Menu -> Entry Source -> Auto selection -> Set to off", but it didn't worked. I replied them and I'm awaiting news from their side.
+
+### But something odd happened!
+
+Since after changing the Entry Source as Off didn't give a different result, with the monitor showing no signal, I decide to act different: instead power off and power on again the desktop button, I changed to TTY3, still no image, but I pressed CTRL+ALT+F1 to change to TTY1, and the login screen appared. It make me see this problem with other point-of-view, and started to make new tests. To be honest I don't know exactly how the SDDM appeared, since I just pressed CTRL+ALT+F1 a few times, and I tried to repeat it but the next tests gave me different results.
+
+I made another reboot, turned off the monitor and waited time enough to SDDM (KDE Plasma's Login Screen) start it's service and then power on the monitor, but happened a different behaviour:
+
+#### First behaviour: 
+Monitor without image on TTY1, switched to TTY3, still no imagem tried to log in blindly (since AW2725DM cannot show any image), but after a time I could see the screen, but I inputed my password incorrectly 3 times, then Arch Linux blocked my users for a time. After waiting this time expires, I could use ```sudo``` to run ```sudo chvt 1``` to return to TTY1 and see if SDDM is shown to me. Unfortunately no success, I returned to TTY3 and inputed ```reboot```.
+
+#### Second behaviour: 
+after the previous failure, I left my monitor powered on. The plan is to remember the keys to select my user and input the password on SDDM to log in even if the monitor is blank. I noticed that pressing 'ENTER' selects my user and I input the password and press 'ENTER' again, so I can log into my desktop. After remembering the process to log in using keyboard only I rebooted, powered off the monitor and powered on after SDDM is running, since the monitor didn't show any image, I used my memory to remember press 'ENTER', input password, press 'ENTER' again, and my desktop is shown. It's good, since I discovered that I don't need anymore to power off and power on the desktop to make the monitor show image: something between SDDM's sucessfull login and the exhibit of KDE's desktop is responsible to refresh the signal to the monitor, making it display the image. Now I need to figure what's the cause.
+
+It oonfirms that the authentication via PAM/logind is the trigger to send a signal ```fbcon``` running via ```nvidia_drm.fbdev=1``` to the monitor and show the image, probably it reconfigure the framebuffer from the TTY.
+
+Maybe login with the user, owning the terminal snaps a new video commit, then I can see video even changing to TTY3~TTY6.
+
+According to the information I've got, when KDE session assumes the system, it's composition (KWin) makes the modeset and assumes the DRM (Digital Rights Management), but how? If I discover, I can create a mechanism to refresh the signal to SDDM to force the display of the image when I power on the monitor after the login sesession is ready.
+
+Before it I had to make to make more tests and catch logs to figure what's happening.
+
+####  First test
+'META+L' with monitor powered on -> Return to SDDM. (It was obvious this result, but I wanna do this test to document it here.)
+
+#### Second test
+Open the terminal, run the command ```sleep 1 && loginctl lock-session``` and press 'ENTER', immediately I power off the monitor and wait some seconds, and I power on, the SDDM screen appeared to me.
+
+This second test is odd, when the monitor is powered off: 
+- SDDM runs at first time after boot, it don't show image when I power on the monitor after.
+- SDDM is shown after 'META+L' since the desktop is running, the monitor can show image.
+
+The difference is the SDDM Greeter looks it makes only one probing, without persistent retries. As evidenced on the message ```[drm] Cannot find any crtc or sizes``` after ran ```dmesg -w```, one attempt, no retry.
+So, If SDDM Gretter don't persist to send signal to the monitor, but an opened session can show the monitor's image even I power off and power on, maybe the solution is to restart SDDM daemon, on TTY3, running ```sudo systemctl restart sddm```.
+Then I restarted the PC, powered off the monitor, waiting a moment, powered on and no signal on SDDM Greeter login, changed to TTY3, logged in this terminal, run ```sudo systemctl restart sddm```, returned to TTY1, but yet didn't retured the image yet.
+
+At this moment I will run dmesg with new parameters on TTY3, when I recriate the faulty no-screen scenario:
+```sudo dmesg -w -T | tee ~/login-trigger-test.log```, return to TTY1 and find something about ```drm, nvidia, crtc, modeset```.
+I've made 3 attempts, each one generating a new log files ```login-trigger-test1.log``` and ```login-trigger-test2.log```, but all these 3 tests I could not see image on TTY1 when I return it, even pressing 'ENTER' and input password.
+
+Then I've made an fourth attempt: rebooted the PC, powered off the monitor, powered on again after SDDM login -> no screen (as expected) -> changed to TTTY3 and login with my user, run the command ```sudo dmesg -w -T | tee ~/login-trigger-test3.log``` (notice the number 3 before the '.log'), opened TTY4, run ```sudo systemctl restart sddm```, returned automatically to TTY1, I've pressed 'ENTER', inputed the password, and pressed 'ENTER' again. It entered on my desktop screen.
+
+This obstacle looks like NVIDIA driver + VT Switching have problem to return the "DRM Master" from different TTYs, which escalates this problem in new ways. But it don't minimize the Dell's product failure to send a signal via PIN_18 on displayport to the GPU (HPD faulty).
+

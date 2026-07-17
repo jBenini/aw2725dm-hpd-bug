@@ -1,0 +1,1549 @@
+[qui jul 16 23:49:07 2026] Linux version 7.1.3-2-cachyos (linux-cachyos@cachyos) (clang version 22.1.6, LLD 22.1.6) #1 SMP PREEMPT_DYNAMIC Wed, 08 Jul 2026 06:14:22 +0000
+[qui jul 16 23:49:07 2026] Command line: BOOT_IMAGE=/vmlinuz-linux-cachyos root=/dev/mapper/ArchinstallVg-root rw rootflags=subvol=@ quiet splash loglevel=3 rd.udev.log_level=3 pci=noaer nvidia_drm.modeset=1 nvidia_drm.fbdev=1 vt.global_cursor_default=0
+[qui jul 16 23:49:07 2026] x86/split lock detection: #DB: warning on user-space bus_locks
+[qui jul 16 23:49:07 2026] BIOS-provided physical RAM map:
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x0000000000100000-0x00000000099fefff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x00000000099ff000-0x0000000009ffffff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000000a000000-0x000000000a1fffff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000000a200000-0x000000000a21dfff]  ACPI NVS
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000000a21e000-0x000000000affffff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000000b000000-0x000000000b020fff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000000b021000-0x000000007857efff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000007857f000-0x00000000956fefff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x00000000956ff000-0x00000000976fefff]  ACPI NVS
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x00000000976ff000-0x00000000977fefff]  ACPI data
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x00000000977ff000-0x0000000098096fff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x0000000098097000-0x0000000098097fff]  ACPI NVS
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x0000000098098000-0x0000000099337fff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x0000000099338000-0x0000000099339fff]  ACPI NVS
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000009933a000-0x0000000099ff6fff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x0000000099ff7000-0x0000000099ffbfff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x0000000099ffc000-0x0000000099ffffff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000009a000000-0x000000009bffffff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [gap 0x000000009c000000-0x000000009d7f2fff]
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000009d7f3000-0x000000009fffffff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [gap 0x00000000a0000000-0x00000000dfffffff]
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [gap 0x00000000f0000000-0x00000000f6ffffff]
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x00000000f7000000-0x00000000ffffffff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x0000000100000000-0x0000000fdde7ffff]  System RAM
+[qui jul 16 23:49:07 2026] BIOS-e820: [gap 0x0000000fdde80000-0x0000000fdeebffff]
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x0000000fdeec0000-0x00000010801fffff]  device reserved
+[qui jul 16 23:49:07 2026] BIOS-e820: [gap 0x0000001080200000-0x000000fcffffffff]
+[qui jul 16 23:49:07 2026] BIOS-e820: [mem 0x000000fd00000000-0x000000ffffffffff]  device reserved
+[qui jul 16 23:49:07 2026] NX (Execute Disable) protection: active
+[qui jul 16 23:49:07 2026] APIC: Static calls initialized
+[qui jul 16 23:49:07 2026] efi: EFI v2.11 by American Megatrends
+[qui jul 16 23:49:07 2026] efi: ACPI=0x976e5000 ACPI 2.0=0x976e5014 SMBIOS=0x84248000 SMBIOS 3.0=0x84247000 MEMATTR=0x71e6e018 ESRT=0x7401cf18 INITRD=0x6d233e98 RNG=0x97745018 
+[qui jul 16 23:49:07 2026] random: crng init done
+[qui jul 16 23:49:07 2026] efi: Remove mem78: MMIO range=[0xe0000000-0xefffffff] (256MB) from e820 map
+[qui jul 16 23:49:07 2026] e820: remove [mem 0xe0000000-0xefffffff] device reserved
+[qui jul 16 23:49:07 2026] efi: Remove mem79: MMIO range=[0xf7000000-0xfedfffff] (126MB) from e820 map
+[qui jul 16 23:49:07 2026] e820: remove [mem 0xf7000000-0xfedfffff] device reserved
+[qui jul 16 23:49:07 2026] efi: Not removing mem80: MMIO range=[0xfee00000-0xfee00fff] (4KB) from e820 map
+[qui jul 16 23:49:07 2026] efi: Remove mem81: MMIO range=[0xfee01000-0xffffffff] (17MB) from e820 map
+[qui jul 16 23:49:07 2026] e820: remove [mem 0xfee01000-0xffffffff] device reserved
+[qui jul 16 23:49:07 2026] efi: Remove mem83: MMIO range=[0x1060000000-0x10801fffff] (514MB) from e820 map
+[qui jul 16 23:49:07 2026] e820: remove [mem 0x1060000000-0x10801fffff] device reserved
+[qui jul 16 23:49:07 2026] DMI: SMBIOS 3.8.0 present.
+[qui jul 16 23:49:07 2026] DMI: Micro-Star International Co., Ltd. MS-7E51/MAG X870 TOMAHAWK WIFI (MS-7E51), BIOS 1.A82 03/19/2026
+[qui jul 16 23:49:07 2026] DMI: Memory slots populated: 2/4
+[qui jul 16 23:49:07 2026] tsc: Fast TSC calibration using PIT
+[qui jul 16 23:49:07 2026] tsc: Detected 4699.989 MHz processor
+[qui jul 16 23:49:07 2026] e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+[qui jul 16 23:49:07 2026] e820: remove [mem 0x000a0000-0x000fffff] System RAM
+[qui jul 16 23:49:07 2026] last_pfn = 0xfdde80 max_arch_pfn = 0x400000000
+[qui jul 16 23:49:07 2026] MTRR map: 5 entries (3 fixed + 2 variable; max 20), built from 9 variable MTRRs
+[qui jul 16 23:49:07 2026] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[qui jul 16 23:49:07 2026] e820: update [mem 0xa0000000-0xffffffff] System RAM ==> device reserved
+[qui jul 16 23:49:07 2026] last_pfn = 0x9a000 max_arch_pfn = 0x400000000
+[qui jul 16 23:49:07 2026] esrt: Reserving ESRT space from 0x000000007401cf18 to 0x000000007401cf50.
+[qui jul 16 23:49:07 2026] e820: update [mem 0x7401c000-0x7401cfff] System RAM ==> device reserved
+[qui jul 16 23:49:07 2026] Using GB pages for direct mapping
+[qui jul 16 23:49:07 2026] Secure boot disabled
+[qui jul 16 23:49:07 2026] RAMDISK: [mem 0x58cef000-0x68faafff]
+[qui jul 16 23:49:07 2026] ACPI: Early table checksum verification disabled
+[qui jul 16 23:49:07 2026] ACPI: RSDP 0x00000000976E5014 000024 (v02 ALASKA)
+[qui jul 16 23:49:07 2026] ACPI: XSDT 0x00000000976E4728 000104 (v01 ALASKA A M I    01072009 AMI  01000013)
+[qui jul 16 23:49:07 2026] ACPI: FACP 0x00000000977F4000 000114 (v06 ALASKA A M I    01072009 AMI  00010013)
+[qui jul 16 23:49:07 2026] ACPI: DSDT 0x000000009777D000 06C29E (v02 ALASKA A M I    01072009 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: FACS 0x00000000976E1000 000040
+[qui jul 16 23:49:07 2026] ACPI: _SDM 0x0000000098097000 000055 (v03 ALASKA A M I    01072009 AMI  01000013)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x00000000977F6000 008689 (v02 AMD    Splinter 00000002 MSFT 04000000)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x00000000977F5000 000221 (v02 ALASKA CPUSSDT  01072009 AMI  01072009)
+[qui jul 16 23:49:07 2026] ACPI: FIDT 0x00000000977ED000 00009D (v01 ALASKA A M I    01072009 AMI  00010013)
+[qui jul 16 23:49:07 2026] ACPI: MCFG 0x00000000977EC000 00003C (v01 ALASKA A M I    01072009 MSFT 00010013)
+[qui jul 16 23:49:07 2026] ACPI: HPET 0x00000000977EB000 000038 (v01 ALASKA A M I    01072009 AMI  00000005)
+[qui jul 16 23:49:07 2026] ACPI: UEFI 0x0000000096CCF000 000048 (v01 ALASKA A M I    01072009 AMI  01000013)
+[qui jul 16 23:49:07 2026] ACPI: FPDT 0x00000000977EA000 000044 (v01 ALASKA A M I    01072009 AMI  01000013)
+[qui jul 16 23:49:07 2026] ACPI: VFCT 0x0000000097772000 00AE84 (v01 ALASKA A M I    00000001 AMD  33504F47)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x00000000977EF000 004DEE (v02 AMD    AMD CPU  00000001 AMD  00000001)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x00000000977EE000 000041 (v02 AMD    AppCompD 00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x0000000097764000 00D2AE (v02 AMD    DISCUSB4 00000002 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x0000000097763000 0006D4 (v02 AMD    CPMWLRC  00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x0000000097761000 00169E (v02 AMD    CPMDFIG2 00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x000000009775E000 002AA6 (v02 AMD    CDFAAIG2 00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x000000009775D000 00078F (v02 AMD    CPMDFDG1 00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x0000000097753000 009AF2 (v02 AMD    CPMCMN   00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x0000000097750000 002A9C (v02 AMD    AOD      00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: WSMT 0x000000009774F000 000028 (v01 ALASKA A M I    01072009 AMI  00010013)
+[qui jul 16 23:49:07 2026] ACPI: APIC 0x000000009774E000 00015E (v06 ALASKA A M I    01072009 AMI  00010013)
+[qui jul 16 23:49:07 2026] ACPI: IVRS 0x000000009774D000 0001FE (v02 AMD    AmdTable 00000001 AMD  00000001)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x000000009774C000 000500 (v02 AMD    MEMTOOL0 00000002 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x000000009774B000 0009D0 (v02 AMD    CPMMSOSC 00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x000000009774A000 00047C (v02 AMD    AMDWOV   00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x0000000097748000 001046 (v02 AMD    CPMACPV4 00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x0000000097747000 00053E (v02 AMD    CPMAPMFD 00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: SSDT 0x0000000097746000 00044E (v02 AMD    AmdTable 00000001 INTL 20230628)
+[qui jul 16 23:49:07 2026] ACPI: Reserving FACP table memory at [mem 0x977f4000-0x977f4113]
+[qui jul 16 23:49:07 2026] ACPI: Reserving DSDT table memory at [mem 0x9777d000-0x977e929d]
+[qui jul 16 23:49:07 2026] ACPI: Reserving FACS table memory at [mem 0x976e1000-0x976e103f]
+[qui jul 16 23:49:07 2026] ACPI: Reserving _SDM table memory at [mem 0x98097000-0x98097054]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x977f6000-0x977fe688]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x977f5000-0x977f5220]
+[qui jul 16 23:49:07 2026] ACPI: Reserving FIDT table memory at [mem 0x977ed000-0x977ed09c]
+[qui jul 16 23:49:07 2026] ACPI: Reserving MCFG table memory at [mem 0x977ec000-0x977ec03b]
+[qui jul 16 23:49:07 2026] ACPI: Reserving HPET table memory at [mem 0x977eb000-0x977eb037]
+[qui jul 16 23:49:07 2026] ACPI: Reserving UEFI table memory at [mem 0x96ccf000-0x96ccf047]
+[qui jul 16 23:49:07 2026] ACPI: Reserving FPDT table memory at [mem 0x977ea000-0x977ea043]
+[qui jul 16 23:49:07 2026] ACPI: Reserving VFCT table memory at [mem 0x97772000-0x9777ce83]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x977ef000-0x977f3ded]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x977ee000-0x977ee040]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x97764000-0x977712ad]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x97763000-0x977636d3]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x97761000-0x9776269d]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x9775e000-0x97760aa5]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x9775d000-0x9775d78e]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x97753000-0x9775caf1]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x97750000-0x97752a9b]
+[qui jul 16 23:49:07 2026] ACPI: Reserving WSMT table memory at [mem 0x9774f000-0x9774f027]
+[qui jul 16 23:49:07 2026] ACPI: Reserving APIC table memory at [mem 0x9774e000-0x9774e15d]
+[qui jul 16 23:49:07 2026] ACPI: Reserving IVRS table memory at [mem 0x9774d000-0x9774d1fd]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x9774c000-0x9774c4ff]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x9774b000-0x9774b9cf]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x9774a000-0x9774a47b]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x97748000-0x97749045]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x97747000-0x9774753d]
+[qui jul 16 23:49:07 2026] ACPI: Reserving SSDT table memory at [mem 0x97746000-0x9774644d]
+[qui jul 16 23:49:07 2026] No NUMA configuration found
+[qui jul 16 23:49:07 2026] Faking a node at [mem 0x0000000000000000-0x0000000fdde7ffff]
+[qui jul 16 23:49:07 2026] NODE_DATA(0) allocated [mem 0xfdde54f80-0xfdde7ffff]
+[qui jul 16 23:49:07 2026] ACPI: PM-Timer IO Port: 0x808
+[qui jul 16 23:49:07 2026] ACPI: LAPIC_NMI (acpi_id[0xff] high edge lint[0x1])
+[qui jul 16 23:49:07 2026] IOAPIC[0]: apic_id 32, version 33, address 0xfec00000, GSI 0-23
+[qui jul 16 23:49:07 2026] IOAPIC[1]: apic_id 33, version 33, address 0xfec01000, GSI 24-55
+[qui jul 16 23:49:07 2026] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[qui jul 16 23:49:07 2026] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+[qui jul 16 23:49:07 2026] ACPI: Using ACPI (MADT) for SMP configuration information
+[qui jul 16 23:49:07 2026] ACPI: HPET id: 0x10228201 base: 0xfed00000
+[qui jul 16 23:49:07 2026] CPU topo: Max. logical packages:   1
+[qui jul 16 23:49:07 2026] CPU topo: Max. logical nodes:      1
+[qui jul 16 23:49:07 2026] CPU topo: Num. nodes per package:  1
+[qui jul 16 23:49:07 2026] CPU topo: Max. logical dies:       1
+[qui jul 16 23:49:07 2026] CPU topo: Max. dies per package:   1
+[qui jul 16 23:49:07 2026] CPU topo: Max. threads per core:   2
+[qui jul 16 23:49:07 2026] CPU topo: Num. cores per package:     8
+[qui jul 16 23:49:07 2026] CPU topo: Num. threads per package:  16
+[qui jul 16 23:49:07 2026] CPU topo: Allowing 16 present CPUs plus 0 hotplug CPUs
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x099ff000-0x09ffffff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x0a200000-0x0a21dfff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x0b000000-0x0b020fff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x7401c000-0x7401cfff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x7857f000-0x977fefff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x98097000-0x98097fff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x99338000-0x99339fff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x99ff7000-0x99ffbfff]
+[qui jul 16 23:49:07 2026] PM: hibernation: Registered nosave memory: [mem 0x9a000000-0xffffffff]
+[qui jul 16 23:49:07 2026] [gap 0xa0000000-0xfedfffff] available for PCI devices
+[qui jul 16 23:49:07 2026] Booting paravirtualized kernel on bare hardware
+[qui jul 16 23:49:07 2026] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[qui jul 16 23:49:07 2026] Zone ranges:
+[qui jul 16 23:49:07 2026]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[qui jul 16 23:49:07 2026]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[qui jul 16 23:49:07 2026]   Normal   [mem 0x0000000100000000-0x0000000fdde7ffff]
+[qui jul 16 23:49:07 2026]   Device   empty
+[qui jul 16 23:49:07 2026] Movable zone start for each node
+[qui jul 16 23:49:07 2026] Early memory node ranges
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x0000000000100000-0x00000000099fefff]
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x000000000a000000-0x000000000a1fffff]
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x000000000a21e000-0x000000000affffff]
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x000000000b021000-0x000000007857efff]
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x00000000977ff000-0x0000000098096fff]
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x0000000098098000-0x0000000099337fff]
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x000000009933a000-0x0000000099ff6fff]
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x0000000099ffc000-0x0000000099ffffff]
+[qui jul 16 23:49:07 2026]   node   0: [mem 0x0000000100000000-0x0000000fdde7ffff]
+[qui jul 16 23:49:07 2026] Initmem setup node 0 [mem 0x0000000000001000-0x0000000fdde7ffff]
+[qui jul 16 23:49:07 2026] On node 0, zone DMA: 1 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone DMA: 96 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone DMA32: 1537 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone DMA32: 30 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone DMA32: 33 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone DMA32: 62080 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone DMA32: 1 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone DMA32: 2 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone DMA32: 5 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone Normal: 24576 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] On node 0, zone Normal: 8576 pages in unavailable ranges
+[qui jul 16 23:49:07 2026] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+[qui jul 16 23:49:07 2026] percpu: Embedded 63 pages/cpu s221184 r8192 d28672 u262144
+[qui jul 16 23:49:07 2026] pcpu-alloc: s221184 r8192 d28672 u262144 alloc=1*2097152
+[qui jul 16 23:49:07 2026] pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15 
+[qui jul 16 23:49:07 2026] Kernel command line: BOOT_IMAGE=/vmlinuz-linux-cachyos root=/dev/mapper/ArchinstallVg-root rw rootflags=subvol=@ quiet splash loglevel=3 rd.udev.log_level=3 pci=noaer nvidia_drm.modeset=1 nvidia_drm.fbdev=1 vt.global_cursor_default=0
+[qui jul 16 23:49:07 2026] Unknown kernel command line parameters "splash", will be passed to user space.
+[qui jul 16 23:49:07 2026] printk: log buffer data + meta data: 131072 + 557056 = 688128 bytes
+[qui jul 16 23:49:07 2026] Dentry cache hash table entries: 8388608 (order: 14, 67108864 bytes, linear)
+[qui jul 16 23:49:07 2026] Inode-cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+[qui jul 16 23:49:07 2026] software IO TLB: area num 16.
+[qui jul 16 23:49:07 2026] Fallback order for Node 0: 0 
+[qui jul 16 23:49:07 2026] Built 1 zonelists, mobility grouping on.  Total pages: 16090455
+[qui jul 16 23:49:07 2026] Policy zone: Normal
+[qui jul 16 23:49:07 2026] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[qui jul 16 23:49:07 2026] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+[qui jul 16 23:49:07 2026] ftrace: allocating 57222 entries in 224 pages
+[qui jul 16 23:49:07 2026] ftrace: allocated 224 pages with 3 groups
+[qui jul 16 23:49:07 2026] Dynamic Preempt: full
+[qui jul 16 23:49:07 2026] rcu: Preemptible hierarchical RCU implementation.
+[qui jul 16 23:49:07 2026] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+[qui jul 16 23:49:07 2026] rcu: 	RCU priority boosting: priority 1 delay 500 ms.
+[qui jul 16 23:49:07 2026] 	Trampoline variant of Tasks RCU enabled.
+[qui jul 16 23:49:07 2026] 	Rude variant of Tasks RCU enabled.
+[qui jul 16 23:49:07 2026] 	Tracing variant of Tasks RCU enabled.
+[qui jul 16 23:49:07 2026] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[qui jul 16 23:49:07 2026] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+[qui jul 16 23:49:07 2026] RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+[qui jul 16 23:49:07 2026] RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+[qui jul 16 23:49:07 2026] NR_IRQS: 524544, nr_irqs: 1096, preallocated irqs: 16
+[qui jul 16 23:49:07 2026] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[qui jul 16 23:49:07 2026] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[qui jul 16 23:49:07 2026] Console: colour dummy device 80x25
+[qui jul 16 23:49:07 2026] printk: legacy console [tty0] enabled
+[qui jul 16 23:49:07 2026] ACPI: Core revision 20251212
+[qui jul 16 23:49:07 2026] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484873504 ns
+[qui jul 16 23:49:07 2026] APIC: Switch to symmetric I/O mode setup
+[qui jul 16 23:49:07 2026] AMD-Vi: ivrs, add hid:AMDI0020, uid:ID00, rdevid:0xa0
+[qui jul 16 23:49:07 2026] AMD-Vi: ivrs, add hid:AMDI0020, uid:ID01, rdevid:0xa0
+[qui jul 16 23:49:07 2026] AMD-Vi: ivrs, add hid:AMDI0020, uid:ID02, rdevid:0xa0
+[qui jul 16 23:49:07 2026] AMD-Vi: ivrs, add hid:AMDI0020, uid:ID03, rdevid:0x98
+[qui jul 16 23:49:07 2026] AMD-Vi: ivrs, add hid:AMDI0020, uid:ID04, rdevid:0x98
+[qui jul 16 23:49:07 2026] AMD-Vi: Using global IVHD EFR:0x246577efa2254afa, EFR2:0x0
+[qui jul 16 23:49:07 2026] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[qui jul 16 23:49:07 2026] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x43bf61f1c0b, max_idle_ns: 440795249625 ns
+[qui jul 16 23:49:07 2026] Calibrating delay loop (skipped), value calculated using timer frequency.. 9399.97 BogoMIPS (lpj=4699989)
+[qui jul 16 23:49:07 2026] x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[qui jul 16 23:49:07 2026] LVT offset 1 assigned for vector 0xf9
+[qui jul 16 23:49:07 2026] LVT offset 2 assigned for vector 0xf4
+[qui jul 16 23:49:07 2026] Last level iTLB entries: 4KB 64, 2MB 64, 4MB 32
+[qui jul 16 23:49:07 2026] Last level dTLB entries: 4KB 128, 2MB 128, 4MB 64, 1GB 0
+[qui jul 16 23:49:07 2026] process: using mwait in idle threads
+[qui jul 16 23:49:07 2026] mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+[qui jul 16 23:49:07 2026] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[qui jul 16 23:49:07 2026] Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+[qui jul 16 23:49:07 2026] Spectre V2 : User space: Mitigation: STIBP always-on protection
+[qui jul 16 23:49:07 2026] Speculative Return Stack Overflow: Mitigation: IBPB on VMEXIT only
+[qui jul 16 23:49:07 2026] VMSCAPE: Mitigation: IBPB on VMEXIT
+[qui jul 16 23:49:07 2026] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[qui jul 16 23:49:07 2026] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[qui jul 16 23:49:07 2026] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[qui jul 16 23:49:07 2026] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[qui jul 16 23:49:07 2026] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[qui jul 16 23:49:07 2026] x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+[qui jul 16 23:49:07 2026] x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+[qui jul 16 23:49:07 2026] x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+[qui jul 16 23:49:07 2026] x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+[qui jul 16 23:49:07 2026] x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+[qui jul 16 23:49:07 2026] x86/fpu: Supporting XSAVE feature 0x1000: 'Control-flow Kernel registers (KVM only)'
+[qui jul 16 23:49:07 2026] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[qui jul 16 23:49:07 2026] x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+[qui jul 16 23:49:07 2026] x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+[qui jul 16 23:49:07 2026] x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+[qui jul 16 23:49:07 2026] x86/fpu: xstate_offset[9]: 2432, xstate_sizes[9]:    8
+[qui jul 16 23:49:07 2026] x86/fpu: xstate_offset[11]: 2440, xstate_sizes[11]:   16
+[qui jul 16 23:49:07 2026] x86/fpu: xstate_offset[12]: 2456, xstate_sizes[12]:   24
+[qui jul 16 23:49:07 2026] x86/fpu: Enabled xstate features 0x1ae7, context size is 2480 bytes, using 'compacted' format.
+[qui jul 16 23:49:07 2026] pid_max: default: 32768 minimum: 301
+[qui jul 16 23:49:07 2026] landlock: Up and running.
+[qui jul 16 23:49:07 2026] Yama: becoming mindful.
+[qui jul 16 23:49:07 2026] LSM support for eBPF active
+[qui jul 16 23:49:07 2026] Mount-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[qui jul 16 23:49:07 2026] Mountpoint-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[qui jul 16 23:49:07 2026] VFS: Finished mounting rootfs on nullfs
+[qui jul 16 23:49:07 2026] smpboot: CPU0: AMD Ryzen 7 9800X3D 8-Core Processor (family: 0x1a, model: 0x44, stepping: 0x0)
+[qui jul 16 23:49:07 2026] Performance Events: Fam17h+ 16-deep LBR, core perfctr, AMD PMU driver.
+[qui jul 16 23:49:07 2026] ... version:                   2
+[qui jul 16 23:49:07 2026] ... bit width:                 48
+[qui jul 16 23:49:07 2026] ... generic counters:          6
+[qui jul 16 23:49:07 2026] ... generic bitmap:            000000000000003f
+[qui jul 16 23:49:07 2026] ... fixed-purpose counters:    0
+[qui jul 16 23:49:07 2026] ... fixed-purpose bitmap:      0000000000000000
+[qui jul 16 23:49:07 2026] ... value mask:                0000ffffffffffff
+[qui jul 16 23:49:07 2026] ... max period:                00007fffffffffff
+[qui jul 16 23:49:07 2026] ... global_ctrl mask:          000000000000003f
+[qui jul 16 23:49:07 2026] signal: max sigframe size: 3376
+[qui jul 16 23:49:07 2026] rcu: Hierarchical SRCU implementation.
+[qui jul 16 23:49:07 2026] rcu: 	Max phase no-delay instances is 400.
+[qui jul 16 23:49:07 2026] Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+[qui jul 16 23:49:07 2026] MCE: In-kernel MCE decoding enabled.
+[qui jul 16 23:49:07 2026] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[qui jul 16 23:49:07 2026] smp: Bringing up secondary CPUs ...
+[qui jul 16 23:49:07 2026] smpboot: x86: Booting SMP configuration:
+[qui jul 16 23:49:07 2026] .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8  #9 #10 #11 #12 #13 #14 #15
+[qui jul 16 23:49:07 2026] Spectre V2 : Update user space SMT mitigation: STIBP always-on
+[qui jul 16 23:49:07 2026] smp: Brought up 1 node, 16 CPUs
+[qui jul 16 23:49:07 2026] smpboot: Total of 16 processors activated (150399.64 BogoMIPS)
+[qui jul 16 23:49:07 2026] Memory: 62727784K/64361820K available (22622K kernel code, 2915K rwdata, 17016K rodata, 4792K init, 4332K bss, 1608716K reserved, 0K cma-reserved)
+[qui jul 16 23:49:07 2026] devtmpfs: initialized
+[qui jul 16 23:49:07 2026] x86/mm: Memory block size: 128MB
+[qui jul 16 23:49:07 2026] ACPI: PM: Registering ACPI NVS region [mem 0x0a200000-0x0a21dfff] (122880 bytes)
+[qui jul 16 23:49:07 2026] ACPI: PM: Registering ACPI NVS region [mem 0x956ff000-0x976fefff] (33554432 bytes)
+[qui jul 16 23:49:07 2026] ACPI: PM: Registering ACPI NVS region [mem 0x98097000-0x98097fff] (4096 bytes)
+[qui jul 16 23:49:07 2026] ACPI: PM: Registering ACPI NVS region [mem 0x99338000-0x99339fff] (8192 bytes)
+[qui jul 16 23:49:07 2026] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[qui jul 16 23:49:07 2026] posixtimers hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[qui jul 16 23:49:07 2026] futex hash table entries: 4096 (262144 bytes on 1 NUMA nodes, total 256 KiB, linear).
+[qui jul 16 23:49:07 2026] xor: automatically using best checksumming function   avx       
+[qui jul 16 23:49:07 2026] PM: RTC time: 02:49:07, date: 2026-07-17
+[qui jul 16 23:49:07 2026] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[qui jul 16 23:49:07 2026] DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+[qui jul 16 23:49:07 2026] DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[qui jul 16 23:49:07 2026] DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[qui jul 16 23:49:07 2026] audit: initializing netlink subsys (disabled)
+[qui jul 16 23:49:07 2026] audit: type=2000 audit(1784256547.134:1): state=initialized audit_enabled=0 res=1
+[qui jul 16 23:49:07 2026] thermal_sys: Registered thermal governor 'fair_share'
+[qui jul 16 23:49:07 2026] thermal_sys: Registered thermal governor 'bang_bang'
+[qui jul 16 23:49:07 2026] thermal_sys: Registered thermal governor 'step_wise'
+[qui jul 16 23:49:07 2026] thermal_sys: Registered thermal governor 'user_space'
+[qui jul 16 23:49:07 2026] thermal_sys: Registered thermal governor 'power_allocator'
+[qui jul 16 23:49:07 2026] cpuidle: using governor ladder
+[qui jul 16 23:49:07 2026] cpuidle: using governor menu
+[qui jul 16 23:49:07 2026] Freeing SMP alternatives memory: 64K
+[qui jul 16 23:49:07 2026] efi: Freeing EFI boot services memory: 98212K
+[qui jul 16 23:49:07 2026] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[qui jul 16 23:49:07 2026] PCI: ECAM [mem 0xe0000000-0xefffffff] (base 0xe0000000) for domain 0000 [bus 00-ff]
+[qui jul 16 23:49:07 2026] PCI: Using configuration type 1 for base access
+[qui jul 16 23:49:07 2026] virt/tdx: TDX not supported by the host platform
+[qui jul 16 23:49:07 2026] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[qui jul 16 23:49:07 2026] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[qui jul 16 23:49:07 2026] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[qui jul 16 23:49:07 2026] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[qui jul 16 23:49:07 2026] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[qui jul 16 23:49:07 2026] raid6: skipped pq benchmark and selected avx512x4
+[qui jul 16 23:49:07 2026] raid6: using avx512x2 recovery algorithm
+[qui jul 16 23:49:07 2026] ACPI: Added _OSI(Module Device)
+[qui jul 16 23:49:07 2026] ACPI: Added _OSI(Processor Device)
+[qui jul 16 23:49:07 2026] ACPI: Added _OSI(Processor Aggregator Device)
+[qui jul 16 23:49:07 2026] ACPI: 18 ACPI AML tables successfully acquired and loaded
+[qui jul 16 23:49:07 2026] ACPI: \_SB_: platform _OSC: OS support mask [006e7eff]
+[qui jul 16 23:49:07 2026] ACPI: \_SB_: platform _OSC: OS control mask [006e7eff]
+[qui jul 16 23:49:07 2026] ACPI: USB4 _OSC: OS supports USB3+ DisplayPort+ PCIe+ XDomain+
+[qui jul 16 23:49:07 2026] ACPI: USB4 _OSC: OS controls USB3+ DisplayPort+ PCIe+ XDomain+
+[qui jul 16 23:49:07 2026] ACPI: Interpreter enabled
+[qui jul 16 23:49:07 2026] ACPI: PM: (supports S0 S3 S4 S5)
+[qui jul 16 23:49:07 2026] ACPI: Using IOAPIC for interrupt routing
+[qui jul 16 23:49:07 2026] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[qui jul 16 23:49:07 2026] PCI: Ignoring E820 reservations for host bridge windows
+[qui jul 16 23:49:07 2026] ACPI: Enabled 10 GPEs in block 00 to 1F
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GP17.XHC0.P0U0: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GP17.XHC1.P0U1: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GP19.XHC2.P0U2: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP0.M237: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP1.P0NV: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP08.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP08.EP00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP10.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP10.WN00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP18.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP18.LN00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP20.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP28.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP30.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP30.EP00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP38.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP38.EP00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP40.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP48.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP48.EP00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP50.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP50.EP00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP58.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP58.EP00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP60.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP60.XH00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP68.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP7.UP00.DP68.SA00.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.U4UP.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.U4UP.U4P0.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.U4UP.U4P0.UP0D.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.U4UP.U4P1.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.U4UP.U4P1.UP1D.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.U4UP.U4P2.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.U4UP.U4P2.UXHC.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.U4UP.U4P3.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PCI0.GPP8.U4UP.U4P3.UHI0.PWRS: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PRWL: New power resource
+[qui jul 16 23:49:07 2026] ACPI: \_SB_.PRWB: New power resource
+[qui jul 16 23:49:07 2026] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[qui jul 16 23:49:07 2026] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+[qui jul 16 23:49:07 2026] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME PCIeCapability LTR DPC]
+[qui jul 16 23:49:07 2026] PCI host bridge to bus 0000:00
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [io  0x0000-0x03af window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [io  0x03e0-0x0cf7 window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [io  0x03b0-0x03df window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000dffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [mem 0xf2000000-0xf6ffffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [mem 0xf0000000-0xf1ffffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [mem 0xa0000000-0xdfffffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [mem 0x1060000000-0xfcffffffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: root bus resource [bus 00-ff]
+[qui jul 16 23:49:07 2026] pci 0000:00:00.0: [1022:14d8] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:00.2: [1022:14d9] type 00 class 0x080600 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:01.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1: PCI bridge to [bus 01]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1:   bridge window [io  0xf000-0xffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1:   bridge window [mem 0xd8000000-0xdc0fffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1:   bridge window [mem 0xf800000000-0xfc01ffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:01.2: [1022:14db] type 01 class 0x060400 PCIe Root Port
+[qui jul 16 23:49:07 2026] pci 0000:00:01.2: PCI bridge to [bus 02]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.2:   bridge window [mem 0xdcf00000-0xdcffffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.2: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:02.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1: PCI bridge to [bus 03-0d]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1:   bridge window [io  0xe000-0xefff]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1:   bridge window [mem 0xdc800000-0xdccfffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2: [1022:14db] type 01 class 0x060400 PCIe Root Port
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2: PCI bridge to [bus 0e-71]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2:   bridge window [io  0x7000-0xcfff]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2:   bridge window [mem 0xa4000000-0xd47fffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2:   bridge window [mem 0xb800000000-0xf7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:03.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:03.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
+[qui jul 16 23:49:07 2026] pci 0000:00:03.1: PCI bridge to [bus 72]
+[qui jul 16 23:49:07 2026] pci 0000:00:03.1:   bridge window [mem 0xdce00000-0xdcefffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:03.1: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:04.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:08.0: [1022:14da] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1: [1022:14dd] type 01 class 0x060400 PCIe Root Port
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1: PCI bridge to [bus 73]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1:   bridge window [io  0xd000-0xdfff]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1:   bridge window [mem 0xdc200000-0xdc7fffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1:   bridge window [mem 0xfc10000000-0xfc1fffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:08.3: [1022:14dd] type 01 class 0x060400 PCIe Root Port
+[qui jul 16 23:49:07 2026] pci 0000:00:08.3: PCI bridge to [bus 74]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.3:   bridge window [mem 0xdcd00000-0xdcdfffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.3: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:00:08.3: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:14.0: [1022:790b] type 00 class 0x0c0500 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:14.3: [1022:790e] type 00 class 0x060100 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:18.0: [1022:14e0] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:18.1: [1022:14e1] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:18.2: [1022:14e2] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:18.3: [1022:14e3] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:18.4: [1022:14e4] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:18.5: [1022:14e5] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:18.6: [1022:14e6] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:00:18.7: [1022:14e7] type 00 class 0x060000 conventional PCI endpoint
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: [10de:2c05] type 00 class 0x030000 PCIe Legacy Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: BAR 0 [mem 0xd8000000-0xdbffffff]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: BAR 1 [mem 0xf800000000-0xfbffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: BAR 3 [mem 0xfc00000000-0xfc01ffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: BAR 5 [io  0xf000-0xf07f]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: ROM [mem 0xdc000000-0xdc07ffff pref]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: Enabling HDA controller
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: PME# supported from D0 D3hot
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 0 [mem 0x00000000-0x0003ffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 0 [mem 0x00000000-0x0003ffff 64bit pref]: contains BAR 0 for 1 VFs
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 2 [mem 0x00000000-0x0fffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 2 [mem 0x00000000-0x0fffffff 64bit pref]: contains BAR 2 for 1 VFs
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 4 [mem 0x00000000-0x01ffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 4 [mem 0x00000000-0x01ffffff 64bit pref]: contains BAR 4 for 1 VFs
+[qui jul 16 23:49:07 2026] pci 0000:01:00.1: [10de:22e9] type 00 class 0x040300 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:01:00.1: BAR 0 [mem 0xdc080000-0xdc083fff]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1: PCI bridge to [bus 01]
+[qui jul 16 23:49:07 2026] pci 0000:02:00.0: [144d:a80c] type 00 class 0x010802 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:02:00.0: BAR 0 [mem 0xdcf00000-0xdcf03fff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.2: PCI bridge to [bus 02]
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0: [1022:43f4] type 01 class 0x060400 PCIe Switch Upstream Port
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0: PCI bridge to [bus 04-0d]
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0:   bridge window [io  0xe000-0xefff]
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0:   bridge window [mem 0xdc800000-0xdccfffff]
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1: PCI bridge to [bus 03-0d]
+[qui jul 16 23:49:07 2026] pci 0000:04:00.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:04:00.0: PCI bridge to [bus 05]
+[qui jul 16 23:49:07 2026] pci 0000:04:00.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:04:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:02.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:04:02.0: PCI bridge to [bus 06]
+[qui jul 16 23:49:07 2026] pci 0000:04:02.0:   bridge window [mem 0xdcc00000-0xdccfffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:02.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:04:02.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:04.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:04:04.0: PCI bridge to [bus 07]
+[qui jul 16 23:49:07 2026] pci 0000:04:04.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:04:04.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:05.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:04:05.0: PCI bridge to [bus 08]
+[qui jul 16 23:49:07 2026] pci 0000:04:05.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:04:05.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0: PCI bridge to [bus 09]
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0:   bridge window [io  0xe000-0xefff]
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0:   bridge window [mem 0xdcb00000-0xdcbfffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:07.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:04:07.0: PCI bridge to [bus 0a]
+[qui jul 16 23:49:07 2026] pci 0000:04:07.0:   bridge window [mem 0xdca00000-0xdcafffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:07.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:04:07.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:08.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:04:08.0: PCI bridge to [bus 0b]
+[qui jul 16 23:49:07 2026] pci 0000:04:08.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:04:08.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:0c.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:04:0c.0: PCI bridge to [bus 0c]
+[qui jul 16 23:49:07 2026] pci 0000:04:0c.0:   bridge window [mem 0xdc900000-0xdc9fffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:0c.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:04:0c.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:0d.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:04:0d.0: PCI bridge to [bus 0d]
+[qui jul 16 23:49:07 2026] pci 0000:04:0d.0:   bridge window [mem 0xdc800000-0xdc8fffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:0d.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:04:0d.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0: PCI bridge to [bus 04-0d]
+[qui jul 16 23:49:07 2026] pci 0000:04:00.0: PCI bridge to [bus 05]
+[qui jul 16 23:49:07 2026] pci 0000:06:00.0: [2646:5028] type 00 class 0x010802 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:06:00.0: BAR 0 [mem 0xdcc00000-0xdcc03fff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:06:00.0: 31.506 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x2 link at 0000:04:02.0 (capable of 63.012 Gb/s with 16.0 GT/s PCIe x4 link)
+[qui jul 16 23:49:07 2026] pci 0000:04:02.0: PCI bridge to [bus 06]
+[qui jul 16 23:49:07 2026] pci 0000:04:04.0: PCI bridge to [bus 07]
+[qui jul 16 23:49:07 2026] pci 0000:04:05.0: PCI bridge to [bus 08]
+[qui jul 16 23:49:07 2026] pci 0000:09:00.0: [10ec:8126] type 00 class 0x020000 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:09:00.0: BAR 0 [io  0xe000-0xe0ff]
+[qui jul 16 23:49:07 2026] pci 0000:09:00.0: BAR 2 [mem 0xdcb00000-0xdcb0ffff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:09:00.0: BAR 4 [mem 0xdcb10000-0xdcb13fff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:09:00.0: supports D1 D2
+[qui jul 16 23:49:07 2026] pci 0000:09:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0: PCI bridge to [bus 09]
+[qui jul 16 23:49:07 2026] pci 0000:0a:00.0: [1b21:1064] type 00 class 0x010601 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:0a:00.0: BAR 0 [mem 0xdca82000-0xdca83fff]
+[qui jul 16 23:49:07 2026] pci 0000:0a:00.0: BAR 5 [mem 0xdca80000-0xdca81fff]
+[qui jul 16 23:49:07 2026] pci 0000:0a:00.0: ROM [mem 0xdca00000-0xdca7ffff pref]
+[qui jul 16 23:49:07 2026] pci 0000:0a:00.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:0a:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:07.0: PCI bridge to [bus 0a]
+[qui jul 16 23:49:07 2026] pci 0000:04:08.0: PCI bridge to [bus 0b]
+[qui jul 16 23:49:07 2026] pci 0000:0c:00.0: [1022:43fc] type 00 class 0x0c0330 PCIe Legacy Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:0c:00.0: BAR 0 [mem 0xdc900000-0xdc907fff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:0c:00.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:0c:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:0c.0: PCI bridge to [bus 0c]
+[qui jul 16 23:49:07 2026] pci 0000:0d:00.0: [1022:43f6] type 00 class 0x010601 PCIe Legacy Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:0d:00.0: BAR 5 [mem 0xdc880000-0xdc8803ff]
+[qui jul 16 23:49:07 2026] pci 0000:0d:00.0: ROM [mem 0xdc800000-0xdc87ffff pref]
+[qui jul 16 23:49:07 2026] pci 0000:0d:00.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:0d:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:04:0d.0: PCI bridge to [bus 0d]
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0: [1b21:2421] type 01 class 0x060400 PCIe Switch Upstream Port
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0: PCI bridge to [bus 0f-71]
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0:   bridge window [io  0x7000-0xcfff]
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0:   bridge window [mem 0xa4000000-0xd47fffff]
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0:   bridge window [mem 0xb800000000-0xf7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0: 31.506 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x2 link at 0000:00:02.2 (capable of 63.012 Gb/s with 16.0 GT/s PCIe x4 link)
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2: PCI bridge to [bus 0e-71]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0: [1b21:2423] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0: PCI bridge to [bus 10-3f]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0:   bridge window [io  0xa000-0xcfff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0:   bridge window [mem 0xbc000000-0xd3ffffff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0:   bridge window [mem 0xd800000000-0xf7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0: [1b21:2423] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0: PCI bridge to [bus 40-6f]
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0:   bridge window [io  0x7000-0x9fff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0:   bridge window [mem 0xa4000000-0xbbffffff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0:   bridge window [mem 0xb800000000-0xd7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:0f:02.0: [1b21:2423] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:0f:02.0: PCI bridge to [bus 70]
+[qui jul 16 23:49:07 2026] pci 0000:0f:02.0:   bridge window [mem 0xd4400000-0xd47fffff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:02.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:0f:03.0: [1b21:2423] type 01 class 0x060400 PCIe Switch Downstream Port
+[qui jul 16 23:49:07 2026] pci 0000:0f:03.0: PCI bridge to [bus 71]
+[qui jul 16 23:49:07 2026] pci 0000:0f:03.0:   bridge window [mem 0xd4000000-0xd43fffff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:03.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0: PCI bridge to [bus 0f-71]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0: PCI bridge to [bus 10-3f]
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0: PCI bridge to [bus 40-6f]
+[qui jul 16 23:49:07 2026] pci 0000:70:00.0: [1b21:2426] type 00 class 0x0c0330 PCIe Legacy Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:70:00.0: BAR 0 [mem 0xd4400000-0xd4407fff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:70:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:0f:02.0: PCI bridge to [bus 70]
+[qui jul 16 23:49:07 2026] pci 0000:71:00.0: [1b21:2425] type 00 class 0x0c0340 PCIe Legacy Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:71:00.0: BAR 0 [mem 0xd4000000-0xd403ffff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:71:00.0: BAR 2 [mem 0xd4040000-0xd404ffff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:71:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:0f:03.0: PCI bridge to [bus 71]
+[qui jul 16 23:49:07 2026] pci 0000:72:00.0: [144d:a80c] type 00 class 0x010802 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:72:00.0: BAR 0 [mem 0xdce00000-0xdce03fff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:72:00.0: 31.506 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x2 link at 0000:00:03.1 (capable of 63.012 Gb/s with 16.0 GT/s PCIe x4 link)
+[qui jul 16 23:49:07 2026] pci 0000:00:03.1: PCI bridge to [bus 72]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: [1002:13c0] type 00 class 0x030000 PCIe Legacy Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: BAR 0 [mem 0xfc10000000-0xfc1fffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: BAR 2 [mem 0xdc200000-0xdc3fffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: BAR 4 [io  0xd000-0xd0ff]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: BAR 5 [mem 0xdc700000-0xdc77ffff]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: PME# supported from D1 D2 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:73:00.1: [1002:1640] type 00 class 0x040300 PCIe Legacy Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:73:00.1: BAR 0 [mem 0xdc788000-0xdc78bfff]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.1: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:73:00.1: PME# supported from D1 D2 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:73:00.2: [1022:1649] type 00 class 0x108000 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:73:00.2: BAR 2 [mem 0xdc600000-0xdc6fffff]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.2: BAR 5 [mem 0xdc78c000-0xdc78dfff]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.2: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:73:00.3: [1022:15b6] type 00 class 0x0c0330 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:73:00.3: BAR 0 [mem 0xdc500000-0xdc5fffff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.3: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:73:00.3: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:73:00.4: [1022:15b7] type 00 class 0x0c0330 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:73:00.4: BAR 0 [mem 0xdc400000-0xdc4fffff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.4: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:73:00.4: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:73:00.6: [1022:15e3] type 00 class 0x040300 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:73:00.6: BAR 0 [mem 0xdc780000-0xdc787fff]
+[qui jul 16 23:49:07 2026] pci 0000:73:00.6: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:73:00.6: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1: PCI bridge to [bus 73]
+[qui jul 16 23:49:07 2026] pci 0000:74:00.0: [1022:15b8] type 00 class 0x0c0330 PCIe Endpoint
+[qui jul 16 23:49:07 2026] pci 0000:74:00.0: BAR 0 [mem 0xdcd00000-0xdcdfffff 64bit]
+[qui jul 16 23:49:07 2026] pci 0000:74:00.0: enabling Extended Tags
+[qui jul 16 23:49:07 2026] pci 0000:74:00.0: PME# supported from D0 D3hot D3cold
+[qui jul 16 23:49:07 2026] pci 0000:00:08.3: PCI bridge to [bus 74]
+[qui jul 16 23:49:07 2026] ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+[qui jul 16 23:49:07 2026] ACPI: PCI: Interrupt link LNKB configured for IRQ 0
+[qui jul 16 23:49:07 2026] ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+[qui jul 16 23:49:07 2026] ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+[qui jul 16 23:49:07 2026] ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+[qui jul 16 23:49:07 2026] ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+[qui jul 16 23:49:07 2026] ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+[qui jul 16 23:49:07 2026] ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+[qui jul 16 23:49:07 2026] iommu: Default domain type: Translated
+[qui jul 16 23:49:07 2026] iommu: DMA domain TLB invalidation policy: lazy mode
+[qui jul 16 23:49:07 2026] SCSI subsystem initialized
+[qui jul 16 23:49:07 2026] libata version 3.00 loaded.
+[qui jul 16 23:49:07 2026] ACPI: bus type USB registered
+[qui jul 16 23:49:07 2026] usbcore: registered new interface driver usbfs
+[qui jul 16 23:49:07 2026] usbcore: registered new interface driver hub
+[qui jul 16 23:49:07 2026] usbcore: registered new device driver usb
+[qui jul 16 23:49:07 2026] EDAC MC: Ver: 3.0.0
+[qui jul 16 23:49:07 2026] efivars: Registered efivars operations
+[qui jul 16 23:49:07 2026] NetLabel: Initializing
+[qui jul 16 23:49:07 2026] NetLabel:  domain hash size = 128
+[qui jul 16 23:49:07 2026] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[qui jul 16 23:49:07 2026] NetLabel:  unlabeled traffic allowed by default
+[qui jul 16 23:49:07 2026] mctp: management component transport protocol core
+[qui jul 16 23:49:07 2026] NET: Registered PF_MCTP protocol family
+[qui jul 16 23:49:07 2026] PCI: Using ACPI for IRQ routing
+[qui jul 16 23:49:07 2026] PCI: pci_cache_line_size set to 64 bytes
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0x099ff000-0x0bffffff]
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0x0a200000-0x0bffffff]
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0x0b000000-0x0bffffff]
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0x7401c000-0x77ffffff]
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0x7857f000-0x7bffffff]
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0x98097000-0x9bffffff]
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0x99338000-0x9bffffff]
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0x99ff7000-0x9bffffff]
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0x9a000000-0x9bffffff]
+[qui jul 16 23:49:07 2026] e820: register RAM buffer resource [mem 0xfdde80000-0xfdfffffff]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: vgaarb: setting as boot VGA device
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: vgaarb: bridge control possible
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: vgaarb: setting as boot VGA device (overriding previous)
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: vgaarb: bridge control possible
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+[qui jul 16 23:49:07 2026] vgaarb: loaded
+[qui jul 16 23:49:07 2026] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[qui jul 16 23:49:07 2026] hpet0: 3 comparators, 32-bit 14.318180 MHz counter
+[qui jul 16 23:49:07 2026] clocksource: Switched to clocksource tsc-early
+[qui jul 16 23:49:07 2026] VFS: Disk quotas dquot_6.6.0
+[qui jul 16 23:49:07 2026] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[qui jul 16 23:49:07 2026] acpi PNP0C01:00: Reserved [mem 0xe0000000-0xefffffff]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:00: Could not reserve [mem 0xf7500000-0xf757ffff]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:01: Reserved [mem 0xfe0000000-0x105fffffff]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:02: Reserved [io  0x0a00-0x0a0f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:02: Reserved [io  0x0a10-0x0a1f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:02: Reserved [io  0x0a20-0x0a2f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0010-0x001f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0022-0x003f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0063]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0065]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0067-0x006f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0072-0x007f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0080]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0084-0x0086]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0088]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x008c-0x008e]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x0090-0x009f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x00a2-0x00bf]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x00b1]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Skipped [io  0x00e0-0x00ef]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x04d0-0x04d1]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x040b]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x04d6]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0c00-0x0c01]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0c14]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0c50-0x0c51]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0c52]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0c6c]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0c6f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0cd8-0x0cdf]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0800-0x089f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0b00-0x0b0f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0b20-0x0b3f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0900-0x090f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [io  0x0910-0x091f]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [mem 0xfedc0000-0xfedc0fff]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [mem 0xfee00000-0xfee00fff]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [mem 0xfec10000-0xfec10fff]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [mem 0xfeb00000-0xfeb00fff]
+[qui jul 16 23:49:07 2026] acpi PNP0C02:03: Reserved [mem 0xff000000-0xffffffff]
+[qui jul 16 23:49:07 2026] pnp: PnP ACPI init
+[qui jul 16 23:49:07 2026] pnp: PnP ACPI: found 0 devices
+[qui jul 16 23:49:07 2026] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[qui jul 16 23:49:07 2026] NET: Registered PF_INET protocol family
+[qui jul 16 23:49:07 2026] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[qui jul 16 23:49:07 2026] tcp_listen_portaddr_hash hash table entries: 32768 (order: 7, 524288 bytes, linear)
+[qui jul 16 23:49:07 2026] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[qui jul 16 23:49:07 2026] TCP established hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[qui jul 16 23:49:07 2026] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[qui jul 16 23:49:07 2026] TCP: Hash tables configured (established 524288 bind 65536)
+[qui jul 16 23:49:07 2026] MPTCP token hash table entries: 65536 (order: 9, 1572864 bytes, linear)
+[qui jul 16 23:49:07 2026] UDP hash table entries: 32768 (order: 9, 2097152 bytes, linear)
+[qui jul 16 23:49:07 2026] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[qui jul 16 23:49:07 2026] NET: Registered PF_XDP protocol family
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 2 [mem size 0x10000000 64bit pref]: can't assign; no space
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 2 [mem size 0x10000000 64bit pref]: failed to assign
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 4 [mem size 0x02000000 64bit pref]: can't assign; no space
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 4 [mem size 0x02000000 64bit pref]: failed to assign
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: VF BAR 0 [mem 0xdc0c0000-0xdc0fffff 64bit pref]: assigned
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1: PCI bridge to [bus 01]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1:   bridge window [io  0xf000-0xffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1:   bridge window [mem 0xd8000000-0xdc0fffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1:   bridge window [mem 0xf800000000-0xfc01ffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.2: PCI bridge to [bus 02]
+[qui jul 16 23:49:07 2026] pci 0000:00:01.2:   bridge window [mem 0xdcf00000-0xdcffffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:00.0: PCI bridge to [bus 05]
+[qui jul 16 23:49:07 2026] pci 0000:04:02.0: PCI bridge to [bus 06]
+[qui jul 16 23:49:07 2026] pci 0000:04:02.0:   bridge window [mem 0xdcc00000-0xdccfffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:04.0: PCI bridge to [bus 07]
+[qui jul 16 23:49:07 2026] pci 0000:04:05.0: PCI bridge to [bus 08]
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0: PCI bridge to [bus 09]
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0:   bridge window [io  0xe000-0xefff]
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0:   bridge window [mem 0xdcb00000-0xdcbfffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:07.0: PCI bridge to [bus 0a]
+[qui jul 16 23:49:07 2026] pci 0000:04:07.0:   bridge window [mem 0xdca00000-0xdcafffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:08.0: PCI bridge to [bus 0b]
+[qui jul 16 23:49:07 2026] pci 0000:04:0c.0: PCI bridge to [bus 0c]
+[qui jul 16 23:49:07 2026] pci 0000:04:0c.0:   bridge window [mem 0xdc900000-0xdc9fffff]
+[qui jul 16 23:49:07 2026] pci 0000:04:0d.0: PCI bridge to [bus 0d]
+[qui jul 16 23:49:07 2026] pci 0000:04:0d.0:   bridge window [mem 0xdc800000-0xdc8fffff]
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0: PCI bridge to [bus 04-0d]
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0:   bridge window [io  0xe000-0xefff]
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0:   bridge window [mem 0xdc800000-0xdccfffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1: PCI bridge to [bus 03-0d]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1:   bridge window [io  0xe000-0xefff]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1:   bridge window [mem 0xdc800000-0xdccfffff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0: PCI bridge to [bus 10-3f]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0:   bridge window [io  0xa000-0xcfff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0:   bridge window [mem 0xbc000000-0xd3ffffff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0:   bridge window [mem 0xd800000000-0xf7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0: PCI bridge to [bus 40-6f]
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0:   bridge window [io  0x7000-0x9fff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0:   bridge window [mem 0xa4000000-0xbbffffff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0:   bridge window [mem 0xb800000000-0xd7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:0f:02.0: PCI bridge to [bus 70]
+[qui jul 16 23:49:07 2026] pci 0000:0f:02.0:   bridge window [mem 0xd4400000-0xd47fffff]
+[qui jul 16 23:49:07 2026] pci 0000:0f:03.0: PCI bridge to [bus 71]
+[qui jul 16 23:49:07 2026] pci 0000:0f:03.0:   bridge window [mem 0xd4000000-0xd43fffff]
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0: PCI bridge to [bus 0f-71]
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0:   bridge window [io  0x7000-0xcfff]
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0:   bridge window [mem 0xa4000000-0xd47fffff]
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0:   bridge window [mem 0xb800000000-0xf7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2: PCI bridge to [bus 0e-71]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2:   bridge window [io  0x7000-0xcfff]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2:   bridge window [mem 0xa4000000-0xd47fffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2:   bridge window [mem 0xb800000000-0xf7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:00:03.1: PCI bridge to [bus 72]
+[qui jul 16 23:49:07 2026] pci 0000:00:03.1:   bridge window [mem 0xdce00000-0xdcefffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1: PCI bridge to [bus 73]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1:   bridge window [io  0xd000-0xdfff]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1:   bridge window [mem 0xdc200000-0xdc7fffff]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1:   bridge window [mem 0xfc10000000-0xfc1fffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.3: PCI bridge to [bus 74]
+[qui jul 16 23:49:07 2026] pci 0000:00:08.3:   bridge window [mem 0xdcd00000-0xdcdfffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: Some PCI device resources are unassigned, try booting with pci=realloc
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: resource 4 [io  0x0000-0x03af window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: resource 5 [io  0x03e0-0x0cf7 window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: resource 6 [io  0x03b0-0x03df window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: resource 7 [io  0x0d00-0xffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: resource 8 [mem 0x000a0000-0x000dffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: resource 9 [mem 0xf2000000-0xf6ffffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: resource 10 [mem 0xf0000000-0xf1ffffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: resource 11 [mem 0xa0000000-0xdfffffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:00: resource 12 [mem 0x1060000000-0xfcffffffff window]
+[qui jul 16 23:49:07 2026] pci_bus 0000:01: resource 0 [io  0xf000-0xffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:01: resource 1 [mem 0xd8000000-0xdc0fffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:01: resource 2 [mem 0xf800000000-0xfc01ffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci_bus 0000:02: resource 1 [mem 0xdcf00000-0xdcffffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:03: resource 0 [io  0xe000-0xefff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:03: resource 1 [mem 0xdc800000-0xdccfffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:04: resource 0 [io  0xe000-0xefff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:04: resource 1 [mem 0xdc800000-0xdccfffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:06: resource 1 [mem 0xdcc00000-0xdccfffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:09: resource 0 [io  0xe000-0xefff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:09: resource 1 [mem 0xdcb00000-0xdcbfffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:0a: resource 1 [mem 0xdca00000-0xdcafffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:0c: resource 1 [mem 0xdc900000-0xdc9fffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:0d: resource 1 [mem 0xdc800000-0xdc8fffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:0e: resource 0 [io  0x7000-0xcfff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:0e: resource 1 [mem 0xa4000000-0xd47fffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:0e: resource 2 [mem 0xb800000000-0xf7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci_bus 0000:0f: resource 0 [io  0x7000-0xcfff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:0f: resource 1 [mem 0xa4000000-0xd47fffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:0f: resource 2 [mem 0xb800000000-0xf7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci_bus 0000:10: resource 0 [io  0xa000-0xcfff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:10: resource 1 [mem 0xbc000000-0xd3ffffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:10: resource 2 [mem 0xd800000000-0xf7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci_bus 0000:40: resource 0 [io  0x7000-0x9fff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:40: resource 1 [mem 0xa4000000-0xbbffffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:40: resource 2 [mem 0xb800000000-0xd7ffffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci_bus 0000:70: resource 1 [mem 0xd4400000-0xd47fffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:71: resource 1 [mem 0xd4000000-0xd43fffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:72: resource 1 [mem 0xdce00000-0xdcefffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:73: resource 0 [io  0xd000-0xdfff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:73: resource 1 [mem 0xdc200000-0xdc7fffff]
+[qui jul 16 23:49:07 2026] pci_bus 0000:73: resource 2 [mem 0xfc10000000-0xfc1fffffff 64bit pref]
+[qui jul 16 23:49:07 2026] pci_bus 0000:74: resource 1 [mem 0xdcd00000-0xdcdfffff]
+[qui jul 16 23:49:07 2026] pci 0000:01:00.1: extending delay after power-on from D3hot to 20 msec
+[qui jul 16 23:49:07 2026] pci 0000:01:00.1: D0 power state depends on 0000:01:00.0
+[qui jul 16 23:49:07 2026] pci 0000:73:00.1: D0 power state depends on 0000:73:00.0
+[qui jul 16 23:49:07 2026] PCI: CLS 64 bytes, default 64
+[qui jul 16 23:49:07 2026] pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
+[qui jul 16 23:49:07 2026] Trying to unpack rootfs image as initramfs...
+[qui jul 16 23:49:07 2026] pci 0000:00:01.0: Adding to iommu group 0
+[qui jul 16 23:49:07 2026] pci 0000:00:01.1: Adding to iommu group 1
+[qui jul 16 23:49:07 2026] pci 0000:00:01.2: Adding to iommu group 2
+[qui jul 16 23:49:07 2026] pci 0000:00:02.0: Adding to iommu group 3
+[qui jul 16 23:49:07 2026] pci 0000:00:02.1: Adding to iommu group 4
+[qui jul 16 23:49:07 2026] pci 0000:00:02.2: Adding to iommu group 5
+[qui jul 16 23:49:07 2026] pci 0000:00:03.0: Adding to iommu group 6
+[qui jul 16 23:49:07 2026] pci 0000:00:03.1: Adding to iommu group 7
+[qui jul 16 23:49:07 2026] pci 0000:00:04.0: Adding to iommu group 8
+[qui jul 16 23:49:07 2026] pci 0000:00:08.0: Adding to iommu group 9
+[qui jul 16 23:49:07 2026] pci 0000:00:08.1: Adding to iommu group 10
+[qui jul 16 23:49:07 2026] pci 0000:00:08.3: Adding to iommu group 11
+[qui jul 16 23:49:07 2026] pci 0000:00:14.0: Adding to iommu group 12
+[qui jul 16 23:49:07 2026] pci 0000:00:14.3: Adding to iommu group 12
+[qui jul 16 23:49:07 2026] pci 0000:00:18.0: Adding to iommu group 13
+[qui jul 16 23:49:07 2026] pci 0000:00:18.1: Adding to iommu group 13
+[qui jul 16 23:49:07 2026] pci 0000:00:18.2: Adding to iommu group 13
+[qui jul 16 23:49:07 2026] pci 0000:00:18.3: Adding to iommu group 13
+[qui jul 16 23:49:07 2026] pci 0000:00:18.4: Adding to iommu group 13
+[qui jul 16 23:49:07 2026] pci 0000:00:18.5: Adding to iommu group 13
+[qui jul 16 23:49:07 2026] pci 0000:00:18.6: Adding to iommu group 13
+[qui jul 16 23:49:07 2026] pci 0000:00:18.7: Adding to iommu group 13
+[qui jul 16 23:49:07 2026] pci 0000:01:00.0: Adding to iommu group 14
+[qui jul 16 23:49:07 2026] pci 0000:01:00.1: Adding to iommu group 14
+[qui jul 16 23:49:07 2026] pci 0000:02:00.0: Adding to iommu group 15
+[qui jul 16 23:49:07 2026] pci 0000:03:00.0: Adding to iommu group 16
+[qui jul 16 23:49:07 2026] pci 0000:04:00.0: Adding to iommu group 17
+[qui jul 16 23:49:07 2026] pci 0000:04:02.0: Adding to iommu group 18
+[qui jul 16 23:49:07 2026] pci 0000:04:04.0: Adding to iommu group 19
+[qui jul 16 23:49:07 2026] pci 0000:04:05.0: Adding to iommu group 20
+[qui jul 16 23:49:07 2026] pci 0000:04:06.0: Adding to iommu group 21
+[qui jul 16 23:49:07 2026] pci 0000:04:07.0: Adding to iommu group 22
+[qui jul 16 23:49:07 2026] pci 0000:04:08.0: Adding to iommu group 23
+[qui jul 16 23:49:07 2026] pci 0000:04:0c.0: Adding to iommu group 24
+[qui jul 16 23:49:07 2026] pci 0000:04:0d.0: Adding to iommu group 25
+[qui jul 16 23:49:07 2026] pci 0000:06:00.0: Adding to iommu group 18
+[qui jul 16 23:49:07 2026] pci 0000:09:00.0: Adding to iommu group 21
+[qui jul 16 23:49:07 2026] pci 0000:0a:00.0: Adding to iommu group 22
+[qui jul 16 23:49:07 2026] pci 0000:0c:00.0: Adding to iommu group 24
+[qui jul 16 23:49:07 2026] pci 0000:0d:00.0: Adding to iommu group 25
+[qui jul 16 23:49:07 2026] pci 0000:0e:00.0: Adding to iommu group 26
+[qui jul 16 23:49:07 2026] pci 0000:0f:00.0: Adding to iommu group 27
+[qui jul 16 23:49:07 2026] pci 0000:0f:01.0: Adding to iommu group 28
+[qui jul 16 23:49:07 2026] pci 0000:0f:02.0: Adding to iommu group 29
+[qui jul 16 23:49:07 2026] pci 0000:0f:03.0: Adding to iommu group 30
+[qui jul 16 23:49:07 2026] pci 0000:70:00.0: Adding to iommu group 29
+[qui jul 16 23:49:07 2026] pci 0000:71:00.0: Adding to iommu group 30
+[qui jul 16 23:49:07 2026] pci 0000:72:00.0: Adding to iommu group 31
+[qui jul 16 23:49:07 2026] pci 0000:73:00.0: Adding to iommu group 32
+[qui jul 16 23:49:07 2026] pci 0000:73:00.1: Adding to iommu group 33
+[qui jul 16 23:49:07 2026] pci 0000:73:00.2: Adding to iommu group 34
+[qui jul 16 23:49:07 2026] pci 0000:73:00.3: Adding to iommu group 35
+[qui jul 16 23:49:07 2026] pci 0000:73:00.4: Adding to iommu group 36
+[qui jul 16 23:49:07 2026] pci 0000:73:00.6: Adding to iommu group 37
+[qui jul 16 23:49:07 2026] pci 0000:74:00.0: Adding to iommu group 38
+[qui jul 16 23:49:07 2026] AMD-Vi: Extended features (0x246577efa2254afa, 0x0): PPR NX GT [5] IA GA PC GA_vAPIC
+[qui jul 16 23:49:07 2026] AMD-Vi: Interrupt remapping enabled
+[qui jul 16 23:49:07 2026] AMD-Vi: Virtual APIC enabled
+[qui jul 16 23:49:07 2026] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[qui jul 16 23:49:07 2026] software IO TLB: mapped [mem 0x000000006de6e000-0x0000000071e6e000] (64MB)
+[qui jul 16 23:49:07 2026] LVT offset 0 assigned for vector 0x400
+[qui jul 16 23:49:07 2026] perf: AMD IBS detected (0x00081bff)
+[qui jul 16 23:49:07 2026] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
+[qui jul 16 23:49:07 2026] Initialise system trusted keyrings
+[qui jul 16 23:49:07 2026] Key type blacklist registered
+[qui jul 16 23:49:07 2026] workingset: timestamp_bits=36 (anon: 32) max_order=24 bucket_order=0 (anon: 0)
+[qui jul 16 23:49:07 2026] fuse: init (API version 7.45)
+[qui jul 16 23:49:07 2026] integrity: Platform Keyring initialized
+[qui jul 16 23:49:07 2026] integrity: Machine keyring initialized
+[qui jul 16 23:49:07 2026] Key type asymmetric registered
+[qui jul 16 23:49:07 2026] Asymmetric key parser 'x509' registered
+[qui jul 16 23:49:07 2026] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[qui jul 16 23:49:07 2026] io scheduler mq-deadline registered
+[qui jul 16 23:49:07 2026] io scheduler kyber registered
+[qui jul 16 23:49:07 2026] Adaptive Deadline I/O Scheduler 3.2.0 by Masahito Suzuki
+[qui jul 16 23:49:07 2026] io scheduler adios registered
+[qui jul 16 23:49:07 2026] io scheduler bfq registered
+[qui jul 16 23:49:07 2026] ledtrig-cpu: registered to indicate activity on CPUs
+[qui jul 16 23:49:07 2026] pcieport 0000:00:01.1: PME: Signaling with IRQ 31
+[qui jul 16 23:49:07 2026] pcieport 0000:00:01.2: PME: Signaling with IRQ 32
+[qui jul 16 23:49:07 2026] pcieport 0000:00:02.1: PME: Signaling with IRQ 33
+[qui jul 16 23:49:07 2026] pcieport 0000:00:02.2: PME: Signaling with IRQ 34
+[qui jul 16 23:49:07 2026] pcieport 0000:00:03.1: PME: Signaling with IRQ 35
+[qui jul 16 23:49:07 2026] pcieport 0000:00:08.1: PME: Signaling with IRQ 36
+[qui jul 16 23:49:07 2026] pcieport 0000:00:08.3: PME: Signaling with IRQ 37
+[qui jul 16 23:49:07 2026] pcieport 0000:0f:00.0: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+[qui jul 16 23:49:07 2026] pcieport 0000:0f:01.0: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+[qui jul 16 23:49:07 2026] input: Power Button as /devices/platform/PNP0C0C:00/input/input0
+[qui jul 16 23:49:07 2026] ACPI: button: Power Button [PWRB]
+[qui jul 16 23:49:07 2026] input: Power Button as /devices/platform/LNXPWRBN:00/input/input1
+[qui jul 16 23:49:07 2026] ACPI: button: Power Button [PWRF]
+[qui jul 16 23:49:07 2026] Monitor-Mwait will be used to enter C-1 state
+[qui jul 16 23:49:07 2026] ACPI: Enabled processor.bm_check_disable for AMD cpuidle
+[qui jul 16 23:49:07 2026] Estimated ratio of average max frequency by base frequency (times 1024): 1086
+[qui jul 16 23:49:07 2026] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[qui jul 16 23:49:07 2026] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[qui jul 16 23:49:07 2026] Non-volatile memory driver v1.3
+[qui jul 16 23:49:07 2026] ahci 0000:0a:00.0: SSS flag set, parallel bus scan disabled
+[qui jul 16 23:49:07 2026] ahci 0000:0a:00.0: AHCI vers 0001.0301, 32 command slots, 6 Gbps, SATA mode
+[qui jul 16 23:49:07 2026] ahci 0000:0a:00.0: 4/4 ports implemented (port mask 0xf)
+[qui jul 16 23:49:07 2026] ahci 0000:0a:00.0: flags: 64bit ncq sntf stag pm led only pio deso sadm sds apst 
+[qui jul 16 23:49:07 2026] scsi host0: ahci
+[qui jul 16 23:49:07 2026] scsi host1: ahci
+[qui jul 16 23:49:07 2026] scsi host2: ahci
+[qui jul 16 23:49:07 2026] scsi host3: ahci
+[qui jul 16 23:49:07 2026] ata1: SATA max UDMA/133 abar m8192@0xdca80000 port 0xdca80100 irq 49 lpm-pol 3
+[qui jul 16 23:49:07 2026] ata2: SATA max UDMA/133 abar m8192@0xdca80000 port 0xdca80180 irq 49 lpm-pol 3
+[qui jul 16 23:49:07 2026] ata3: SATA max UDMA/133 abar m8192@0xdca80000 port 0xdca80200 irq 49 lpm-pol 3
+[qui jul 16 23:49:07 2026] ata4: SATA max UDMA/133 abar m8192@0xdca80000 port 0xdca80280 irq 49 lpm-pol 3
+[qui jul 16 23:49:07 2026] ahci 0000:0d:00.0: SSS flag set, parallel bus scan disabled
+[qui jul 16 23:49:07 2026] ahci 0000:0d:00.0: AHCI vers 0001.0301, 32 command slots, 6 Gbps, SATA mode
+[qui jul 16 23:49:07 2026] ahci 0000:0d:00.0: 4/6 ports implemented (port mask 0xf)
+[qui jul 16 23:49:07 2026] ahci 0000:0d:00.0: flags: 64bit ncq sntf stag pm led clo only pmp pio slum part sxs deso sadm sds apst 
+[qui jul 16 23:49:07 2026] scsi host4: ahci
+[qui jul 16 23:49:07 2026] scsi host5: ahci
+[qui jul 16 23:49:07 2026] scsi host6: ahci
+[qui jul 16 23:49:07 2026] scsi host7: ahci
+[qui jul 16 23:49:07 2026] scsi host8: ahci
+[qui jul 16 23:49:07 2026] scsi host9: ahci
+[qui jul 16 23:49:07 2026] ata5: SATA max UDMA/133 abar m1024@0xdc880000 port 0xdc880100 irq 50 lpm-pol 3
+[qui jul 16 23:49:07 2026] ata6: SATA max UDMA/133 abar m1024@0xdc880000 port 0xdc880180 irq 50 lpm-pol 3
+[qui jul 16 23:49:07 2026] ata7: SATA max UDMA/133 abar m1024@0xdc880000 port 0xdc880200 irq 50 lpm-pol 3
+[qui jul 16 23:49:07 2026] ata8: SATA max UDMA/133 abar m1024@0xdc880000 port 0xdc880280 irq 50 lpm-pol 3
+[qui jul 16 23:49:07 2026] ata9: DUMMY
+[qui jul 16 23:49:07 2026] ata10: DUMMY
+[qui jul 16 23:49:07 2026] ACPI: bus type drm_connector registered
+[qui jul 16 23:49:07 2026] xhci_hcd 0000:0c:00.0: xHCI Host Controller
+[qui jul 16 23:49:07 2026] xhci_hcd 0000:0c:00.0: new USB bus registered, assigned bus number 1
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:0c:00.0: hcc params 0x0200ef81 hci version 0x110 quirks 0x0000000000000010
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:0c:00.0: xHCI Host Controller
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:0c:00.0: new USB bus registered, assigned bus number 2
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:0c:00.0: Host supports USB 3.2 Enhanced SuperSpeed
+[qui jul 16 23:49:08 2026] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+[qui jul 16 23:49:08 2026] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[qui jul 16 23:49:08 2026] usb usb1: Product: xHCI Host Controller
+[qui jul 16 23:49:08 2026] usb usb1: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+[qui jul 16 23:49:08 2026] usb usb1: SerialNumber: 0000:0c:00.0
+[qui jul 16 23:49:08 2026] hub 1-0:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 1-0:1.0: 12 ports detected
+[qui jul 16 23:49:08 2026] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[qui jul 16 23:49:08 2026] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.01
+[qui jul 16 23:49:08 2026] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[qui jul 16 23:49:08 2026] usb usb2: Product: xHCI Host Controller
+[qui jul 16 23:49:08 2026] usb usb2: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+[qui jul 16 23:49:08 2026] usb usb2: SerialNumber: 0000:0c:00.0
+[qui jul 16 23:49:08 2026] hub 2-0:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 2-0:1.0: 5 ports detected
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:70:00.0: xHCI Host Controller
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:70:00.0: new USB bus registered, assigned bus number 3
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:70:00.0: hcc params 0x0200ef81 hci version 0x120 quirks 0x0000000200000010
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:70:00.0: xHCI Host Controller
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:70:00.0: new USB bus registered, assigned bus number 4
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:70:00.0: Host supports USB 3.2 Enhanced SuperSpeed
+[qui jul 16 23:49:08 2026] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+[qui jul 16 23:49:08 2026] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[qui jul 16 23:49:08 2026] usb usb3: Product: xHCI Host Controller
+[qui jul 16 23:49:08 2026] usb usb3: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+[qui jul 16 23:49:08 2026] usb usb3: SerialNumber: 0000:70:00.0
+[qui jul 16 23:49:08 2026] hub 3-0:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 3-0:1.0: 2 ports detected
+[qui jul 16 23:49:08 2026] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+[qui jul 16 23:49:08 2026] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.01
+[qui jul 16 23:49:08 2026] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[qui jul 16 23:49:08 2026] usb usb4: Product: xHCI Host Controller
+[qui jul 16 23:49:08 2026] usb usb4: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+[qui jul 16 23:49:08 2026] usb usb4: SerialNumber: 0000:70:00.0
+[qui jul 16 23:49:08 2026] hub 4-0:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 4-0:1.0: 2 ports detected
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.3: xHCI Host Controller
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.3: new USB bus registered, assigned bus number 5
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.3: hcc params 0x0120ffc5 hci version 0x120 quirks 0x0000000200000010
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.3: xHCI Host Controller
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.3: new USB bus registered, assigned bus number 6
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.3: Host supports USB 3.1 Enhanced SuperSpeed
+[qui jul 16 23:49:08 2026] usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+[qui jul 16 23:49:08 2026] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[qui jul 16 23:49:08 2026] usb usb5: Product: xHCI Host Controller
+[qui jul 16 23:49:08 2026] usb usb5: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+[qui jul 16 23:49:08 2026] usb usb5: SerialNumber: 0000:73:00.3
+[qui jul 16 23:49:08 2026] hub 5-0:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 5-0:1.0: 2 ports detected
+[qui jul 16 23:49:08 2026] usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
+[qui jul 16 23:49:08 2026] usb usb6: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.01
+[qui jul 16 23:49:08 2026] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[qui jul 16 23:49:08 2026] usb usb6: Product: xHCI Host Controller
+[qui jul 16 23:49:08 2026] usb usb6: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+[qui jul 16 23:49:08 2026] usb usb6: SerialNumber: 0000:73:00.3
+[qui jul 16 23:49:08 2026] hub 6-0:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 6-0:1.0: 2 ports detected
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.4: xHCI Host Controller
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.4: new USB bus registered, assigned bus number 7
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.4: hcc params 0x0120ffc5 hci version 0x120 quirks 0x0000000200000010
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.4: xHCI Host Controller
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.4: new USB bus registered, assigned bus number 8
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:73:00.4: Host supports USB 3.1 Enhanced SuperSpeed
+[qui jul 16 23:49:08 2026] usb usb7: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+[qui jul 16 23:49:08 2026] usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[qui jul 16 23:49:08 2026] usb usb7: Product: xHCI Host Controller
+[qui jul 16 23:49:08 2026] usb usb7: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+[qui jul 16 23:49:08 2026] usb usb7: SerialNumber: 0000:73:00.4
+[qui jul 16 23:49:08 2026] hub 7-0:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 7-0:1.0: 2 ports detected
+[qui jul 16 23:49:08 2026] usb usb8: We don't know the algorithms for LPM for this host, disabling LPM.
+[qui jul 16 23:49:08 2026] usb usb8: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.01
+[qui jul 16 23:49:08 2026] usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[qui jul 16 23:49:08 2026] usb usb8: Product: xHCI Host Controller
+[qui jul 16 23:49:08 2026] usb usb8: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+[qui jul 16 23:49:08 2026] usb usb8: SerialNumber: 0000:73:00.4
+[qui jul 16 23:49:08 2026] hub 8-0:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 8-0:1.0: 2 ports detected
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:74:00.0: xHCI Host Controller
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:74:00.0: new USB bus registered, assigned bus number 9
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:74:00.0: USB0 root hub has no ports
+[qui jul 16 23:49:08 2026] xhci_hcd 0000:74:00.0: hcc params 0x0110ffc5 hci version 0x120 quirks 0x0000000200000010
+[qui jul 16 23:49:08 2026] usb usb9: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.01
+[qui jul 16 23:49:08 2026] usb usb9: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[qui jul 16 23:49:08 2026] usb usb9: Product: xHCI Host Controller
+[qui jul 16 23:49:08 2026] usb usb9: Manufacturer: Linux 7.1.3-2-cachyos xhci-hcd
+[qui jul 16 23:49:08 2026] usb usb9: SerialNumber: 0000:74:00.0
+[qui jul 16 23:49:08 2026] hub 9-0:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 9-0:1.0: 1 port detected
+[qui jul 16 23:49:08 2026] usbcore: registered new interface driver usbserial_generic
+[qui jul 16 23:49:08 2026] usbserial: USB Serial support registered for generic
+[qui jul 16 23:49:08 2026] i8042: PNP: No PS/2 controller found.
+[qui jul 16 23:49:08 2026] rtc_cmos PNP0B00:00: RTC can wake from S4
+[qui jul 16 23:49:08 2026] rtc_cmos PNP0B00:00: registered as rtc0
+[qui jul 16 23:49:08 2026] rtc_cmos PNP0B00:00: setting system clock to 2026-07-17T02:49:08 UTC (1784256548)
+[qui jul 16 23:49:08 2026] rtc_cmos PNP0B00:00: alarms up to one month, y3k, 114 bytes nvram
+[qui jul 16 23:49:08 2026] hid: raw HID events driver (C) Jiri Kosina
+[qui jul 16 23:49:08 2026] usbcore: registered new interface driver usbhid
+[qui jul 16 23:49:08 2026] usbhid: USB HID core driver
+[qui jul 16 23:49:08 2026] drop_monitor: Initializing network drop monitor service
+[qui jul 16 23:49:08 2026] NET: Registered PF_INET6 protocol family
+[qui jul 16 23:49:08 2026] Segment Routing with IPv6
+[qui jul 16 23:49:08 2026] RPL Segment Routing with IPv6
+[qui jul 16 23:49:08 2026] In-situ OAM (IOAM) with IPv6
+[qui jul 16 23:49:08 2026] NET: Registered PF_PACKET protocol family
+[qui jul 16 23:49:08 2026] x86/amd: Previous system reset reason [0x00080800]: software wrote 0x6 to reset control register 0xCF9
+[qui jul 16 23:49:08 2026] AGESA: AGESA!V9 ComboAm5PI 1.3.0.0
+[qui jul 16 23:49:08 2026] microcode: Current revision: 0x0b404035
+[qui jul 16 23:49:08 2026] microcode: Updated early from: 0x0b404035
+[qui jul 16 23:49:08 2026] resctrl: L3 allocation detected
+[qui jul 16 23:49:08 2026] resctrl: MB allocation detected
+[qui jul 16 23:49:08 2026] resctrl: SMBA allocation detected
+[qui jul 16 23:49:08 2026] resctrl: L3 monitoring detected
+[qui jul 16 23:49:08 2026] IPI shorthand broadcast: enabled
+[qui jul 16 23:49:08 2026] Piece-Of-Cake (POC) CPU Selector 2.6.2 by Masahito Suzuki [CTZ: HW (TZCNT), PTSelect: HW (PDEP)]
+[qui jul 16 23:49:08 2026] sched_clock: Marking stable (503016702, 399313)->(504748742, -1332727)
+[qui jul 16 23:49:08 2026] registered taskstats version 1
+[qui jul 16 23:49:08 2026] Loading compiled-in X.509 certificates
+[qui jul 16 23:49:08 2026] Freeing initrd memory: 264944K
+[qui jul 16 23:49:08 2026] Loaded X.509 cert 'Build time autogenerated kernel key: 52d55d9e3cb97d23620902761b88a3c7b177e29a'
+[qui jul 16 23:49:08 2026] zswap: loaded using pool zstd
+[qui jul 16 23:49:08 2026] Demotion targets for Node 0: null
+[qui jul 16 23:49:08 2026] Key type .fscrypt registered
+[qui jul 16 23:49:08 2026] Key type fscrypt-provisioning registered
+[qui jul 16 23:49:08 2026] Btrfs loaded, zoned=yes, fsverity=yes
+[qui jul 16 23:49:08 2026] Key type big_key registered
+[qui jul 16 23:49:08 2026] integrity: Loading X.509 certificate: UEFI:db
+[qui jul 16 23:49:08 2026] integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+[qui jul 16 23:49:08 2026] integrity: Loading X.509 certificate: UEFI:db
+[qui jul 16 23:49:08 2026] integrity: Loaded X.509 cert 'Microsoft UEFI CA 2023: 81aa6b3244c935bce0d6628af39827421e32497d'
+[qui jul 16 23:49:08 2026] integrity: Loading X.509 certificate: UEFI:db
+[qui jul 16 23:49:08 2026] integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+[qui jul 16 23:49:08 2026] integrity: Loading X.509 certificate: UEFI:db
+[qui jul 16 23:49:08 2026] integrity: Loaded X.509 cert 'Microsoft Option ROM UEFI CA 2023: 514fbf937fa46fb57bf07af8bed84b3b864b1711'
+[qui jul 16 23:49:08 2026] integrity: Loading X.509 certificate: UEFI:db
+[qui jul 16 23:49:08 2026] integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+[qui jul 16 23:49:08 2026] integrity: Loading X.509 certificate: UEFI:db
+[qui jul 16 23:49:08 2026] integrity: Loaded X.509 cert 'MSI SHIP DB: ebc30d5be5f35f8041c1c2d9e613eee2'
+[qui jul 16 23:49:08 2026] PM:   Magic number: 2:281:814
+[qui jul 16 23:49:08 2026] RAS: Correctable Errors collector initialized.
+[qui jul 16 23:49:08 2026] clk: Disabling unused clocks
+[qui jul 16 23:49:08 2026] PM: genpd: Disabling unused power domains
+[qui jul 16 23:49:08 2026] usb 5-2: new high-speed USB device number 2 using xhci_hcd
+[qui jul 16 23:49:08 2026] ata5: SATA link down (SStatus 0 SControl 330)
+[qui jul 16 23:49:08 2026] ata1: SATA link down (SStatus 0 SControl 300)
+[qui jul 16 23:49:08 2026] usb 1-2: new high-speed USB device number 2 using xhci_hcd
+[qui jul 16 23:49:08 2026] usb 5-2: New USB device found, idVendor=05e3, idProduct=0608, bcdDevice=60.70
+[qui jul 16 23:49:08 2026] usb 5-2: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[qui jul 16 23:49:08 2026] usb 5-2: Product: USB2.0 Hub
+[qui jul 16 23:49:08 2026] hub 5-2:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 5-2:1.0: 4 ports detected
+[qui jul 16 23:49:08 2026] usb 1-2: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice=93.91
+[qui jul 16 23:49:08 2026] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[qui jul 16 23:49:08 2026] usb 1-2: Product: USB2.1 Hub
+[qui jul 16 23:49:08 2026] usb 1-2: Manufacturer: GenesysLogic
+[qui jul 16 23:49:08 2026] hub 1-2:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 1-2:1.0: 4 ports detected
+[qui jul 16 23:49:08 2026] ata2: SATA link down (SStatus 0 SControl 300)
+[qui jul 16 23:49:08 2026] usb 2-2: new SuperSpeed USB device number 2 using xhci_hcd
+[qui jul 16 23:49:08 2026] usb 2-2: New USB device found, idVendor=05e3, idProduct=0620, bcdDevice=93.91
+[qui jul 16 23:49:08 2026] usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[qui jul 16 23:49:08 2026] usb 2-2: Product: USB3.2 Hub
+[qui jul 16 23:49:08 2026] usb 2-2: Manufacturer: GenesysLogic
+[qui jul 16 23:49:08 2026] hub 2-2:1.0: USB hub found
+[qui jul 16 23:49:08 2026] hub 2-2:1.0: 4 ports detected
+[qui jul 16 23:49:08 2026] usb 5-2.2: new full-speed USB device number 3 using xhci_hcd
+[qui jul 16 23:49:08 2026] usb 1-3: new high-speed USB device number 3 using xhci_hcd
+[qui jul 16 23:49:08 2026] usb 5-2.2: New USB device found, idVendor=5943, idProduct=3130, bcdDevice= 1.00
+[qui jul 16 23:49:08 2026] usb 5-2.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[qui jul 16 23:49:08 2026] usb 5-2.2: Product: SG-286
+[qui jul 16 23:49:08 2026] usb 5-2.2: Manufacturer: Jieli Technology
+[qui jul 16 23:49:08 2026] input: Jieli Technology SG-286 as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.2/5-2.2:1.3/0003:5943:3130.0001/input/input2
+[qui jul 16 23:49:08 2026] ata3: SATA link down (SStatus 0 SControl 300)
+[qui jul 16 23:49:08 2026] hid-generic 0003:5943:3130.0001: input,hidraw0: USB HID v1.00 Device [Jieli Technology SG-286] on usb-0000:73:00.3-2.2/input3
+[qui jul 16 23:49:08 2026] tsc: Refined TSC clocksource calibration: 4700.001 MHz
+[qui jul 16 23:49:08 2026] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x43bf6d26585, max_idle_ns: 440795252125 ns
+[qui jul 16 23:49:08 2026] clocksource: Switched to clocksource tsc
+[qui jul 16 23:49:09 2026] usb 1-3: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice=93.91
+[qui jul 16 23:49:09 2026] usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[qui jul 16 23:49:09 2026] usb 1-3: Product: USB2.1 Hub
+[qui jul 16 23:49:09 2026] usb 1-3: Manufacturer: GenesysLogic
+[qui jul 16 23:49:09 2026] hub 1-3:1.0: USB hub found
+[qui jul 16 23:49:09 2026] hub 1-3:1.0: 4 ports detected
+[qui jul 16 23:49:09 2026] usb 2-3: new SuperSpeed USB device number 3 using xhci_hcd
+[qui jul 16 23:49:09 2026] usb 2-3: New USB device found, idVendor=05e3, idProduct=0620, bcdDevice=93.91
+[qui jul 16 23:49:09 2026] usb 2-3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[qui jul 16 23:49:09 2026] usb 2-3: Product: USB3.2 Hub
+[qui jul 16 23:49:09 2026] usb 2-3: Manufacturer: GenesysLogic
+[qui jul 16 23:49:09 2026] hub 2-3:1.0: USB hub found
+[qui jul 16 23:49:09 2026] hub 2-3:1.0: 4 ports detected
+[qui jul 16 23:49:09 2026] ata4: SATA link down (SStatus 0 SControl 300)
+[qui jul 16 23:49:09 2026] usb 1-5: new high-speed USB device number 4 using xhci_hcd
+[qui jul 16 23:49:09 2026] ata6: SATA link down (SStatus 0 SControl 330)
+[qui jul 16 23:49:09 2026] usb 1-3.2: new full-speed USB device number 5 using xhci_hcd
+[qui jul 16 23:49:09 2026] ata7: SATA link down (SStatus 0 SControl 330)
+[qui jul 16 23:49:10 2026] usb 1-3.2: New USB device found, idVendor=1b1c, idProduct=0a6b, bcdDevice= 0.00
+[qui jul 16 23:49:10 2026] usb 1-3.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[qui jul 16 23:49:10 2026] usb 1-3.2: Product: CORSAIR HS80 RGB Wireless Gaming Receiver
+[qui jul 16 23:49:10 2026] usb 1-3.2: Manufacturer: Corsair
+[qui jul 16 23:49:10 2026] usb 1-3.2: SerialNumber: 1c62f27300000217
+[qui jul 16 23:49:10 2026] ata8: SATA link down (SStatus 0 SControl 330)
+[qui jul 16 23:49:10 2026] Freeing unused decrypted memory: 2028K
+[qui jul 16 23:49:10 2026] Freeing unused kernel image (initmem) memory: 4792K
+[qui jul 16 23:49:10 2026] Write protecting the kernel read-only data: 43008k
+[qui jul 16 23:49:10 2026] Freeing unused kernel image (text/rodata gap) memory: 1952K
+[qui jul 16 23:49:10 2026] Freeing unused kernel image (rodata/data gap) memory: 1416K
+[qui jul 16 23:49:10 2026] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[qui jul 16 23:49:10 2026] rodata_test: all tests were successful
+[qui jul 16 23:49:10 2026] Run /init as init process
+[qui jul 16 23:49:10 2026]   with arguments:
+[qui jul 16 23:49:10 2026]     /init
+[qui jul 16 23:49:10 2026]     splash
+[qui jul 16 23:49:10 2026]   with environment:
+[qui jul 16 23:49:10 2026]     HOME=/
+[qui jul 16 23:49:10 2026]     TERM=linux
+[qui jul 16 23:49:10 2026] nvidia: loading out-of-tree module taints kernel.
+[qui jul 16 23:49:10 2026] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+[qui jul 16 23:49:10 2026] input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver Keyboard as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.3/0003:1B1C:0A6B.0002/input/input3
+[qui jul 16 23:49:10 2026] nvidia-nvlink: Nvlink Core is being initialized, major device number 239
+
+[qui jul 16 23:49:10 2026] nvidia 0000:01:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+[qui jul 16 23:49:10 2026] NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  610.43.03  Release Build  (root@joaoantonio-PC)  
+[qui jul 16 23:49:10 2026] ACPI: video: Video Device [VGA] (multi-head: yes  rom: no  post: no)
+[qui jul 16 23:49:10 2026] input: Video Bus as /devices/pci0000:00/0000:00:08.1/acpi.video_bus.0/input/input7
+[qui jul 16 23:49:10 2026] input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.3/0003:1B1C:0A6B.0002/input/input4
+[qui jul 16 23:49:10 2026] input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.3/0003:1B1C:0A6B.0002/input/input5
+[qui jul 16 23:49:10 2026] input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.3/0003:1B1C:0A6B.0002/input/input6
+[qui jul 16 23:49:10 2026] hid-generic 0003:1B1C:0A6B.0002: input,hiddev96,hidraw1: USB HID v1.11 Keyboard [Corsair CORSAIR HS80 RGB Wireless Gaming Receiver] on usb-0000:0c:00.0-3.2/input3
+[qui jul 16 23:49:10 2026] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for x86_64  610.43.03  Release Build  (root@joaoantonio-PC)  
+[qui jul 16 23:49:10 2026] input: Corsair CORSAIR HS80 RGB Wireless Gaming Receiver as /devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0c:00.0/usb1/1-3/1-3.2/1-3.2:1.4/0003:1B1C:0A6B.0003/input/input8
+[qui jul 16 23:49:10 2026] hid-generic 0003:1B1C:0A6B.0003: input,hidraw2: USB HID v1.11 Mouse [Corsair CORSAIR HS80 RGB Wireless Gaming Receiver] on usb-0000:0c:00.0-3.2/input4
+[qui jul 16 23:49:10 2026] [drm] [nvidia-drm] [GPU ID 0x00000100] Loading driver
+[qui jul 16 23:49:11 2026] usb 1-5: New USB device found, idVendor=0db0, idProduct=cd0e, bcdDevice= 0.05
+[qui jul 16 23:49:11 2026] usb 1-5: New USB device strings: Mfr=3, Product=1, SerialNumber=0
+[qui jul 16 23:49:11 2026] usb 1-5: Product: USB Audio
+[qui jul 16 23:49:11 2026] usb 1-5: Manufacturer: Generic
+[qui jul 16 23:49:11 2026] hid-generic 0003:0DB0:CD0E.0004: hiddev97,hidraw3: USB HID v1.11 Device [Generic USB Audio] on usb-0000:0c:00.0-5/input7
+[qui jul 16 23:49:11 2026] usb 1-10: new full-speed USB device number 6 using xhci_hcd
+[qui jul 16 23:49:11 2026] [drm] Initialized nvidia-drm 0.0.0 for 0000:01:00.0 on minor 0
+[qui jul 16 23:49:11 2026] nvidia 0000:01:00.0: [drm] Cannot find any crtc or sizes
+[qui jul 16 23:49:11 2026] Key type psk registered
+[qui jul 16 23:49:11 2026] nvme 0000:02:00.0: platform quirk: setting simple suspend
+[qui jul 16 23:49:11 2026] nvme nvme1: pci function 0000:02:00.0
+[qui jul 16 23:49:11 2026] nvme nvme0: pci function 0000:06:00.0
+[qui jul 16 23:49:11 2026] nvme nvme2: pci function 0000:72:00.0
+[qui jul 16 23:49:11 2026] nvme nvme1: D3 entry latency set to 10 seconds
+[qui jul 16 23:49:11 2026] nvme nvme1: passthrough uses implicit buffer lengths
+[qui jul 16 23:49:11 2026] nvme nvme2: D3 entry latency set to 10 seconds
+[qui jul 16 23:49:11 2026] nvme nvme2: passthrough uses implicit buffer lengths
+[qui jul 16 23:49:11 2026] nvme nvme1: 16/0/0 default/read/poll queues
+[qui jul 16 23:49:11 2026] nvme nvme2: 16/0/0 default/read/poll queues
+[qui jul 16 23:49:11 2026] usb 1-10: New USB device found, idVendor=0db0, idProduct=0076, bcdDevice= 0.01
+[qui jul 16 23:49:11 2026] usb 1-10: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[qui jul 16 23:49:11 2026] usb 1-10: Product: MYSTIC LIGHT
+[qui jul 16 23:49:11 2026] usb 1-10: Manufacturer: MSI
+[qui jul 16 23:49:11 2026] usb 1-10: SerialNumber: 7E5124092002
+[qui jul 16 23:49:11 2026]  nvme1n1: p1 p2
+[qui jul 16 23:49:11 2026] nvme nvme0: passthrough uses implicit buffer lengths
+[qui jul 16 23:49:11 2026]  nvme2n1: p1 p2
+[qui jul 16 23:49:11 2026] nvme nvme0: allocated 64 MiB host memory buffer (1 segment).
+[qui jul 16 23:49:11 2026] hid-generic 0003:0DB0:0076.0005: hiddev98,hidraw4: USB HID v1.10 Device [MSI MYSTIC LIGHT] on usb-0000:0c:00.0-10/input0
+[qui jul 16 23:49:11 2026] nvme nvme0: 16/0/0 default/read/poll queues
+[qui jul 16 23:49:11 2026]  nvme0n1: p1 p2
+[qui jul 16 23:49:11 2026] device-mapper: uevent: version 1.0.3
+[qui jul 16 23:49:11 2026] device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[qui jul 16 23:49:11 2026] usb 1-12: new full-speed USB device number 7 using xhci_hcd
+[qui jul 16 23:49:12 2026] usb 1-12: New USB device found, idVendor=0489, idProduct=e10a, bcdDevice= 0.01
+[qui jul 16 23:49:12 2026] usb 1-12: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[qui jul 16 23:49:13 2026] amdgpu: vga_switcheroo: detected switching method \_SB_.PCI0.GP17.VGA_.ATPX handle
+[qui jul 16 23:49:13 2026] amdgpu: ATPX version 1, functions 0x00000000
+[qui jul 16 23:49:13 2026] amdgpu: Virtual CRAT table created for CPU
+[qui jul 16 23:49:13 2026] amdgpu: Topology: Add CPU node
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: enabling device (0006 -> 0007)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: initializing kernel modesetting (IP DISCOVERY 0x1002:0x13C0 0x1462:0x7E51 0xCB).
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: register mmio base: 0xDC700000
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: register mmio size: 524288
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 0 <common_v1_0_0> (nv_common)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 1 <gmc_v10_0_0> (gmc_v10_0)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 2 <ih_v5_0_0> (navi10_ih)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 3 <psp_v13_0_0> (psp)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 4 <smu_v13_0_0> (smu)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 5 <dce_v1_0_0> (dm)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 6 <gfx_v10_0_0> (gfx_v10_0)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 7 <sdma_v5_2_0> (sdma_v5_2)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 8 <vcn_v3_0_0> (vcn_v3_0)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: detected ip block number 9 <jpeg_v3_0_0> (jpeg_v3_0)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: Fetched VBIOS from VFCT
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] ATOM BIOS: 102-RAPHAEL-008, build: 612127  , ver: 032.019.000.008.000000, 2022/09/26
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: vgaarb: deactivate vga console
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: Trusted Memory Zone (TMZ) feature disabled as experimental (default)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: vm size is 262144 GB, 4 levels, block size is 9-bit, fragment size is 9-bit
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: VRAM: 2048M 0x000000F400000000 - 0x000000F47FFFFFFF (2048M used)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: GART: 1024M 0x0000000000000000 - 0x000000003FFFFFFF
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] Detected VRAM RAM=2048M, BAR=2048M
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] RAM width 128bits DDR5
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0:  2048M of VRAM memory ready
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0:  30823M of GTT memory ready.
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] GART: num cpu pages 262144, num gpu pages 262144
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] PCIE GART of 1024M enabled (table at 0x000000F47FC00000).
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] Loading DMUB firmware via PSP: version=0x05003000
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] use_doorbell being set to: [true]
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [VCN instance 0] Found VCN firmware Version ENC: 1.33 DEC: 4 VEP: 0 Revision: 15
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: reserve 0xa00000 from 0xf47e000000 for PSP TMR
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: RAS: optional ras ta ucode is not available
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: RAP: optional rap ta ucode is not available
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: SECUREDISPLAY: optional securedisplay ta ucode is not available
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: smu driver if version = 0x00000005, smu fw if version = 0x00000005, smu fw program = 0, smu fw version = 0x00625300 (98.83.0)
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: SMU is initialized successfully!
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] Display Core v3.2.378 initialized on DCN 3.1.5
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] DP-HDMI FRL PCON supported
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] DMUB hardware initialized: version=0x05003000
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] HDMI-A-3: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] DP-4: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] DP-5: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] DP-6: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: kiq ring mec 2 pipe 1 q 0
+[qui jul 16 23:49:13 2026] kfd kfd: Allocated 3969056 bytes on gart
+[qui jul 16 23:49:13 2026] kfd kfd: Total number of KFD nodes to be created: 1
+[qui jul 16 23:49:13 2026] amdgpu: Virtual CRAT table created for GPU
+[qui jul 16 23:49:13 2026] amdgpu: Topology: Add GPU node [0x1002:0x13c0]
+[qui jul 16 23:49:13 2026] kfd kfd: added device 1002:13c0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: SE 1, SH per SE 1, CU per SH 2, active_cu_number 2
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring gfx_0.1.0 uses VM inv eng 1 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring comp_1.0.0 uses VM inv eng 4 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring comp_1.1.0 uses VM inv eng 5 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring comp_1.2.0 uses VM inv eng 6 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring comp_1.3.0 uses VM inv eng 7 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring comp_1.0.1 uses VM inv eng 8 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring comp_1.1.1 uses VM inv eng 9 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring comp_1.2.1 uses VM inv eng 10 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring comp_1.3.1 uses VM inv eng 11 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring kiq_0.2.1.0 uses VM inv eng 12 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring sdma0 uses VM inv eng 13 on hub 0
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring vcn_dec_0 uses VM inv eng 0 on hub 8
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring vcn_enc_0.0 uses VM inv eng 1 on hub 8
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring vcn_enc_0.1 uses VM inv eng 4 on hub 8
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: ring jpeg_dec uses VM inv eng 5 on hub 8
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: Runtime PM not available
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] Registered 4 planes with drm panic
+[qui jul 16 23:49:13 2026] [drm] Initialized amdgpu 3.64.0 for 0000:73:00.0 on minor 1
+[qui jul 16 23:49:13 2026] amdgpu 0000:73:00.0: [drm] Cannot find any crtc or sizes
+[qui jul 16 23:49:13 2026] [drm] pre_validate_dsc:1667 MST_DSC dsc precompute is not needed
+[qui jul 16 23:49:13 2026] BTRFS: device fsid 87f5a9f3-3f4f-4df3-91d4-f4af3ebe6108 devid 1 transid 88967 /dev/mapper/ArchinstallVg-root (253:0) scanned by mount (437)
+[qui jul 16 23:49:13 2026] BTRFS info (device dm-0): first mount of filesystem 87f5a9f3-3f4f-4df3-91d4-f4af3ebe6108
+[qui jul 16 23:49:13 2026] BTRFS info (device dm-0): using crc32c checksum algorithm
+[qui jul 16 23:49:13 2026] BTRFS info (device dm-0): enabling ssd optimizations
+[qui jul 16 23:49:13 2026] BTRFS info (device dm-0): turning on async discard
+[qui jul 16 23:49:13 2026] BTRFS info (device dm-0): enabling free space tree
+[qui jul 16 23:49:13 2026] systemd[1]: systemd 261.1-1-arch running in system mode (+PAM +AUDIT -SELINUX +APPARMOR -IMA +IPE +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +LIBARCHIVE)
+[qui jul 16 23:49:13 2026] systemd[1]: Detected architecture x86-64.
+[qui jul 16 23:49:13 2026] systemd[1]: Hostname set to <joaoantonio-PC>.
+[qui jul 16 23:49:14 2026] systemd[1]: bpf-restrict-fs: LSM BPF program attached
+[qui jul 16 23:49:14 2026] zram: Added device: zram0
+[qui jul 16 23:49:14 2026] systemd[1]: Queued start job for default target Graphical Interface.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice Slice /system/dirmngr.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice Slice /system/getty.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice Slice /system/gpg-agent.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice Slice /system/gpg-agent-browser.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice Slice /system/gpg-agent-extra.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice Slice /system/gpg-agent-ssh.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice Slice /system/keyboxd.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice Slice /system/modprobe.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice Slice /system/systemd-zram-setup.
+[qui jul 16 23:49:14 2026] systemd[1]: Created slice User and Session Slice.
+[qui jul 16 23:49:14 2026] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[qui jul 16 23:49:14 2026] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[qui jul 16 23:49:14 2026] systemd[1]: Expecting device /dev/disk/by-uuid/4533-4062...
+[qui jul 16 23:49:14 2026] systemd[1]: Expecting device /dev/disk/by-uuid/6CFED9C5FED987AA...
+[qui jul 16 23:49:14 2026] systemd[1]: Expecting device /dev/disk/by-uuid/87f5a9f3-3f4f-4df3-91d4-f4af3ebe6108...
+[qui jul 16 23:49:14 2026] systemd[1]: Expecting device /dev/disk/by-uuid/8EAEE46AAEE44BF1...
+[qui jul 16 23:49:14 2026] systemd[1]: Expecting device /dev/zram0...
+[qui jul 16 23:49:14 2026] systemd[1]: Reached target Login Prompts.
+[qui jul 16 23:49:14 2026] systemd[1]: Reached target Image Downloads.
+[qui jul 16 23:49:14 2026] systemd[1]: Reached target Local Integrity Protected Volumes.
+[qui jul 16 23:49:14 2026] systemd[1]: Reached target Remote File Systems.
+[qui jul 16 23:49:14 2026] systemd[1]: Reached target Slice Units.
+[qui jul 16 23:49:14 2026] systemd[1]: Reached target Local Verity Protected Volumes.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on LVM2 poll daemon socket.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Query the User Interactively for a Password.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Process Core Dump Socket.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Credential Encryption/Decryption.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Factory Reset Management.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Hostname Service Socket.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Journal Socket (/dev/log).
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Journal Sockets.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Console Output Muting Service Socket.
+[qui jul 16 23:49:14 2026] systemd[1]: TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-os
+[qui jul 16 23:49:14 2026] systemd[1]: Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Disk Repartitioning Service Socket.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Simple Block Device Backed Storage Provider.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on Simple File System Backed Storage Provider.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on udev Control Socket.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on udev Kernel Socket.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on udev Varlink Socket.
+[qui jul 16 23:49:14 2026] systemd[1]: Listening on User Database Manager Socket.
+[qui jul 16 23:49:14 2026] systemd[1]: Mounting Huge Pages File System...
+[qui jul 16 23:49:14 2026] systemd[1]: Mounting POSIX Message Queue File System...
+[qui jul 16 23:49:14 2026] systemd[1]: Mounting Kernel Debug File System...
+[qui jul 16 23:49:14 2026] systemd[1]: Mounting Kernel Trace File System...
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Create List of Static Device Nodes...
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[qui jul 16 23:49:14 2026] systemd[1]: Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+[qui jul 16 23:49:14 2026] systemd[1]: Mounting Kernel Configuration File System...
+[qui jul 16 23:49:14 2026] systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[qui jul 16 23:49:14 2026] systemd[1]: Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+[qui jul 16 23:49:14 2026] systemd[1]: Mounting FUSE Control File System...
+[qui jul 16 23:49:14 2026] systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Journal Service...
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Load Kernel Modules...
+[qui jul 16 23:49:14 2026] systemd[1]: TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+[qui jul 16 23:49:14 2026] systemd[1]: TPM PCR OS Separator skipped, unmet condition check ConditionSecurity=measured-os
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Remount Root and Kernel File Systems...
+[qui jul 16 23:49:14 2026] systemd[1]: Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-os
+[qui jul 16 23:49:14 2026] systemd[1]: TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionPathExists=/etc/initrd-release
+[qui jul 16 23:49:14 2026] systemd[1]: TPM NvPCR Product ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Load udev Rules from Credentials...
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Coldplug All udev Devices...
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Virtual Console Setup...
+[qui jul 16 23:49:14 2026] systemd[1]: Finished Create List of Static Device Nodes.
+[qui jul 16 23:49:14 2026] systemd[1]: Mounted Huge Pages File System.
+[qui jul 16 23:49:14 2026] systemd[1]: Mounted POSIX Message Queue File System.
+[qui jul 16 23:49:14 2026] systemd[1]: Mounted Kernel Debug File System.
+[qui jul 16 23:49:14 2026] systemd[1]: Mounted Kernel Trace File System.
+[qui jul 16 23:49:14 2026] systemd[1]: Mounted Kernel Configuration File System.
+[qui jul 16 23:49:14 2026] systemd[1]: Mounted FUSE Control File System.
+[qui jul 16 23:49:14 2026] systemd[1]: Finished Load udev Rules from Credentials.
+[qui jul 16 23:49:14 2026] systemd[1]: Finished Virtual Console Setup.
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+[qui jul 16 23:49:14 2026] systemd-journald[519]: Collecting audit messages is disabled.
+[qui jul 16 23:49:14 2026] i2c_dev: i2c /dev entries driver
+[qui jul 16 23:49:14 2026] systemd[1]: Finished Load Kernel Modules.
+[qui jul 16 23:49:14 2026] systemd[1]: Starting Apply Kernel Variables...
+[qui jul 16 23:49:14 2026] systemd[1]: Finished Apply Kernel Variables.
+[qui jul 16 23:49:14 2026] systemd[1]: Starting CLI Netfilter Manager...
+[qui jul 16 23:49:14 2026] systemd[1]: Starting User Database Manager...
+[qui jul 16 23:49:14 2026] systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 533 ((systemd-userd))
+[qui jul 16 23:49:14 2026] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+[qui jul 16 23:49:14 2026] systemd[1]: Started Journal Service.
+[qui jul 16 23:49:14 2026] BTRFS info (device dm-0 state M): use zstd compression, level 3
+[qui jul 16 23:49:15 2026] zram0: detected capacity change from 0 to 8388608
+[qui jul 16 23:49:15 2026] Adding 4194300k swap on /dev/zram0.  Priority:100 extents:1 across:4194300k SSDsc
+[qui jul 16 23:49:15 2026] mousedev: PS/2 mouse device common for all mice
+[qui jul 16 23:49:15 2026] mc: Linux media interface: v0.10
+[qui jul 16 23:49:15 2026] systemd-journald[519]: Received client request to flush runtime journal.
+[qui jul 16 23:49:15 2026] Bluetooth: Core ver 2.22
+[qui jul 16 23:49:15 2026] NET: Registered PF_BLUETOOTH protocol family
+[qui jul 16 23:49:15 2026] Bluetooth: HCI device and connection manager initialized
+[qui jul 16 23:49:15 2026] Bluetooth: HCI socket layer initialized
+[qui jul 16 23:49:15 2026] Bluetooth: L2CAP socket layer initialized
+[qui jul 16 23:49:15 2026] Bluetooth: SCO socket layer initialized
+[qui jul 16 23:49:15 2026] ccp 0000:73:00.2: enabling device (0000 -> 0002)
+[qui jul 16 23:49:15 2026] ccp 0000:73:00.2: tee enabled
+[qui jul 16 23:49:15 2026] ccp 0000:73:00.2: psp enabled
+[qui jul 16 23:49:15 2026] FAT-fs (nvme1n1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[qui jul 16 23:49:15 2026] ACPI: bus type thunderbolt registered
+[qui jul 16 23:49:15 2026] thunderbolt 0000:71:00.0: enabling device (0000 -> 0002)
+[qui jul 16 23:49:15 2026] piix4_smbus 0000:00:14.0: SMBus Host Controller at 0xb00, revision 0
+[qui jul 16 23:49:15 2026] piix4_smbus 0000:00:14.0: Using register 0x02 for SMBus port selection
+[qui jul 16 23:49:15 2026] r8169 0000:09:00.0: enabling device (0000 -> 0003)
+[qui jul 16 23:49:15 2026] i2c i2c-15: Successfully instantiated SPD at 0x51
+[qui jul 16 23:49:15 2026] i2c i2c-15: Successfully instantiated SPD at 0x53
+[qui jul 16 23:49:15 2026] piix4_smbus 0000:00:14.0: Auxiliary SMBus Host Controller at 0xb20
+[qui jul 16 23:49:15 2026] snd_hda_intel 0000:01:00.1: enabling device (0000 -> 0002)
+[qui jul 16 23:49:15 2026] input: PC Speaker as /devices/platform/pcspkr/input/input9
+[qui jul 16 23:49:15 2026] snd_hda_intel 0000:01:00.1: Disabling MSI
+[qui jul 16 23:49:15 2026] snd_hda_intel 0000:01:00.1: Handle vga_switcheroo audio client
+[qui jul 16 23:49:15 2026] sp5100_tco: SP5100/SB800 TCO WatchDog Timer Driver
+[qui jul 16 23:49:15 2026] sp5100-tco sp5100-tco: Using 0xfeb00000 for watchdog MMIO address
+[qui jul 16 23:49:15 2026] sp5100-tco sp5100-tco: initialized. heartbeat=60 sec (nowayout=0)
+[qui jul 16 23:49:15 2026] snd_hda_intel 0000:73:00.1: enabling device (0000 -> 0002)
+[qui jul 16 23:49:15 2026] snd_hda_intel 0000:73:00.1: Handle vga_switcheroo audio client
+[qui jul 16 23:49:15 2026] snd_hda_intel 0000:73:00.6: enabling device (0000 -> 0002)
+[qui jul 16 23:49:15 2026] usbcore: registered new interface driver btusb
+[qui jul 16 23:49:15 2026] r8169 0000:09:00.0 eth0: RTL8126A, 34:5a:60:01:b3:86, XID 64a, IRQ 158
+[qui jul 16 23:49:15 2026] r8169 0000:09:00.0 eth0: jumbo features [frames: 16362 bytes, tx checksumming: ko]
+[qui jul 16 23:49:15 2026] Bluetooth: hci0: HCI Enhanced Setup Synchronous Connection command is advertised, but not supported.
+[qui jul 16 23:49:15 2026] snd_hda_intel 0000:73:00.6: no codecs found!
+[qui jul 16 23:49:15 2026] RAPL PMU: API unit is 2^-32 Joules, 2 fixed counters, 163840 ms ovfl timer
+[qui jul 16 23:49:15 2026] RAPL PMU: hw unit of domain package 2^-16 Joules
+[qui jul 16 23:49:15 2026] RAPL PMU: hw unit of domain core 2^-16 Joules
+[qui jul 16 23:49:15 2026] snd_hda_intel 0000:73:00.1: bound 0000:73:00.0 (ops amdgpu_dm_audio_component_bind_ops [amdgpu])
+[qui jul 16 23:49:15 2026] input: HD-Audio Generic HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:08.1/0000:73:00.1/sound/card2/input10
+[qui jul 16 23:49:15 2026] input: HD-Audio Generic HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:08.1/0000:73:00.1/sound/card2/input11
+[qui jul 16 23:49:15 2026] input: HD-Audio Generic HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:08.1/0000:73:00.1/sound/card2/input12
+[qui jul 16 23:49:15 2026] input: HD-Audio Generic HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:08.1/0000:73:00.1/sound/card2/input13
+[qui jul 16 23:49:15 2026] input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input14
+[qui jul 16 23:49:15 2026] input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input15
+[qui jul 16 23:49:15 2026] input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input16
+[qui jul 16 23:49:15 2026] input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input17
+[qui jul 16 23:49:15 2026] r8169 0000:09:00.0 enp9s0: renamed from eth0
+[qui jul 16 23:49:15 2026] kvm_amd: TSC scaling supported
+[qui jul 16 23:49:15 2026] kvm_amd: Nested Virtualization enabled
+[qui jul 16 23:49:15 2026] kvm_amd: Nested Paging enabled
+[qui jul 16 23:49:15 2026] kvm_amd: LBR virtualization supported
+[qui jul 16 23:49:15 2026] kvm_amd: AVIC enabled
+[qui jul 16 23:49:15 2026] kvm_amd: x2AVIC enabled (max 512 vCPUs)
+[qui jul 16 23:49:15 2026] kvm_amd: Virtual VMLOAD VMSAVE supported
+[qui jul 16 23:49:15 2026] kvm_amd: Virtual GIF supported
+[qui jul 16 23:49:15 2026] kvm_amd: Virtual NMI enabled
+[qui jul 16 23:49:15 2026] spd5118 15-0051: DDR5 temperature sensor: vendor 0x06:0x32 revision 1.6
+[qui jul 16 23:49:15 2026] spd5118 15-0053: DDR5 temperature sensor: vendor 0x06:0x32 revision 1.6
+[qui jul 16 23:49:15 2026] intel_rapl_common: Found RAPL domain package
+[qui jul 16 23:49:15 2026] intel_rapl_common: Found RAPL domain core
+[qui jul 16 23:49:15 2026] amd_atl: AMD Address Translation Library initialized
+[qui jul 16 23:49:15 2026] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[qui jul 16 23:49:15 2026] Bluetooth: BNEP filters: protocol multicast
+[qui jul 16 23:49:15 2026] Bluetooth: BNEP socket layer initialized
+[qui jul 16 23:49:15 2026] Bluetooth: MGMT ver 1.23
+[qui jul 16 23:49:15 2026] NET: Registered PF_ALG protocol family
+[qui jul 16 23:49:15 2026] Realtek Internal NBASE-T PHY r8169-0-900:00: attached PHY driver (mii_bus:phy_addr=r8169-0-900:00, irq=MAC)
+[qui jul 16 23:49:16 2026] r8169 0000:09:00.0 enp9s0: Link is Down
+[qui jul 16 23:49:17 2026] Bluetooth: RFCOMM TTY layer initialized
+[qui jul 16 23:49:17 2026] Bluetooth: RFCOMM socket layer initialized
+[qui jul 16 23:49:17 2026] Bluetooth: RFCOMM ver 1.11
+[qui jul 16 23:49:18 2026] r8169 0000:09:00.0 enp9s0: Link is Up - 1Gbps/Full - flow control rx/tx
+[qui jul 16 23:49:22 2026] usbcore: registered new interface driver snd-usb-audio
+[qui jul 16 23:49:54 2026] usb 5-2.1: new high-speed USB device number 4 using xhci_hcd
+[qui jul 16 23:49:54 2026] usb 5-2.1: New USB device found, idVendor=0bda, idProduct=5409, bcdDevice= 1.30
+[qui jul 16 23:49:54 2026] usb 5-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[qui jul 16 23:49:54 2026] usb 5-2.1: Product: USB2.1 Hub
+[qui jul 16 23:49:54 2026] usb 5-2.1: Manufacturer: Generic
+[qui jul 16 23:49:54 2026] hub 5-2.1:1.0: USB hub found
+[qui jul 16 23:49:54 2026] hub 5-2.1:1.0: 3 ports detected
+[qui jul 16 23:49:54 2026] usb 5-2.1.1: new full-speed USB device number 5 using xhci_hcd
+[qui jul 16 23:49:54 2026] usb 5-2.1.1: New USB device found, idVendor=1b1c, idProduct=1b75, bcdDevice= 3.14
+[qui jul 16 23:49:54 2026] usb 5-2.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[qui jul 16 23:49:54 2026] usb 5-2.1.1: Product: CORSAIR HARPOON RGB PRO Gaming Mouse
+[qui jul 16 23:49:54 2026] usb 5-2.1.1: Manufacturer: Corsair
+[qui jul 16 23:49:54 2026] usb 5-2.1.1: SerialNumber: 1002701DAFBC8806633FB238F5001C04
+[qui jul 16 23:49:55 2026] input: Corsair CORSAIR HARPOON RGB PRO Gaming Mouse as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.1/5-2.1.1:1.0/0003:1B1C:1B75.0006/input/input18
+[qui jul 16 23:49:55 2026] input: Corsair CORSAIR HARPOON RGB PRO Gaming Mouse as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.1/5-2.1.1:1.0/0003:1B1C:1B75.0006/input/input19
+[qui jul 16 23:49:55 2026] input: Corsair CORSAIR HARPOON RGB PRO Gaming Mouse as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.1/5-2.1.1:1.0/0003:1B1C:1B75.0006/input/input20
+[qui jul 16 23:49:55 2026] hid-generic 0003:1B1C:1B75.0006: input,hiddev99,hidraw5: USB HID v1.11 Mouse [Corsair CORSAIR HARPOON RGB PRO Gaming Mouse] on usb-0000:73:00.3-2.1.1/input0
+[qui jul 16 23:49:55 2026] hid-generic 0003:1B1C:1B75.0007: hiddev100,hidraw6: USB HID v1.11 Device [Corsair CORSAIR HARPOON RGB PRO Gaming Mouse] on usb-0000:73:00.3-2.1.1/input1
+[qui jul 16 23:49:55 2026] usb 5-2.1.3: new high-speed USB device number 6 using xhci_hcd
+[qui jul 16 23:49:55 2026] usb 5-2.1.3: New USB device found, idVendor=0bda, idProduct=1101, bcdDevice= 1.01
+[qui jul 16 23:49:55 2026] usb 5-2.1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[qui jul 16 23:49:55 2026] usb 5-2.1.3: Product: HID Device
+[qui jul 16 23:49:55 2026] usb 5-2.1.3: Manufacturer: Realtek
+[qui jul 16 23:49:55 2026] hid-generic 0003:0BDA:1101.0008: hiddev101,hidraw7: USB HID v1.11 Device [Realtek HID Device] on usb-0000:73:00.3-2.1.3/input0
+[qui jul 16 23:49:55 2026] usb 5-2.1.2: new full-speed USB device number 7 using xhci_hcd
+[qui jul 16 23:49:55 2026] usb 5-2.1.2: New USB device found, idVendor=1b1c, idProduct=1bad, bcdDevice= 4.15
+[qui jul 16 23:49:55 2026] usb 5-2.1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[qui jul 16 23:49:55 2026] usb 5-2.1.2: Product: CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard
+[qui jul 16 23:49:55 2026] usb 5-2.1.2: Manufacturer: Corsair
+[qui jul 16 23:49:55 2026] usb 5-2.1.2: SerialNumber: 14021013AF7BA4C85F7F0F3EF5001BC6
+[qui jul 16 23:49:55 2026] input: Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.2/5-2.1.2:1.0/0003:1B1C:1BAD.0009/input/input21
+[qui jul 16 23:49:55 2026] hid-generic 0003:1B1C:1BAD.0009: input,hidraw8: USB HID v1.11 Keyboard [Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard] on usb-0000:73:00.3-2.1.2/input0
+[qui jul 16 23:49:55 2026] hid-generic 0003:1B1C:1BAD.000A: hiddev102,hidraw9: USB HID v1.11 Device [Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard] on usb-0000:73:00.3-2.1.2/input1
+[qui jul 16 23:49:55 2026] hid-generic 0003:1B1C:1BAD.000B: hiddev103,hidraw10: USB HID v1.11 Device [Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard] on usb-0000:73:00.3-2.1.2/input2
+[qui jul 16 23:49:55 2026] input: Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard as /devices/pci0000:00/0000:00:08.1/0000:73:00.3/usb5/5-2/5-2.1/5-2.1.2/5-2.1.2:1.3/0003:1B1C:1BAD.000C/input/input22
+[qui jul 16 23:49:55 2026] hid-generic 0003:1B1C:1BAD.000C: input,hidraw11: USB HID v1.11 Mouse [Corsair CORSAIR K60 RGB PRO Low Profile Mechanical Gaming Keyboard] on usb-0000:73:00.3-2.1.2/input3
+[qui jul 16 23:49:57 2026] [UFW BLOCK] IN=enp9s0 OUT= MAC=01:00:5e:00:00:01:c8:5d:38:c9:ed:d6:08:00 SRC=192.168.0.1 DST=224.0.0.1 LEN=36 TOS=0x00 PREC=0x00 TTL=1 ID=0 DF PROTO=2 
+[qui jul 16 23:50:05 2026] fbcon: Taking over console
+[qui jul 16 23:50:17 2026] Console: switching to colour frame buffer device 160x45
+[qui jul 16 23:50:17 2026] nvidia 0000:01:00.0: [drm] fb0: nvidia-drmdrmfb frame buffer device
+[qui jul 16 23:51:28 2026] sddm-greeter-qt[1004]: segfault at 10 ip 00007f5b2c09956c sp 00007ffdd4db8380 error 4 in libQt6Multimedia.so.6.11.1[4156c,7f5b2c096000+eb000] likely on CPU 3 (core 3, socket 0)
+[qui jul 16 23:51:28 2026] Code: c2 f0 15 00 48 8d 0d 65 7e 0e 00 48 8d 15 44 eb 0e 00 be 44 05 00 00 48 8d 3d b0 c3 0e 00 ff 15 a2 f0 15 00 ff 15 94 f5 15 00 <48> 8b 04 25 10 00 00 00 0f 0b 41 54 55 53 48 b8 fe fe fe fe fe fe
+[qui jul 16 23:52:02 2026] [UFW BLOCK] IN=enp9s0 OUT= MAC=01:00:5e:00:00:01:c8:5d:38:c9:ed:d6:08:00 SRC=192.168.0.1 DST=224.0.0.1 LEN=36 TOS=0x00 PREC=0x00 TTL=1 ID=0 DF PROTO=2 
+[qui jul 16 23:52:11 2026] sddm-greeter-qt[1973]: segfault at 10 ip 00007fd5a009a56c sp 00007fff68098b70 error 4 in libQt6Multimedia.so.6.11.1[4156c,7fd5a0097000+eb000] likely on CPU 4 (core 4, socket 0)
+[qui jul 16 23:52:11 2026] Code: c2 f0 15 00 48 8d 0d 65 7e 0e 00 48 8d 15 44 eb 0e 00 be 44 05 00 00 48 8d 3d b0 c3 0e 00 ff 15 a2 f0 15 00 ff 15 94 f5 15 00 <48> 8b 04 25 10 00 00 00 0f 0b 41 54 55 53 48 b8 fe fe fe fe fe fe
+[qui jul 16 23:52:26 2026] block nvme0n1: No UUID available providing old NGUID
+[qui jul 16 23:54:07 2026] [UFW BLOCK] IN=enp9s0 OUT= MAC=01:00:5e:00:00:01:c8:5d:38:c9:ed:d6:08:00 SRC=192.168.0.1 DST=224.0.0.1 LEN=36 TOS=0x00 PREC=0x00 TTL=1 ID=0 DF PROTO=2 
