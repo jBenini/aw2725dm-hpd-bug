@@ -33,12 +33,12 @@ I have an annoying issue: the monitor and the desktop have handshake problem via
 1) Power on the Alienware AW2725DM monitor.
 2) Power on the Desktop.
 
-If I power on the desktop and, for miliseconds later I power on the monitor, it cannot display the image of POST/UEFI, also don't show image during the boot and the login screen, forcing me to power off the desktop and power on again. (Or reboot it)
+If I power on the desktop and, for milliseconds later I power on the monitor, it cannot display the image of POST/UEFI, also don't show image during the boot and the login screen, forcing me to power off the desktop and power on again. (Or reboot it)
 
 ## Knowing the scenario
 
 In my Arch Linux have both display servers: Xorg and Wayland.
-When the SDDM starts, it runs via TTY1, using Xorg. After a sucessfull login, it switches to TTY2, in which runs a KDE Plasma via Wayland.
+When the SDDM starts, it runs via TTY1, using Xorg. After a successfull login, it switches to TTY2, in which runs a KDE Plasma via Wayland.
 For TTY3 to TTY6, is pure terminal.
 
 | VT | Purpose | Display Server | Process |
@@ -89,7 +89,7 @@ I contacted MSI's technical support to check if it was cold boot issue that make
 Then I tried to change the GPU's Displayport from DP-1 to DP-2 port, but the problem didn't solved it either.
 
 The next step is to check the monitor's firmware and check if there is an update at Dell webpage.
-I had to create a Win10 virtual machine only to download the file ```Alienware_AW2725DM_FWUpdate_M2C103_Windows.exe``` and apply it on monitor. The previous firmware installed on monitor was M2C102. After several minutes the new firmware version M2C103 have been installed successfully, then I restarted the tests, and I noticed that the handshake issue between the monitor and CPU have little changes: now I can power on the desktop and power on the monitor, **BUT** until the POST finishes the process. If I poweron the monitor after the login screen appears, the monitor cannot display any image yet.
+I had to create a Win10 virtual machine only to download the file ```Alienware_AW2725DM_FWUpdate_M2C103_Windows.exe``` and apply it on monitor. The previous firmware installed on monitor was M2C102. After several minutes the new firmware version M2C103 have been installed successfully, then I restarted the tests, and I noticed that the handshake issue between the monitor and CPU have changed very little: now I can power on the desktop and power on the monitor, **BUT** until the POST finishes the process. If I poweron the monitor after the login screen appears, the monitor cannot display any image yet.
 
 The next step is to run some system info and check system logs and find a root problem for this problem.
 ```shell
@@ -352,7 +352,7 @@ Restarting SDDM Daemon plus returning to TTY1 logging in blindly gave me some a 
 According to ```login-trigger-test``` logfiles, the NVIDIA driver enters in a loop of recurrent faulty for each 17 ~ 30 seconds, it tries to show image, without success:
 
 ```shell
-Failed to query display engine channel state # GPU recgonize the monitor, even cannot complete the link via Displayport.
+Failed to query display engine channel state # GPU recognize the monitor, even cannot complete the link via Displayport.
 Lost display notification
 Failed to query default adaptivesync listing for Dell AW2725DM (DP-2) # NOW IT DETECTS THE MONITOR MODEL!!! AN IMPORTANT PROGRESS!!!
 Flip event timeout on head 0
@@ -366,7 +366,7 @@ Failed detecting connected display devices
 
 This issue occurs repeatedly until I run `sudo systemctl restart sddm´.
 
-Now I got an evidence that the Kernel tried a lot of times to display the signal, but since with EDID didn't show up the display, and complete the video flip/commit, there is an unstable eletric link via DisplayPort. Proving that it's not a bug, but a deterministic error (constant and predictable).
+Now I got an evidence that the Kernel tried a lot of times to display the signal, but since with EDID didn't show up the display, and complete the video flip/commit, there is an unstable eletric link via DisplayPort. Proving that this is not silence from indifference, but a genuine — and inconsistent — hardware negotiation failure: sometimes the link is never attempted, other times it's attempted repeatedly and fails partway through EDID/commit. This intermittency itself points to a marginal electrical link, not a clean software bug.
 
 ## Another attempt to find a palliative solution: triggerhappy (thd)
 
@@ -408,7 +408,7 @@ Now I had to reboot, power off the monitor and power on only the SDDM is up, the
 Inside this repo there is a folder called *wake-monitor-script*, in which detects automatically if the monitor is power on, check if the USB Hub from AW2725DM is working, using **udev rule**, then runs a script via **systemd** for the monitor shows up the screen 5 seconds later, also checks if users is already logged in or not.
 In case is not logged, then SDDM is restarted, run a new Xorg probe and finds the monitor.
 
-The scripts avois the blind login, also there is no X11 authorization issues, runs automatically.
+The scripts avoids the blind login, also there is no X11 authorization issues, runs automatically.
 
 ### How it works.
 
@@ -433,23 +433,23 @@ Windows' WDDM (Windows Display Driver Model) has, by its own design, periodic po
 
 ## So, at this moment, what I can figure?
 
-For my point-of-view and all the troubleshoot attempts, with data collecting from the logs, I can say that the **Dell Technologies** have the big slice of this responsability, since the monitor **NEVER** send a signal from the DisplayPort to the other-end and establish a 'handshake' between the devices and display the image to the user. They are well comfortable that Microsoft already created a solution from their side called WDDM, ignoring the fact that the monitor is simply sluggish.
+For my point-of-view and all the troubleshoot attempts, with data collecting from the logs, I can say that the **Dell Technologies** have the big slice of this responsibility, since the monitor **NEVER** send a signal from the DisplayPort to the other-end and establish a 'handshake' between the devices and display the image to the user. They are well comfortable that Microsoft already created a solution from their side called WDDM, ignoring the fact that the monitor is simply sluggish.
 According to the DisplayPort Standards, the PIN number 18, also called Hot Plug Detect(HPD), it's used to send signal to the other side to confirm that the monitor is powered and ready to display any image. 
 Source: [DisplayPort on Wikipedia](https://en.wikipedia.org/wiki/DisplayPort)
 
 Also on [DisplayPort search results for Alienware monitors](https://www.displayport.org/product-category/monitors-tvs/?ps=alienware), from today, July 14, 2026, there is no **AW2725DM** on the results, suggesting that this monitor (though not conclusively proving) may not be listed on VESA's certified products database since I wrote this README.
 
-Another slice goes to NVIDIA, for the Linux Driver still have issues, as I've discovered and registered in this document. Thanks to understand the issue of the Driver I can figure how to find another palliative solution, since EDID didn't worked. 
+Another slice goes to NVIDIA, for the Linux Driver still has issues, as I've discovered and registered in this document. Thanks to understand the issue of the Driver I can figure how to find another palliative solution, since EDID didn't worked. 
 
-### To be clear: Why Dell is the major guilty of this problem?
+### To be clear: Why Dell bears the most responsibility?
 
 Alienware is a released product from the manufacture with defects, from Design, Firmware, and Hardware, as explained on the 6 points below:
 
 1. As I've said before: It's the responsible of the monitor to send the HPD signal via pin 18 to the GPU, but Alienware AW2725DM **NEVER** do this.
 2. USB Hub (KVM) works well, AW2725DM's DisplayPort depends to receive the signal from GPU, since the HPD is faulty from this product due the design/firmware problem, not hardware limitation.
-3. Upgrading to M2C103 firmware helped a little, since the late hotplug still don't work. (when SDDM opens up) Why the Staff responsible for AW2725DM don't made the homework well I honestly don't know why!
+3. Upgrading to M2C103 firmware helped a little, since the late hotplug still doesn't work. (when SDDM opens up) Why Dell's engineering team didn't address this properly remains unclear!
 4. Windows WDDM do periodic polling, since Microsoft do the job that belongs to Dell, due to the laziness of the second.
-5. Have suspicious (have to be confirmed) that AW2725DM does not appear as a certified product at displayport.org.
+5. There is a suspicion (have to be confirmed) that AW2725DM does not appear as a certified product at displayport.org.
 6. EDID override + video=DP-2:e didn't worked: even forcing the software displays the image to the monitor when this one is powered later, the link training fails, since the monitor's receptor is not powered. And this item shows a hardware failure.
 
 ## And now, how to deal with this problem?
