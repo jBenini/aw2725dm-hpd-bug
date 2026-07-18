@@ -1,0 +1,18 @@
+# 99-wake-monitor.rules
+# Detects the Alienware AW2725DM monitor's internal USB hub reconnecting
+# and triggers a display-manager restart to force a new DisplayPort probe.
+#
+# The AW2725DM has a firmware bug: it does NOT assert HPD (Hot Plug Detect)
+# on DisplayPort PIN 18 when powered on after the system is already running.
+# However, its internal USB hub DOES reconnect — we use that as a proxy.
+#
+# Device chain (last to enumerate = monitor fully on):
+#   usb 5-2.1   → Realtek USB2.1 Hub    (0bda:5409)
+#   usb 5-2.1.1 → Corsair Mouse         (1b1c:1b75)
+#   usb 5-2.1.2 → Corsair Keyboard      (1b1c:1bad)
+#   usb 5-2.1.3 → Realtek HID Device    (0bda:1101) ← THIS IS THE TRIGGER
+#
+# The cooldown in the script prevents multiple firings from the hub's
+# multi-device enumeration sequence.
+
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0bda", ATTR{idProduct}=="1101", ENV{SYSTEMD_WANTS}+="wake-monitor.service"

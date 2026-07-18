@@ -1,0 +1,17 @@
+# wake-monitor.service
+# Triggered by udev when the AW2725DM monitor's USB hub reconnects.
+# Runs the wake-monitor.sh script to restart SDDM if no Wayland session
+# is active (i.e., we're stuck at the login screen with a blank monitor).
+
+[Unit]
+Description=Restart SDDM when AW2725DM monitor powers on late
+After=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/wake-monitor.sh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=graphical.target
