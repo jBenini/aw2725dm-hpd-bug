@@ -454,6 +454,6 @@ Alienware is a released product from the manufacture with defects, from Design, 
 
 ## And now, how to deal with this problem?
 
-I'm not very confident that Dell will take a real action for my cause, since Linux's marketshare is really tiny and it won't cause any problem on the profits of this manufacturer, so, it was left for me to accept that it's a problem without solution until now. NVIDIA already opened the code of the GPU drivers, so I had to find on the Linux community how to solve in GPU side.
+I'm not very confident that Dell will take a real action for my cause, since Linux's marketshare is really tiny and it won't cause any problem on the profits of this manufacturer, so, it was left for me to accept that it's a problem without solution until now. NVIDIA's kernel module is open-source (nvidia-open), though the display/modeset logic remains closed, so I had to rely on community knowledge to explore workarounds on the GPU side.
 
 Since I couldn't find any solution, definitive or palliative, for me I must log in blindly on SDDM when I forget to power on the monitor before SDDM appears.
