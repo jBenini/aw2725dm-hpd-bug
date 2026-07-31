@@ -1,5 +1,5 @@
 # The Display issue after a later power-on of Alienware AW2725DM
-Last update: July 17, 2026.
+Last update: July 30, 2026.
 
 # Disclaimer -> Why this configuration necessary? Where should be applied?
 
@@ -9,7 +9,9 @@ After long log collecting and tests I discovered that the fault is divided by:
 - 20% for DisplayPort protocol, due fragile structure.
 - 10% for NVIDIA, due Linux driver issues.
 
-I couldn't find a solution, so I had to get a mechanism for the Kernel send a signal via GPU port to warn the Monitor to display the signal, in case if there is a blank screen and a message "*No signal on DisplayPort*".
+~~I couldn't find a solution, so I had to get a mechanism for the Kernel send a signal via GPU port to warn the Monitor to display the signal, in case if there is a blank screen and a message "*No signal on DisplayPort*".~~
+
+**UPDATE - July 30, 2026:** I've found a palliative solution, applied and made several tests. It worked! Please go to [Palliative Solution](#paliattive-solution).
 
 ## Hardware overview
 
@@ -38,7 +40,7 @@ If I power on the desktop and, for milliseconds later I power on the monitor, it
 ## Knowing the scenario
 
 In my Arch Linux have both display servers: Xorg and Wayland.
-When the SDDM starts, it runs via TTY1, using Xorg. After a successfull login, it switches to TTY2, in which runs a KDE Plasma via Wayland.
+When the SDDM starts, it runs via TTY1, using Xorg. After a successful login, it switches to TTY2, in which runs a KDE Plasma via Wayland.
 For TTY3 to TTY6, is pure terminal.
 
 | VT | Purpose | Display Server | Process |
@@ -301,12 +303,12 @@ Since after changing the Entry Source as Off didn't give a different result, wit
 I made another reboot, turned off the monitor and waited time enough to SDDM (KDE Plasma's Login Screen) start it's service and then power on the monitor, but happened a different behaviour:
 
 #### First behaviour: 
-Monitor without image on TTY1, switched to TTY3, still no imagem tried to log in blindly (since AW2725DM cannot show any image), but after a time I could see the screen, but I inputed my password incorrectly 3 times, then Arch Linux blocked my users for a time. After waiting this time expires, I could use ```sudo``` to run ```sudo chvt 1``` to return to TTY1 and see if SDDM is shown to me. Unfortunately no success, I returned to TTY3 and inputed ```reboot```.
+Monitor without image on TTY1, switched to TTY3, still no image tried to log in blindly (since AW2725DM cannot show any image), but after a time I could see the screen, but I inputed my password incorrectly 3 times, then Arch Linux blocked my users for a time. After waiting this time expires, I could use ```sudo``` to run ```sudo chvt 1``` to return to TTY1 and see if SDDM is shown to me. Unfortunately no success, I returned to TTY3 and inputed ```reboot```.
 
 #### Second behaviour: 
-after the previous failure, I left my monitor powered on. The plan is to remember the keys to select my user and input the password on SDDM to log in even if the monitor is blank. I noticed that pressing 'ENTER' selects my user and I input the password and press 'ENTER' again, so I can log into my desktop. After remembering the process to log in using keyboard only I rebooted, powered off the monitor and powered on after SDDM is running, since the monitor didn't show any image, I used my memory to remember press 'ENTER', input password, press 'ENTER' again, and my desktop is shown. It's good, since I discovered that I don't need anymore to power off and power on the desktop to make the monitor show image: something between SDDM's sucessfull login and the exhibit of KDE's desktop is responsible to refresh the signal to the monitor, making it display the image. Now I need to figure what's the cause.
+after the previous failure, I left my monitor powered on. The plan is to remember the keys to select my user and input the password on SDDM to log in even if the monitor is blank. I noticed that pressing 'ENTER' selects my user and I input the password and press 'ENTER' again, so I can log into my desktop. After remembering the process to log in using keyboard only I rebooted, powered off the monitor and powered on after SDDM is running, since the monitor didn't show any image, I used my memory to remember press 'ENTER', input password, press 'ENTER' again, and my desktop is shown. It's good, since I discovered that I don't need anymore to power off and power on the desktop to make the monitor show image: something between SDDM's sucessful login and the exhibit of KDE's desktop is responsible to refresh the signal to the monitor, making it display the image. Now I need to figure what's the cause.
 
-It oonfirms that the authentication via **Kwin/Wayland compositor** starting up, performing a modeset, changing to TTY1 (SDDM using Xorg Desktop Server) to TTY2 (KDE Plasma using Wayland desktop server).
+It confirms that the authentication via **Kwin/Wayland compositor** starting up, performing a modeset, changing to TTY1 (SDDM using Xorg Desktop Server) to TTY2 (KDE Plasma using Wayland desktop server).
 
 ##### The Steps when SDDM authenticates the user:
 
@@ -341,7 +343,7 @@ At this moment I will run dmesg with new parameters on TTY3, when I recriate the
 ```sudo dmesg -w -T | tee ~/login-trigger-test.log```, return to TTY1 and find something about ```drm, nvidia, crtc, modeset```.
 I've made 3 attempts, each one generating a new log files ```login-trigger-test1.log``` and ```login-trigger-test2.log```, but all these 3 tests I could not see image on TTY1 when I return it, even pressing 'ENTER' and input password.
 
-Then I've made an fourth attempt: rebooted the PC, powered off the monitor, powered on again after SDDM login -> no screen (as expected) -> changed to TTTY3 and login with my user, run the command ```sudo dmesg -w -T | tee ~/login-trigger-test3.log``` (notice the number 3 before the '.log'), opened TTY4, run ```sudo systemctl restart sddm```, returned automatically to TTY1, I've pressed 'ENTER', inputed the password, and pressed 'ENTER' again. It entered on my desktop screen.
+Then I've made an fourth attempt: rebooted the PC, powered off the monitor, powered on again after SDDM login -> no screen (as expected) -> changed to TTY3 and login with my user, run the command ```sudo dmesg -w -T | tee ~/login-trigger-test3.log``` (notice the number 3 before the '.log'), opened TTY4, run ```sudo systemctl restart sddm```, returned automatically to TTY1, I've pressed 'ENTER', inputed the password, and pressed 'ENTER' again. It entered on my desktop screen.
 
 This obstacle looks like NVIDIA driver + VT Switching have problem to return the "DRM Master" from different TTYs, which escalates this problem in new ways. But it don't minimize the Dell's product failure to send a signal via PIN_18 on displayport to the GPU (HPD faulty).
 
@@ -364,9 +366,9 @@ Failed detecting connected display devices
 
 ```
 
-This issue occurs repeatedly until I run `sudo systemctl restart sddm´.
+This issue occurs repeatedly until I run 'sudo systemctl restart sddm'.
 
-Now I got an evidence that the Kernel tried a lot of times to display the signal, but since with EDID didn't show up the display, and complete the video flip/commit, there is an unstable eletric link via DisplayPort. Proving that this is not silence from indifference, but a genuine — and inconsistent — hardware negotiation failure: sometimes the link is never attempted, other times it's attempted repeatedly and fails partway through EDID/commit. This intermittency itself points to a marginal electrical link, not a clean software bug.
+Now I got an evidence that the Kernel tried a lot of times to display the signal, but since with EDID didn't show up the display, and complete the video flip/commit, there is an unstable electric link via DisplayPort. Proving that this is not silence from indifference, but a genuine — and inconsistent — hardware negotiation failure: sometimes the link is never attempted, other times it's attempted repeatedly and fails partway through EDID/commit. This intermittency itself points to a marginal electrical link, not a clean software bug.
 
 ## Another attempt to find a palliative solution: triggerhappy (thd)
 
@@ -403,7 +405,7 @@ Now I had to reboot, power off the monitor and power on only the SDDM is up, the
 ```grep -q "seat0.*active"``` looks for the word "active" in the loginctl output — but ```loginctl list-sessions``` doesn't have an "active" column in its default output. This check would **always fail** (grep finds nothing), meaning the script would **always restart SDDM**, even when the user was logged in.
 
 
-## Last attempt: wake-monitor script.
+## Another attempt: wake-monitor script.
 
 Inside this repo there is a folder called *wake-monitor-script*, in which detects automatically if the monitor is power on, check if the USB Hub from AW2725DM is working, using **udev rule**, then runs a script via **systemd** for the monitor shows up the screen 5 seconds later, also checks if users is already logged in or not.
 In case is not logged, then SDDM is restarted, run a new Xorg probe and finds the monitor.
@@ -421,7 +423,83 @@ I changed to TTY3 and run ```journalctl -t wake-monitor -n 30 --no-pager``` and 
 
 I left this script on wake-monitor-script/ inside this repo for reference, also there is a document, WAKE-MONITOR.sh, for understand how it works.
 
-## CONCLUSION
+# Palliative Solution
+
+Applying a customEDID at xorg.conf for SDDM, in which uses the NVIDIA's proprietary API make the screen be shown even if I power on the monitor later.
+
+Follow the steps:
+
+1. At the terminal, do these steps
+```shell
+sudo mkdir -p /etc/X11/xorg.conf.d
+sudo nvim /etc/X11/xorg.conf.d/10-nvidia-dp2.conf
+```
+
+2. Edit the ```10-nvidia-dp2.conf``` with this settings below:
+```shell
+Section "Device"
+    Identifier     "NVIDIA0"
+    Driver         "nvidia"
+    Option         "ConnectedMonitor" "DP-2"
+    Option         "CustomEDID" "DP-2:/usr/lib/firmware/edid/aw2725dm-dp2.bin"
+    Option         "AllowEmptyInitialConfiguration" "true"
+EndSection
+
+Section "Monitor"
+    Identifier     "DP-2"
+    Option         "Enable" "true"
+EndSection
+```
+
+3. Confirm if the file ```aw2725dm-dp2.bin``` exists
+
+```shell
+ls -la /usr/lib/firmware/edid/aw2725dm-dp2.bin
+```
+
+In case if don't exist, then do the command below:
+
+```shell
+sudo cp /sys/class/drm/card1-DP-2/edid /usr/lib/firmware/edid/aw2725dm-dp2.bin
+```
+
+4. Restart SDDM
+
+```shell
+sudo systemctl restart sddm
+```
+
+5. Do the test.
+- Power off the desktop and monitor.
+- Power on the desktop first, then wait a while for SDDM starts.
+- Power on the monitor
+- If the screen appears, it worked! 🎉
+
+## Why the first EDID configuration attempt failed?
+
+At that moment, I didn't figure that Xorg was running only to display the Gretter Session SDDM, and only give place to Wayland when KDE Plasma opens. 
+
+The real cause is more fundamental: the drm.edid_firmware is a parameter that is only read and processed by the generic code of drm_kms_helper — the shared layer that open-source drivers (amdgpu, nouveau, i915) use to decide "is there a monitor here? which EDID to use?".
+
+NVIDIA's proprietary driver never connects this generic logic — neither in Xorg nor in Wayland. It implements its own closed connector/EDID detection stack (within nvidia-modeset), which simply ignores this kernel parameter, regardless of which graphics server is running on top. That's why, even confirming the active parameter in /proc/cmdline and the file present in initramfs, not a single line of logs ever appeared trying to load it — the code that would process this doesn't even exist in the path that NVIDIA uses.
+
+### Why the 10-nvidia-dp2.conf file does differently
+
+This file doesn't use the generic kernel API — it uses its own proprietary API from the nvidia_drv.so driver (NVIDIA's own Xorg driver), written by NVIDIA to be read by their own driver. In other words, this time you're not trying to fit a generic part into a proprietary lock — you're using the key that the lock manufacturer designed.
+
+Each line does something specific:
+
+ConnectedMonitor "DP-2": tells the driver "treat this port as always physically connected," without relying on real-time detection (HPD) to decide if there's a monitor there.
+
+CustomEDID "DP-2:/path/...": provides the EDID data statically, instead of the driver needing to read it live via the AUX channel — which is exactly where we saw, in that error spiral log, the process failing (Unable to read EDID, Failure processing EDID). Now it doesn't even try to read it live, it already uses what you provided.
+
+`AllowEmptyInitialConfiguration "true"`: safety net — allows Xorg to start even if, at the exact moment it starts up, nothing appears connected (prevents X from refusing to start due to "zero displays detected").
+
+Putting it all together: instead of the driver asking the monitor "are you there? what are your capabilities?" (a question we know fails intermittently), it now receives the fixed answer, beforehand: "there's a monitor here, always, and here's its complete technical data sheet". There's no more live negotiation to fail — the video commit happens with static data, without depending on the unstable electrical handshake.
+
+After so many attempts, this one really hit the nail on the head: the problem was never "Wayland vs Xorg" itself, it was using the generic kernel tool against a driver that simply doesn't read it, versus using the manufacturer-specific tool that it reads natively.
+
+## To Clarify: Who where the responsible for this issue?
 
 During POST, the firmware repeatedly probes the video output in a loop, which is tolerant enough to catch the Hot-Plug Detect (HPD) signal even with imperfect timing. If the monitor is already up, the 'handshake' occurs properly and the screen will be shown to me.
 After the AW2725DM's upgrade to version M2C103 it will show during POST as well.
@@ -447,13 +525,13 @@ Alienware is a released product from the manufacture with defects, from Design, 
 
 1. As I've said before: It's the responsible of the monitor to send the HPD signal via pin 18 to the GPU, but Alienware AW2725DM **NEVER** do this.
 2. USB Hub (KVM) works well, AW2725DM's DisplayPort depends to receive the signal from GPU, since the HPD is faulty from this product due the design/firmware problem, not hardware limitation.
-3. Upgrading to M2C103 firmware helped a little, since the late hotplug still doesn't work. (when SDDM opens up) Why Dell's engineering team didn't address this properly remains unclear!
+3. Upgrading to M2C103 firmware helped a little, since the late hotplug still doesn't work. (when SDDM opens up) Why Dell's engineering team didn't address this properly remains unclear.
 4. Windows WDDM do periodic polling, since Microsoft do the job that belongs to Dell, due to the laziness of the second.
 5. There is a suspicion (have to be confirmed) that AW2725DM does not appear as a certified product at displayport.org.
 6. EDID override + video=DP-2:e didn't worked: even forcing the software displays the image to the monitor when this one is powered later, the link training fails, since the monitor's receptor is not powered. And this item shows a hardware failure.
 
-## And now, how to deal with this problem?
+~~## And now, how to deal with this problem?~~
 
-I'm not very confident that Dell will take a real action for my cause, since Linux's marketshare is really tiny and it won't cause any problem on the profits of this manufacturer, so, it was left for me to accept that it's a problem without solution until now. NVIDIA's kernel module is open-source (nvidia-open), though the display/modeset logic remains closed, so I had to rely on community knowledge to explore workarounds on the GPU side.
+~~I'm not very confident that Dell will take a real action for my cause, since Linux's marketshare is really tiny and it won't cause any problem on the profits of this manufacturer, so, it was left for me to accept that it's a problem without solution until now. NVIDIA's kernel module is open-source (nvidia-open), though the display/modeset logic remains closed, so I had to rely on community knowledge to explore workarounds on the GPU side.~~
 
-Since I couldn't find any solution, definitive or palliative, for me I must log in blindly on SDDM when I forget to power on the monitor before SDDM appears.
+~~Since I couldn't find any solution, definitive or palliative, for me I must log in blindly on SDDM when I forget to power on the monitor before SDDM appears.~~
